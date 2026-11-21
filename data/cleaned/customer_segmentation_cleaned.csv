@@ -1,0 +1,1001 @@
+customer_id,gender,age,age_imputed,age_under_18,country,signup_date,last_purchase_date,tenure_days,recency_days,frequency,frequency_flag,monetary_value,aov,preferred_category,acquisition_channel,email_open_rate,churn_risk_score
+CUST_10000,Female,32,True,False,Kenya,2023-09-08,2024-04-23,601,373,3,observed,179.34,59.78,Makeup,Email,0.22,1.0
+CUST_10001,Female,32,True,False,UK,2023-08-27,2025-01-25,613,96,3,observed,355.02,118.33999999999999,Makeup,Email,0.1,0.25
+CUST_10002,Unknown,32,False,False,USA,2023-06-13,2024-08-18,688,256,2,observed,50.52,25.26,Bodycare,Email,0.2,0.9
+CUST_10003,Female,21,False,False,Kenya,2024-09-10,2024-11-16,233,166,2,observed,61.06,30.53,Makeup,Email,0.41,0.74
+CUST_10004,Female,30,False,False,Nigeria,2024-01-06,2024-10-27,481,186,4,observed,156.89,39.2225,Haircare,Organic Search,0.35,0.64
+CUST_10005,Male,38,False,False,Canada,2023-10-12,2025-01-18,567,103,1,zero_with_spend_set_to_1,304.42,,Bodycare,Social Media,0.42,0.42
+CUST_10006,Female,35,False,False,UK,2024-06-30,2024-11-02,305,180,2,observed,392.39,196.195,Makeup,Social Media,0.26,0.73
+CUST_10007,Female,25,False,False,USA,2023-11-20,2025-01-03,528,118,6,observed,50.89,8.481666666666667,Makeup,Social Media,0.49,0.37
+CUST_10008,Male,23,False,False,Canada,2024-10-20,2025-02-14,193,76,10,observed,131.9,13.190000000000001,Makeup,Referral,0.36,0.41
+CUST_10009,Male,29,False,False,Canada,2024-01-06,2024-04-27,481,369,2,observed,278.69,139.345,Wellness,Organic Search,0.33,1.0
+CUST_10010,Female,16,False,True,UK,2024-11-27,2025-03-15,155,47,1,observed,195.92,195.92,Makeup,Referral,0.17,0.27
+CUST_10011,Female,27,False,False,USA,2024-11-27,2024-12-26,155,126,5,observed,99.72,19.944,Bodycare,Social Media,0.58,0.55
+CUST_10012,Female,22,False,False,UK,2024-04-09,2024-04-10,387,386,2,observed,124.47,62.235,Bodycare,Paid Ads,0.07,1.0
+CUST_10013,Unknown,47,False,False,Kenya,2024-10-16,2025-02-22,197,68,3,observed,354.36,118.12,Haircare,Referral,0.21,0.4
+CUST_10014,Female,17,False,True,Canada,2023-01-20,2023-05-14,832,718,6,observed,446.99,74.49833333333333,Bodycare,Paid Ads,0.23,1.0
+CUST_10015,Unknown,19,False,False,USA,2024-05-12,2024-06-16,354,319,4,observed,438.54,109.635,Haircare,Email,0.11,1.0
+CUST_10016,Unknown,18,False,False,Nigeria,2024-09-13,2024-12-30,230,122,7,observed,102.68,14.668571428571429,Haircare,Email,0.46,0.43
+CUST_10017,Female,36,False,False,Nigeria,2024-04-07,2024-06-07,389,328,4,observed,181.38,45.345,Skincare,Paid Ads,0.43,1.0
+CUST_10018,Unknown,27,False,False,USA,2024-12-25,2025-01-09,127,112,5,observed,364.17,72.834,Bodycare,Paid Ads,0.42,0.41
+CUST_10019,Female,45,False,False,UK,2024-07-06,2024-09-11,299,232,9,observed,238.19,26.465555555555554,Makeup,Email,0.27,0.75
+CUST_10020,Male,55,False,False,USA,2024-11-05,2025-02-23,177,67,2,observed,27.78,13.89,Skincare,Organic Search,0.13,0.31
+CUST_10021,Female,38,False,False,Kenya,2023-04-22,2024-01-01,740,486,2,observed,845.35,422.675,Haircare,Social Media,0.53,1.0
+CUST_10022,Male,25,False,False,USA,2024-03-29,2025-01-04,398,117,2,observed,363.26,181.63,Makeup,Organic Search,0.26,0.47
+CUST_10023,Male,25,False,False,Canada,2024-05-07,2024-08-24,359,250,7,observed,44.88,6.411428571428572,Haircare,Email,0.16,0.96
+CUST_10024,Female,31,False,False,Canada,2023-10-20,2024-12-26,559,126,3,observed,87.52,29.173333333333332,Makeup,Email,0.19,0.66
+CUST_10025,Male,32,False,False,UK,2023-03-01,2024-10-14,792,199,2,observed,170.25,85.125,Bodycare,Referral,0.51,0.87
+CUST_10026,Male,53,False,False,Nigeria,2023-06-11,2023-08-08,690,632,5,observed,24.4,4.88,Haircare,Organic Search,0.18,1.0
+CUST_10027,Male,28,False,False,Nigeria,2023-09-10,2025-04-24,599,7,6,observed,339.54,56.59,Wellness,Referral,0.24,0.16
+CUST_10028,Unknown,47,False,False,Kenya,2023-07-29,2024-06-14,642,321,5,observed,139.34,27.868000000000002,Bodycare,Organic Search,0.33,1.0
+CUST_10029,Female,52,False,False,Nigeria,2023-04-13,2023-06-27,749,674,6,observed,110.06,18.343333333333334,Haircare,Organic Search,0.29,1.0
+CUST_10030,Male,36,False,False,UK,2024-03-24,2024-12-27,403,125,2,observed,124.76,62.38,Makeup,Referral,0.18,0.4
+CUST_10031,Female,17,False,True,USA,2023-05-18,2024-02-12,714,444,5,observed,252.14,50.428,Makeup,Social Media,0.49,1.0
+CUST_10032,Unknown,25,False,False,Kenya,2023-07-28,2024-04-23,643,373,1,observed,192.63,192.63,Skincare,Email,0.22,1.0
+CUST_10033,Female,32,True,False,Kenya,2023-05-14,2025-02-24,718,66,2,observed,210.99,105.495,Wellness,Email,0.36,0.39
+CUST_10034,Unknown,32,True,False,USA,2024-12-08,2025-01-15,144,106,4,observed,388.46,97.115,Makeup,Email,0.67,0.28
+CUST_10035,Male,32,True,False,Kenya,2023-02-10,2024-02-11,811,445,5,observed,386.33,77.26599999999999,Skincare,Referral,0.3,1.0
+CUST_10036,Male,31,False,False,UK,2023-08-31,2024-02-13,609,443,8,observed,159.39,19.92375,Wellness,Social Media,0.25,1.0
+CUST_10037,Male,35,False,False,UK,2023-10-01,2024-03-12,578,415,4,observed,219.22,54.805,Skincare,Paid Ads,0.54,1.0
+CUST_10038,Male,34,False,False,Canada,2023-12-25,2024-05-29,493,337,7,observed,714.4,102.05714285714285,Haircare,Paid Ads,0.24,1.0
+CUST_10039,Male,16,False,True,USA,2023-10-13,2024-10-06,566,207,6,observed,393.85,65.64166666666667,Makeup,Organic Search,0.31,0.85
+CUST_10040,Female,35,False,False,Kenya,2023-07-02,2025-02-15,669,75,4,observed,194.98,48.745,Skincare,Social Media,0.43,0.4
+CUST_10041,Female,41,False,False,Nigeria,2023-04-29,2024-05-27,733,339,3,observed,128.59,42.86333333333334,Skincare,Organic Search,0.16,1.0
+CUST_10042,Unknown,32,False,False,Nigeria,2024-12-04,2025-01-23,148,98,3,observed,13.84,4.613333333333333,Bodycare,Organic Search,0.27,0.42
+CUST_10043,Female,26,False,False,Canada,2023-12-01,2025-01-16,517,105,5,observed,303.28,60.65599999999999,Haircare,Email,0.32,0.39
+CUST_10044,Male,23,False,False,Kenya,2024-02-20,2024-11-26,436,156,1,observed,90.05,90.05,Haircare,Referral,0.26,0.8
+CUST_10045,Unknown,40,False,False,Canada,2024-03-28,2024-11-09,399,173,4,observed,139.22,34.805,Haircare,Social Media,0.36,0.54
+CUST_10046,Unknown,18,False,False,Nigeria,2023-12-10,2024-01-26,508,461,1,observed,300.51,300.51,Bodycare,Paid Ads,0.24,1.0
+CUST_10047,Male,32,True,False,UK,2024-05-01,2025-03-09,365,53,6,observed,288.07,48.01166666666666,Wellness,Referral,0.27,0.4
+CUST_10048,Male,26,False,False,Canada,2024-05-21,2024-12-11,345,141,3,observed,81.46,27.153333333333332,Skincare,Organic Search,0.58,0.52
+CUST_10049,Male,32,False,False,Nigeria,2024-04-20,2024-05-15,376,351,2,observed,120.49,60.245,Skincare,Email,0.47,1.0
+CUST_10050,Unknown,37,False,False,Nigeria,2023-11-21,2025-02-16,527,74,5,observed,170.16,34.032,Makeup,Referral,0.21,0.34
+CUST_10051,Male,37,False,False,Canada,2024-04-05,2024-08-15,391,259,3,observed,261.26,87.08666666666666,Bodycare,Referral,0.14,1.0
+CUST_10052,Male,23,False,False,Kenya,2024-03-26,2024-05-04,401,362,6,observed,47.26,7.876666666666666,Bodycare,Referral,0.37,1.0
+CUST_10053,Female,27,False,False,UK,2024-01-28,2025-01-17,459,104,3,observed,269.31,89.77,Wellness,Referral,0.3,0.46
+CUST_10054,Male,22,False,False,UK,2024-03-06,2024-09-21,421,222,4,observed,500.7,125.175,Skincare,Referral,0.55,0.76
+CUST_10055,Male,16,False,True,Kenya,2023-11-02,2024-12-05,546,147,5,observed,532.82,106.56400000000001,Wellness,Referral,0.46,0.63
+CUST_10056,Unknown,20,False,False,Canada,2023-08-13,2024-05-18,627,348,6,observed,208.76,34.79333333333333,Bodycare,Email,0.45,1.0
+CUST_10057,Male,40,False,False,UK,2024-09-29,2025-02-12,214,78,4,imputed_median,12.88,,Makeup,Organic Search,0.25,0.39
+CUST_10058,Male,38,False,False,Canada,2023-07-06,2023-08-26,665,614,2,observed,80.18,40.09,Wellness,Email,0.44,1.0
+CUST_10059,Female,57,False,False,Canada,2023-09-16,2023-12-08,593,510,2,observed,209.32,104.66,Skincare,Social Media,0.22,1.0
+CUST_10060,Male,33,False,False,USA,2023-02-01,2023-10-12,820,567,5,observed,151.47,30.294,Haircare,Email,0.35,1.0
+CUST_10061,Female,28,False,False,UK,2024-04-21,2025-04-14,375,17,3,observed,189.41,63.13666666666666,Makeup,Organic Search,0.51,0.19
+CUST_10062,Male,36,False,False,USA,2024-08-15,2024-08-28,259,246,2,observed,354.43,177.215,Wellness,Paid Ads,0.07,0.77
+CUST_10063,Female,37,False,False,UK,2023-04-15,2025-03-28,747,34,1,zero_with_spend_set_to_1,155.78,,Makeup,Referral,0.46,0.24
+CUST_10064,Female,42,False,False,Canada,2024-11-08,2025-02-10,174,80,3,observed,59.99,19.996666666666666,Skincare,Email,0.5,0.41
+CUST_10065,Female,41,False,False,Kenya,2024-10-12,2025-02-06,201,84,2,observed,195.24,97.62,Makeup,Social Media,0.5,0.3
+CUST_10066,Unknown,33,False,False,Nigeria,2024-05-10,2025-01-03,356,118,1,observed,38.87,38.87,Bodycare,Paid Ads,0.4,0.58
+CUST_10067,Female,34,False,False,Canada,2023-09-07,2024-12-25,602,127,5,observed,394.13,78.826,Bodycare,Social Media,0.2,0.4
+CUST_10068,Male,24,False,False,Kenya,2023-09-22,2024-09-04,587,239,5,observed,215.13,43.025999999999996,Bodycare,Referral,0.24,0.7
+CUST_10069,Male,57,False,False,Canada,2024-05-15,2025-02-23,351,67,3,observed,185.48,61.82666666666666,Wellness,Organic Search,0.56,0.43
+CUST_10070,Female,37,False,False,Canada,2024-12-09,2025-02-09,143,81,4,observed,188.69,47.1725,Wellness,Social Media,0.32,0.48
+CUST_10071,Male,44,False,False,Nigeria,2023-12-05,2024-11-29,513,153,6,observed,413.81,68.96833333333333,Bodycare,Paid Ads,0.37,0.66
+CUST_10072,Female,29,False,False,Nigeria,2024-12-07,2025-01-23,145,98,7,observed,51.74,7.3914285714285715,Bodycare,Referral,0.47,0.6
+CUST_10073,Unknown,30,False,False,USA,2023-07-18,2024-05-16,653,350,6,observed,139.32,23.22,Skincare,Paid Ads,0.19,1.0
+CUST_10074,Female,32,True,False,USA,2024-07-20,2024-12-16,285,136,8,observed,156.98,19.6225,Wellness,Organic Search,0.34,0.45
+CUST_10075,Unknown,41,False,False,Canada,2024-03-27,2024-09-17,400,226,5,observed,168.65,33.730000000000004,Wellness,Organic Search,0.29,0.77
+CUST_10076,Male,26,False,False,Nigeria,2024-10-06,2025-03-30,207,32,3,observed,147.55,49.18333333333334,Makeup,Organic Search,0.09,0.25
+CUST_10077,Male,34,False,False,Canada,2024-09-12,2025-02-11,231,79,4,observed,45.09,11.2725,Makeup,Email,0.28,0.4
+CUST_10078,Female,24,False,False,Canada,2023-11-09,2024-01-09,539,478,4,observed,328.09,82.0225,Haircare,Social Media,0.58,1.0
+CUST_10079,Female,27,False,False,UK,2024-07-19,2024-08-26,286,248,10,observed,409.29,40.929,Makeup,Organic Search,0.4,0.86
+CUST_10080,Male,33,False,False,Kenya,2024-12-20,2025-04-15,132,16,5,observed,231.09,46.218,Bodycare,Referral,0.22,0.46
+CUST_10081,Male,34,False,False,Nigeria,2023-08-19,2024-01-18,621,469,5,observed,144.04,28.808,Skincare,Social Media,0.18,1.0
+CUST_10082,Unknown,24,False,False,Nigeria,2023-10-23,2025-01-14,556,107,2,observed,262.43,131.215,Wellness,Referral,0.2,0.29
+CUST_10083,Unknown,26,False,False,USA,2024-09-04,2024-09-14,239,229,4,observed,655.9,163.975,Makeup,Organic Search,0.09,0.7
+CUST_10084,Male,40,False,False,Nigeria,2024-08-24,2025-04-24,250,7,4,imputed_median,110.82,,Bodycare,Paid Ads,0.2,0.09
+CUST_10085,Male,46,False,False,Canada,2023-10-12,2024-04-14,567,382,9,observed,232.02,25.78,Wellness,Email,0.45,1.0
+CUST_10086,Female,24,False,False,Kenya,2024-11-17,2024-12-13,165,139,4,observed,197.79,49.4475,Wellness,Email,0.3,0.68
+CUST_10087,Unknown,32,True,False,USA,2023-11-19,2024-08-03,529,271,3,observed,161.92,53.97333333333333,Wellness,Organic Search,0.09,0.94
+CUST_10088,Unknown,29,False,False,USA,2023-07-12,2024-12-23,659,129,2,observed,204.19,102.095,Wellness,Paid Ads,0.14,0.5
+CUST_10089,Female,37,False,False,Kenya,2024-03-24,2025-03-16,403,46,1,observed,504.55,504.55,Makeup,Paid Ads,0.4,0.26
+CUST_10090,Female,35,False,False,Nigeria,2024-02-22,2024-04-09,434,387,3,observed,325.23,108.41000000000001,Skincare,Organic Search,0.44,1.0
+CUST_10091,Male,33,False,False,Kenya,2024-06-05,2024-10-22,330,191,1,observed,115.1,115.1,Wellness,Referral,0.16,0.67
+CUST_10092,Male,61,False,False,Nigeria,2024-06-04,2024-08-12,331,262,6,observed,185.4,30.900000000000002,Wellness,Referral,0.44,0.73
+CUST_10093,Female,22,False,False,Kenya,2023-11-02,2025-03-17,546,45,2,observed,236.83,118.415,Wellness,Referral,0.32,0.32
+CUST_10094,Unknown,16,False,True,Kenya,2023-07-13,2024-03-13,658,414,6,observed,123.74,20.62333333333333,Wellness,Email,0.34,1.0
+CUST_10095,Male,42,False,False,UK,2024-05-22,2024-06-09,344,326,3,observed,263.77,87.92333333333333,Bodycare,Email,0.17,1.0
+CUST_10096,Female,31,False,False,Canada,2023-01-16,2025-01-24,836,97,1,observed,283.38,283.38,Haircare,Social Media,0.25,0.33
+CUST_10097,Female,28,False,False,Canada,2024-10-27,2024-11-16,186,166,2,observed,150.63,75.315,Makeup,Social Media,0.28,0.63
+CUST_10098,Male,30,False,False,USA,2024-09-24,2024-10-11,219,202,1,observed,335.23,335.23,Bodycare,Organic Search,0.21,0.75
+CUST_10099,Male,26,False,False,USA,2024-03-30,2024-06-23,397,312,3,observed,201.44,67.14666666666666,Skincare,Organic Search,0.37,1.0
+CUST_10100,Female,30,False,False,Canada,2023-05-30,2024-02-04,702,452,1,observed,425.49,425.49,Haircare,Organic Search,0.16,1.0
+CUST_10101,Unknown,37,False,False,Nigeria,2024-11-30,2025-01-30,152,91,7,observed,88.91,12.70142857142857,Haircare,Social Media,0.31,0.61
+CUST_10102,Male,20,False,False,USA,2024-04-21,2024-09-15,375,228,3,observed,190.23,63.41,Wellness,Referral,0.19,0.87
+CUST_10103,Female,16,False,True,Canada,2024-12-07,2025-02-09,145,81,6,observed,87.42,14.57,Wellness,Organic Search,0.21,0.27
+CUST_10104,Male,28,False,False,Kenya,2024-08-11,2025-01-09,263,112,2,observed,577.47,288.735,Wellness,Referral,0.32,0.47
+CUST_10105,Female,27,False,False,Canada,2023-10-21,2024-06-12,558,323,4,observed,196.93,49.2325,Haircare,Paid Ads,0.31,1.0
+CUST_10106,Female,35,False,False,USA,2023-11-13,2025-02-06,535,84,4,observed,35.67,8.9175,Haircare,Social Media,0.23,0.57
+CUST_10107,Female,47,False,False,UK,2023-07-25,2023-12-07,646,511,2,observed,345.26,172.63,Bodycare,Social Media,0.11,1.0
+CUST_10108,Male,22,False,False,Canada,2023-10-30,2024-10-10,549,203,5,observed,282.39,56.477999999999994,Skincare,Paid Ads,0.31,0.8
+CUST_10109,Male,17,False,True,Nigeria,2024-01-10,2024-02-25,477,431,5,observed,3059.6,611.92,Makeup,Social Media,0.63,1.0
+CUST_10110,Female,19,False,False,Kenya,2023-04-21,2025-03-12,741,50,4,observed,206.86,51.715,Makeup,Referral,0.29,0.2
+CUST_10111,Male,35,False,False,Canada,2024-12-18,2025-03-05,134,57,3,observed,199.68,66.56,Skincare,Social Media,0.22,0.3
+CUST_10112,Male,21,False,False,UK,2024-07-04,2024-09-11,301,232,2,observed,103.95,51.975,Makeup,Paid Ads,0.19,0.85
+CUST_10113,Male,16,False,True,Canada,2024-09-22,2025-01-04,221,117,7,observed,263.73,37.675714285714285,Bodycare,Email,0.1,0.68
+CUST_10114,Male,28,False,False,USA,2024-12-03,2025-03-07,149,55,5,observed,211.52,42.304,Bodycare,Social Media,0.47,0.37
+CUST_10115,Male,33,False,False,Canada,2023-04-04,2025-02-10,758,80,3,observed,177.3,59.1,Skincare,Social Media,0.18,0.33
+CUST_10116,Male,16,False,True,Nigeria,2023-07-30,2023-10-08,641,571,7,observed,139.46,19.922857142857143,Makeup,Paid Ads,0.38,1.0
+CUST_10117,Female,30,False,False,Nigeria,2023-01-03,2023-10-13,849,566,6,observed,104.28,17.38,Haircare,Paid Ads,0.2,1.0
+CUST_10118,Female,18,False,False,USA,2023-05-15,2023-05-30,717,702,3,observed,208.91,69.63666666666667,Makeup,Paid Ads,0.34,1.0
+CUST_10119,Female,34,False,False,Canada,2024-06-22,2024-08-19,313,255,3,observed,100.56,33.52,Bodycare,Organic Search,0.22,0.86
+CUST_10120,Male,26,False,False,Nigeria,2023-02-14,2025-02-27,807,63,2,observed,142.85,71.425,Makeup,Organic Search,0.34,0.22
+CUST_10121,Female,41,False,False,Canada,2024-03-12,2025-02-26,415,64,3,observed,180.74,60.24666666666667,Wellness,Organic Search,0.3,0.34
+CUST_10122,Female,26,False,False,USA,2023-05-10,2024-02-15,722,441,1,observed,217.34,217.34,Bodycare,Referral,0.17,1.0
+CUST_10123,Unknown,43,False,False,Nigeria,2024-09-11,2024-12-30,232,122,2,observed,176.43,88.215,Makeup,Paid Ads,0.13,0.68
+CUST_10124,Male,29,False,False,UK,2024-02-28,2024-08-19,428,255,6,observed,186.62,31.103333333333335,Skincare,Social Media,0.37,0.98
+CUST_10125,Female,32,False,False,UK,2024-12-04,2025-04-04,148,27,4,observed,104.51,26.1275,Skincare,Social Media,0.2,0.14
+CUST_10126,Male,22,False,False,Nigeria,2024-07-29,2025-01-13,276,108,4,observed,247.04,61.76,Wellness,Organic Search,0.13,0.63
+CUST_10127,Female,28,False,False,Kenya,2023-04-17,2024-11-28,745,154,4,observed,163.6,40.9,Wellness,Organic Search,0.12,0.77
+CUST_10128,Female,37,False,False,Kenya,2023-04-28,2024-02-07,734,449,5,observed,77.88,15.575999999999999,Makeup,Referral,0.05,1.0
+CUST_10129,Unknown,18,False,False,Nigeria,2023-01-27,2024-10-11,825,202,10,observed,377.4,37.739999999999995,Bodycare,Social Media,0.31,0.74
+CUST_10130,Female,31,False,False,Kenya,2023-01-07,2023-07-11,845,660,7,observed,26.47,3.781428571428571,Wellness,Organic Search,0.25,1.0
+CUST_10131,Female,30,False,False,UK,2024-01-21,2024-08-22,466,252,1,zero_with_spend_set_to_1,63.97,,Bodycare,Referral,0.32,1.0
+CUST_10132,Unknown,35,False,False,USA,2023-06-09,2023-11-17,692,531,4,observed,48.98,12.245,Skincare,Email,0.16,1.0
+CUST_10133,Male,34,False,False,Canada,2023-10-07,2024-05-14,572,352,3,observed,382.06,127.35333333333334,Wellness,Referral,0.51,1.0
+CUST_10134,Male,29,False,False,Kenya,2023-02-16,2023-09-29,805,580,3,observed,573.99,191.33,Skincare,Paid Ads,0.41,1.0
+CUST_10135,Male,30,False,False,Kenya,2023-12-02,2024-04-02,516,394,4,imputed_median,137.68,,Haircare,Referral,0.15,1.0
+CUST_10136,Male,37,False,False,Kenya,2023-03-15,2024-04-24,778,372,4,observed,147.7,36.925,Skincare,Organic Search,0.49,1.0
+CUST_10137,Female,26,False,False,Nigeria,2024-02-19,2025-02-16,437,74,4,observed,344.9,86.225,Wellness,Social Media,0.18,0.29
+CUST_10138,Male,31,False,False,Nigeria,2024-04-16,2025-04-04,380,27,3,observed,374.38,124.79333333333334,Skincare,Referral,0.34,0.22
+CUST_10139,Male,30,False,False,Canada,2023-11-14,2024-10-26,534,187,3,observed,170.08,56.693333333333335,Skincare,Organic Search,0.13,0.66
+CUST_10140,Unknown,31,False,False,Kenya,2023-12-26,2025-01-01,492,120,2,observed,10.47,5.235,Haircare,Paid Ads,0.39,0.58
+CUST_10141,Female,30,False,False,Nigeria,2023-06-06,2025-04-07,695,24,5,observed,120.26,24.052,Wellness,Referral,0.34,0.19
+CUST_10142,Unknown,23,False,False,Nigeria,2024-10-20,2025-03-31,193,31,5,observed,228.6,45.72,Bodycare,Organic Search,0.31,0.0
+CUST_10143,Male,27,False,False,Kenya,2023-10-09,2023-12-05,570,513,3,observed,700.95,233.65,Wellness,Organic Search,0.15,1.0
+CUST_10144,Female,24,False,False,USA,2024-10-22,2024-11-14,191,168,4,observed,149.19,37.2975,Wellness,Organic Search,0.35,0.59
+CUST_10145,Male,30,False,False,Nigeria,2024-10-29,2024-12-16,184,136,4,observed,218.07,54.5175,Haircare,Email,0.04,0.68
+CUST_10146,Female,39,False,False,Kenya,2023-03-28,2024-08-25,765,249,4,observed,171.73,42.9325,Wellness,Referral,0.19,0.83
+CUST_10147,Unknown,26,False,False,Kenya,2024-01-17,2025-04-30,470,1,5,observed,231.16,46.232,Bodycare,Organic Search,0.28,0.2
+CUST_10148,Female,21,False,False,USA,2024-07-25,2025-02-07,280,83,3,observed,273.96,91.32,Makeup,Social Media,0.5,0.35
+CUST_10149,Female,37,False,False,UK,2023-12-25,2024-05-31,493,335,7,observed,186.21,26.601428571428574,Wellness,Organic Search,0.02,1.0
+CUST_10150,Female,29,False,False,Kenya,2023-05-11,2025-03-27,721,35,3,observed,148.38,49.46,Makeup,Email,0.05,0.3
+CUST_10151,Unknown,33,False,False,Kenya,2023-11-13,2024-05-15,535,351,4,observed,247.18,61.795,Wellness,Paid Ads,0.17,1.0
+CUST_10152,Male,16,False,True,USA,2024-06-03,2025-03-06,332,56,1,observed,220.14,220.14,Skincare,Referral,0.32,0.42
+CUST_10153,Male,43,False,False,UK,2023-06-16,2023-12-18,685,500,4,observed,35.09,8.7725,Haircare,Organic Search,0.02,1.0
+CUST_10154,Male,26,False,False,UK,2024-03-30,2025-02-05,397,85,8,observed,186.3,23.2875,Wellness,Paid Ads,0.09,0.47
+CUST_10155,Female,50,False,False,Canada,2023-07-18,2024-07-28,653,277,2,observed,27.04,13.52,Wellness,Social Media,0.15,0.87
+CUST_10156,Male,41,False,False,Canada,2023-06-15,2024-01-05,686,482,2,observed,599.29,299.645,Bodycare,Email,0.19,1.0
+CUST_10157,Female,34,False,False,USA,2024-12-29,2025-04-16,123,15,6,observed,30.22,5.036666666666666,Skincare,Social Media,0.12,0.26
+CUST_10158,Male,48,False,False,UK,2024-03-23,2024-05-08,404,358,4,observed,480.69,120.1725,Wellness,Organic Search,0.23,1.0
+CUST_10159,Male,30,False,False,Nigeria,2024-01-18,2024-05-17,469,349,2,observed,172.78,86.39,Haircare,Organic Search,0.49,1.0
+CUST_10160,Female,25,False,False,UK,2023-02-09,2023-11-29,812,519,1,observed,419.44,419.44,Haircare,Email,0.16,1.0
+CUST_10161,Male,34,False,False,USA,2023-01-20,2023-10-09,832,570,3,observed,104.66,34.88666666666666,Makeup,Organic Search,0.26,1.0
+CUST_10162,Female,30,False,False,USA,2023-02-18,2023-10-20,803,559,6,observed,134.11,22.35166666666667,Wellness,Email,0.17,1.0
+CUST_10163,Unknown,23,False,False,Nigeria,2024-08-11,2024-12-12,263,140,3,observed,15.86,5.286666666666666,Skincare,Paid Ads,0.29,0.47
+CUST_10164,Unknown,46,False,False,USA,2024-06-20,2024-12-21,315,131,1,observed,331.0,331.0,Makeup,Referral,0.36,0.6
+CUST_10165,Unknown,32,True,False,Canada,2023-02-14,2024-11-25,807,157,1,observed,105.38,105.38,Skincare,Organic Search,0.47,0.65
+CUST_10166,Female,21,False,False,USA,2024-08-18,2025-02-04,256,86,7,observed,398.5,56.92857142857143,Bodycare,Paid Ads,0.15,0.46
+CUST_10167,Male,16,False,True,Canada,2024-10-08,2024-11-23,205,159,6,observed,110.69,18.448333333333334,Wellness,Paid Ads,0.16,0.49
+CUST_10168,Female,44,False,False,USA,2023-11-20,2024-10-02,528,211,2,observed,389.8,194.9,Makeup,Organic Search,0.51,0.81
+CUST_10169,Male,31,False,False,USA,2024-11-02,2025-01-25,180,96,1,observed,69.76,69.76,Wellness,Email,0.21,0.44
+CUST_10170,Male,47,False,False,UK,2024-05-23,2025-02-01,343,89,4,observed,239.46,59.865,Bodycare,Email,0.6,0.3
+CUST_10171,Female,20,False,False,UK,2024-07-12,2024-12-09,293,143,6,observed,222.97,37.16166666666667,Bodycare,Referral,0.28,0.39
+CUST_10172,Male,39,False,False,Canada,2023-12-26,2024-08-10,492,264,4,observed,248.71,62.1775,Bodycare,Email,0.45,0.8
+CUST_10173,Female,58,False,False,USA,2023-03-18,2025-02-02,775,88,6,observed,45.83,7.638333333333333,Haircare,Paid Ads,0.34,0.48
+CUST_10174,Unknown,31,False,False,Canada,2023-02-05,2023-06-14,816,687,5,observed,121.19,24.238,Bodycare,Referral,0.36,1.0
+CUST_10175,Female,43,False,False,Canada,2024-01-15,2024-07-23,472,282,4,observed,152.22,38.055,Haircare,Email,0.46,0.96
+CUST_10176,Female,42,False,False,UK,2023-04-27,2023-05-23,735,709,3,observed,682.2,227.4,Wellness,Organic Search,0.26,1.0
+CUST_10177,Female,25,False,False,Canada,2023-08-08,2025-04-25,632,6,2,observed,386.98,193.49,Wellness,Paid Ads,0.27,0.27
+CUST_10178,Female,36,False,False,Canada,2023-03-31,2025-02-26,762,64,5,observed,121.39,24.278,Bodycare,Referral,0.31,0.3
+CUST_10179,Unknown,28,False,False,Kenya,2023-06-11,2025-03-25,690,37,5,observed,200.19,40.038,Haircare,Paid Ads,0.29,0.23
+CUST_10180,Male,40,False,False,Canada,2023-01-27,2024-01-31,825,456,5,observed,117.43,23.486,Makeup,Organic Search,0.25,1.0
+CUST_10181,Female,33,False,False,Canada,2024-06-22,2025-01-18,313,103,3,observed,352.91,117.63666666666667,Skincare,Social Media,0.09,0.76
+CUST_10182,Female,24,False,False,Nigeria,2023-12-19,2024-02-22,499,434,3,observed,371.97,123.99000000000001,Makeup,Paid Ads,0.1,1.0
+CUST_10183,Male,33,False,False,USA,2023-05-08,2024-10-19,724,194,1,observed,356.99,356.99,Bodycare,Paid Ads,0.25,0.65
+CUST_10184,Female,42,False,False,Nigeria,2023-10-18,2024-01-06,561,481,5,observed,113.79,22.758000000000003,Makeup,Social Media,0.02,1.0
+CUST_10185,Unknown,44,False,False,Nigeria,2024-10-18,2024-11-30,195,152,5,observed,311.37,62.274,Haircare,Referral,0.45,0.68
+CUST_10186,Female,17,False,True,Nigeria,2023-02-12,2023-03-13,809,780,2,observed,169.27,84.635,Makeup,Paid Ads,0.49,1.0
+CUST_10187,Unknown,53,False,False,USA,2024-05-24,2025-04-10,342,21,5,observed,469.57,93.914,Bodycare,Email,0.25,0.18
+CUST_10188,Female,28,False,False,USA,2023-06-11,2024-09-03,690,240,2,observed,308.75,154.375,Bodycare,Social Media,0.44,0.83
+CUST_10189,Female,22,False,False,Kenya,2024-02-13,2024-04-19,443,377,4,observed,295.47,73.8675,Skincare,Email,0.18,1.0
+CUST_10190,Female,36,False,False,UK,2023-05-25,2023-09-01,707,608,1,observed,203.05,203.05,Makeup,Paid Ads,0.21,1.0
+CUST_10191,Female,24,False,False,Kenya,2023-07-14,2023-12-24,657,494,3,observed,395.59,131.86333333333332,Wellness,Email,0.07,1.0
+CUST_10192,Female,16,False,True,Canada,2024-06-01,2025-01-21,334,100,1,observed,97.15,97.15,Bodycare,Social Media,0.52,0.53
+CUST_10193,Male,32,False,False,Canada,2023-10-20,2025-04-21,559,10,4,imputed_median,147.32,,Haircare,Social Media,0.33,0.25
+CUST_10194,Male,19,False,False,Canada,2023-02-22,2024-09-27,799,216,4,observed,557.63,139.4075,Bodycare,Referral,0.26,0.68
+CUST_10195,Male,30,False,False,Kenya,2024-09-30,2025-03-23,213,39,5,observed,360.75,72.15,Skincare,Social Media,0.22,0.3
+CUST_10196,Unknown,17,False,True,UK,2023-07-23,2025-03-30,648,32,5,observed,161.47,32.294,Skincare,Social Media,0.24,0.22
+CUST_10197,Male,33,False,False,UK,2024-09-12,2025-04-28,231,3,10,observed,629.98,62.998000000000005,Makeup,Email,0.33,0.26
+CUST_10198,Unknown,31,False,False,Kenya,2024-08-30,2024-11-24,244,158,1,zero_with_spend_set_to_1,552.78,,Wellness,Social Media,0.38,0.56
+CUST_10199,Male,21,False,False,Kenya,2023-12-06,2024-03-27,512,400,4,observed,733.51,183.3775,Skincare,Social Media,0.17,1.0
+CUST_10200,Unknown,18,False,False,USA,2024-08-20,2024-12-20,254,132,7,observed,40.25,5.75,Makeup,Email,0.08,0.56
+CUST_10201,Male,22,False,False,UK,2023-02-02,2024-09-10,819,233,1,observed,143.34,143.34,Skincare,Email,0.21,0.68
+CUST_10202,Male,23,False,False,UK,2024-02-25,2024-11-07,431,175,8,observed,388.12,48.515,Skincare,Referral,0.27,0.68
+CUST_10203,Male,39,False,False,Canada,2024-06-22,2024-12-31,313,121,7,observed,217.44,31.062857142857144,Makeup,Social Media,0.35,0.28
+CUST_10204,Female,21,False,False,UK,2023-09-10,2024-06-21,599,314,1,observed,74.54,74.54,Bodycare,Paid Ads,0.36,0.95
+CUST_10205,Male,20,False,False,Kenya,2024-07-27,2024-12-14,278,138,8,observed,608.44,76.055,Makeup,Email,0.51,0.63
+CUST_10206,Female,37,False,False,UK,2023-10-25,2023-12-07,554,511,1,observed,216.76,216.76,Bodycare,Social Media,0.55,1.0
+CUST_10207,Male,63,False,False,Nigeria,2023-10-05,2024-07-09,574,296,10,observed,127.93,12.793000000000001,Makeup,Organic Search,0.25,1.0
+CUST_10208,Unknown,31,False,False,UK,2023-02-23,2023-06-05,798,696,4,observed,322.52,80.63,Skincare,Paid Ads,0.09,1.0
+CUST_10209,Female,32,False,False,UK,2024-02-21,2025-01-20,435,101,3,observed,286.32,95.44,Wellness,Social Media,0.22,0.39
+CUST_10210,Female,35,False,False,USA,2023-04-02,2025-01-28,760,93,6,observed,353.53,58.92166666666666,Skincare,Paid Ads,0.34,0.58
+CUST_10211,Male,16,False,True,UK,2023-02-07,2024-03-19,814,408,3,observed,109.6,36.53333333333333,Bodycare,Organic Search,0.46,1.0
+CUST_10212,Female,33,False,False,USA,2023-12-10,2024-05-03,508,363,5,observed,288.24,57.648,Makeup,Paid Ads,0.36,1.0
+CUST_10213,Unknown,32,False,False,UK,2023-04-26,2024-03-29,736,398,5,observed,72.75,14.55,Bodycare,Organic Search,0.15,1.0
+CUST_10214,Female,34,False,False,Nigeria,2024-11-21,2025-01-09,161,112,2,observed,210.94,105.47,Wellness,Referral,0.2,0.38
+CUST_10215,Female,40,False,False,USA,2023-07-09,2023-11-29,662,519,1,zero_with_spend_set_to_1,446.78,,Skincare,Paid Ads,0.35,1.0
+CUST_10216,Male,37,False,False,Kenya,2023-11-06,2023-11-17,542,531,5,observed,257.54,51.508,Haircare,Organic Search,0.39,1.0
+CUST_10217,Male,36,False,False,Canada,2024-12-03,2025-04-10,149,21,3,observed,93.75,31.25,Bodycare,Social Media,0.43,0.21
+CUST_10218,Female,49,False,False,UK,2023-05-17,2024-09-17,715,226,3,observed,499.43,166.47666666666666,Makeup,Referral,0.27,0.75
+CUST_10219,Male,23,False,False,UK,2023-09-11,2023-12-03,598,515,1,observed,597.49,597.49,Bodycare,Referral,0.19,1.0
+CUST_10220,Female,32,False,False,Nigeria,2024-06-01,2024-09-12,334,231,5,observed,338.53,67.70599999999999,Bodycare,Email,0.22,0.91
+CUST_10221,Female,29,False,False,Nigeria,2024-05-15,2024-06-30,351,305,6,observed,694.72,115.78666666666668,Skincare,Referral,0.19,1.0
+CUST_10222,Male,25,False,False,USA,2024-07-26,2025-03-19,279,43,4,observed,200.63,50.1575,Skincare,Organic Search,0.2,0.37
+CUST_10223,Male,21,False,False,USA,2024-03-09,2024-09-01,418,242,4,observed,74.59,18.6475,Skincare,Organic Search,0.26,0.73
+CUST_10224,Male,32,True,False,Canada,2023-07-04,2023-11-19,667,529,7,observed,399.72,57.10285714285715,Wellness,Email,0.12,1.0
+CUST_10225,Male,36,False,False,Canada,2024-01-20,2024-03-01,467,426,6,observed,78.52,13.086666666666666,Makeup,Social Media,0.36,1.0
+CUST_10226,Female,24,False,False,Nigeria,2024-02-07,2024-11-03,449,179,2,observed,61.52,30.76,Skincare,Social Media,0.11,0.79
+CUST_10227,Male,52,False,False,Nigeria,2024-03-10,2024-12-07,417,145,5,observed,200.52,40.104,Wellness,Social Media,0.12,0.51
+CUST_10228,Male,27,False,False,USA,2023-02-02,2024-12-09,819,143,4,observed,5.78,1.445,Skincare,Organic Search,0.31,0.52
+CUST_10229,Female,46,False,False,Canada,2024-09-04,2025-02-23,239,67,1,observed,397.59,397.59,Skincare,Paid Ads,0.44,0.17
+CUST_10230,Unknown,30,False,False,USA,2023-05-24,2024-10-20,708,193,6,observed,459.48,76.58,Makeup,Referral,0.14,0.5
+CUST_10231,Female,33,False,False,UK,2024-11-07,2025-03-20,175,42,3,observed,125.21,41.736666666666665,Skincare,Referral,0.04,0.25
+CUST_10232,Male,30,False,False,Canada,2024-07-23,2025-04-02,282,29,5,observed,318.86,63.772000000000006,Wellness,Social Media,0.09,0.35
+CUST_10233,Male,45,False,False,Kenya,2024-01-21,2024-04-24,466,372,5,observed,271.36,54.272000000000006,Haircare,Paid Ads,0.24,1.0
+CUST_10234,Male,35,False,False,Nigeria,2024-02-27,2024-09-27,429,216,6,observed,82.68,13.780000000000001,Haircare,Social Media,0.5,0.72
+CUST_10235,Female,32,False,False,Kenya,2023-04-05,2024-10-04,757,209,1,observed,374.87,374.87,Bodycare,Referral,0.49,0.87
+CUST_10236,Unknown,32,True,False,USA,2023-07-12,2025-03-04,659,58,4,observed,307.52,76.88,Wellness,Social Media,0.1,0.24
+CUST_10237,Female,39,False,False,USA,2023-08-05,2024-02-15,635,441,1,observed,342.25,342.25,Wellness,Referral,0.3,1.0
+CUST_10238,Male,16,False,True,UK,2024-07-19,2024-12-30,286,122,2,observed,322.95,161.475,Makeup,Social Media,0.26,0.6
+CUST_10239,Female,39,False,False,Canada,2024-04-22,2024-06-11,374,324,3,observed,310.68,103.56,Bodycare,Social Media,0.52,0.97
+CUST_10240,Female,38,False,False,Nigeria,2023-08-15,2024-01-11,625,476,4,imputed_median,312.68,,Makeup,Email,0.42,1.0
+CUST_10241,Female,41,False,False,Kenya,2023-08-24,2024-09-15,616,228,7,observed,255.71,36.53,Makeup,Social Media,0.26,0.91
+CUST_10242,Female,31,False,False,Canada,2024-10-19,2025-04-26,194,5,5,observed,114.93,22.986,Bodycare,Referral,0.29,0.34
+CUST_10243,Male,48,False,False,Nigeria,2024-10-19,2024-11-03,194,179,5,observed,550.31,110.06199999999998,Skincare,Organic Search,0.39,0.75
+CUST_10244,Female,20,False,False,UK,2023-03-11,2025-03-04,782,58,5,observed,155.38,31.076,Wellness,Referral,0.3,0.25
+CUST_10245,Unknown,38,False,False,Canada,2023-01-17,2023-01-23,835,829,7,observed,241.84,34.54857142857143,Skincare,Social Media,0.45,1.0
+CUST_10246,Unknown,35,False,False,USA,2024-05-29,2025-01-04,337,117,3,observed,251.69,83.89666666666666,Skincare,Referral,0.41,0.49
+CUST_10247,Male,29,False,False,Nigeria,2024-06-23,2024-10-30,312,183,7,observed,133.62,19.08857142857143,Wellness,Email,0.25,0.72
+CUST_10248,Male,28,False,False,UK,2023-11-04,2024-01-25,544,462,3,observed,255.98,85.32666666666667,Skincare,Email,0.59,1.0
+CUST_10249,Male,58,False,False,USA,2024-10-14,2024-10-16,199,197,3,observed,187.77,62.59,Wellness,Social Media,0.15,0.68
+CUST_10250,Unknown,37,False,False,USA,2024-06-24,2024-07-15,311,290,9,observed,577.2,64.13333333333334,Makeup,Organic Search,0.15,1.0
+CUST_10251,Female,28,False,False,Kenya,2024-07-10,2025-04-24,295,7,4,observed,243.39,60.8475,Bodycare,Paid Ads,0.17,0.29
+CUST_10252,Unknown,46,False,False,Canada,2023-03-20,2024-01-20,773,467,2,observed,68.15,34.075,Wellness,Referral,0.22,1.0
+CUST_10253,Female,34,False,False,UK,2024-12-06,2024-12-26,146,126,3,observed,444.08,148.02666666666667,Skincare,Paid Ads,0.42,0.61
+CUST_10254,Female,28,False,False,Nigeria,2024-09-01,2024-12-11,242,141,1,observed,295.65,295.65,Bodycare,Email,0.24,0.38
+CUST_10255,Male,26,False,False,Nigeria,2024-01-20,2024-08-28,467,246,3,observed,87.17,29.05666666666667,Wellness,Referral,0.42,0.66
+CUST_10256,Female,31,False,False,USA,2023-03-26,2023-12-25,767,493,6,observed,64.72,10.786666666666667,Haircare,Social Media,0.27,1.0
+CUST_10257,Female,40,False,False,USA,2023-11-12,2025-02-09,536,81,2,observed,603.83,301.915,Haircare,Email,0.3,0.36
+CUST_10258,Male,35,False,False,Nigeria,2024-02-22,2024-04-14,434,382,4,imputed_median,138.07,,Skincare,Social Media,0.54,1.0
+CUST_10259,Male,32,True,False,Canada,2024-02-02,2025-03-06,454,56,2,observed,218.16,109.08,Haircare,Paid Ads,0.48,0.4
+CUST_10260,Male,33,False,False,Kenya,2023-11-05,2024-08-05,543,269,8,observed,368.73,46.09125,Wellness,Social Media,0.56,0.91
+CUST_10261,Male,23,False,False,Kenya,2023-09-15,2024-05-24,594,342,5,observed,62.03,12.406,Makeup,Organic Search,0.45,1.0
+CUST_10262,Male,16,False,True,Canada,2023-12-07,2024-12-30,511,122,8,observed,315.48,39.435,Bodycare,Referral,0.13,0.59
+CUST_10263,Male,23,False,False,Nigeria,2024-12-12,2025-02-01,140,89,4,observed,119.76,29.94,Wellness,Social Media,0.04,0.31
+CUST_10264,Male,51,False,False,UK,2023-11-30,2024-12-19,518,133,2,observed,160.04,80.02,Bodycare,Referral,0.21,0.65
+CUST_10265,Male,16,False,True,Nigeria,2023-07-04,2025-01-17,667,104,4,imputed_median,85.09,,Haircare,Social Media,0.24,0.64
+CUST_10266,Female,38,False,False,Canada,2024-11-20,2025-03-27,162,35,2,observed,304.44,152.22,Bodycare,Email,0.22,0.31
+CUST_10267,Male,28,False,False,Nigeria,2024-05-05,2025-02-27,361,63,3,observed,27.85,9.283333333333333,Wellness,Social Media,0.71,0.34
+CUST_10268,Unknown,26,False,False,USA,2023-04-22,2024-01-01,740,486,1,observed,407.85,407.85,Makeup,Email,0.46,1.0
+CUST_10269,Female,36,False,False,Canada,2023-04-19,2023-04-29,743,733,4,observed,230.97,57.7425,Makeup,Referral,0.68,1.0
+CUST_10270,Male,33,False,False,Canada,2024-04-19,2025-04-01,377,30,3,observed,208.37,69.45666666666666,Bodycare,Email,0.34,0.35
+CUST_10271,Female,16,False,True,USA,2023-04-29,2023-09-21,733,588,5,observed,158.55,31.71,Haircare,Social Media,0.19,1.0
+CUST_10272,Male,28,False,False,Canada,2023-11-23,2024-01-30,525,457,2,observed,150.58,75.29,Skincare,Social Media,0.21,1.0
+CUST_10273,Female,29,False,False,UK,2023-09-07,2025-02-16,602,74,8,observed,345.72,43.215,Makeup,Email,0.24,0.42
+CUST_10274,Male,39,False,False,UK,2023-07-10,2025-04-25,661,6,4,observed,168.73,42.1825,Makeup,Email,0.24,0.37
+CUST_10275,Unknown,25,False,False,USA,2024-12-22,2025-02-14,130,76,6,observed,579.82,96.63666666666667,Skincare,Referral,0.59,0.47
+CUST_10276,Male,16,False,True,UK,2024-04-13,2024-06-10,383,325,2,observed,465.95,232.975,Makeup,Social Media,0.16,0.98
+CUST_10277,Unknown,35,False,False,Canada,2024-08-24,2024-09-22,250,221,1,observed,147.52,147.52,Makeup,Social Media,0.24,0.79
+CUST_10278,Unknown,16,False,True,UK,2023-11-17,2024-03-16,531,411,1,observed,481.63,481.63,Bodycare,Referral,0.12,1.0
+CUST_10279,Male,31,False,False,UK,2024-08-11,2025-02-23,263,67,5,observed,117.39,23.478,Makeup,Paid Ads,0.33,0.45
+CUST_10280,Unknown,30,False,False,Kenya,2023-05-24,2023-12-01,708,517,3,observed,90.77,30.256666666666664,Skincare,Organic Search,0.33,1.0
+CUST_10281,Male,16,False,True,Canada,2024-07-29,2025-04-13,276,18,4,observed,136.98,34.245,Wellness,Email,0.19,0.27
+CUST_10282,Male,47,False,False,Nigeria,2023-02-01,2025-04-25,820,6,5,observed,94.21,18.842,Bodycare,Social Media,0.1,0.31
+CUST_10283,Male,37,False,False,Nigeria,2024-05-22,2025-02-27,344,63,3,observed,65.99,21.996666666666666,Bodycare,Social Media,0.31,0.56
+CUST_10284,Unknown,29,False,False,USA,2024-03-27,2024-12-31,400,121,5,observed,29.53,5.906000000000001,Haircare,Organic Search,0.25,0.44
+CUST_10285,Male,25,False,False,USA,2024-03-25,2024-05-24,402,342,3,observed,374.43,124.81,Makeup,Referral,0.2,1.0
+CUST_10286,Male,16,False,True,UK,2023-07-31,2024-02-27,640,429,4,observed,637.78,159.445,Makeup,Referral,0.11,1.0
+CUST_10287,Male,35,False,False,Kenya,2023-10-24,2024-07-23,555,282,2,observed,346.66,173.33,Skincare,Email,0.37,1.0
+CUST_10288,Female,26,False,False,UK,2024-12-19,2025-01-21,133,100,4,observed,93.21,23.3025,Haircare,Email,0.15,0.54
+CUST_10289,Male,29,False,False,Kenya,2024-10-04,2025-01-18,209,103,3,observed,662.9,220.96666666666667,Skincare,Social Media,0.21,0.6
+CUST_10290,Female,23,False,False,Canada,2023-12-02,2023-12-04,516,514,3,observed,108.71,36.236666666666665,Skincare,Email,0.6,1.0
+CUST_10291,Female,34,False,False,Nigeria,2024-02-12,2024-06-02,444,333,4,observed,88.99,22.2475,Wellness,Social Media,0.35,1.0
+CUST_10292,Female,38,False,False,UK,2024-08-02,2025-04-07,272,24,2,observed,1007.38,503.69,Skincare,Email,0.11,0.26
+CUST_10293,Female,34,False,False,UK,2024-03-27,2024-11-15,400,167,4,imputed_median,451.04,,Haircare,Paid Ads,0.55,0.69
+CUST_10294,Female,43,False,False,Kenya,2023-04-06,2025-02-04,756,86,6,observed,413.6,68.93333333333334,Haircare,Social Media,0.68,0.43
+CUST_10295,Male,22,False,False,USA,2024-12-21,2025-01-14,131,107,4,imputed_median,231.95,,Haircare,Referral,0.09,0.54
+CUST_10296,Male,32,True,False,Kenya,2023-05-04,2024-07-09,728,296,6,observed,197.0,32.833333333333336,Haircare,Organic Search,0.09,0.81
+CUST_10297,Female,40,False,False,Kenya,2023-05-21,2024-06-15,711,320,2,observed,79.41,39.705,Haircare,Paid Ads,0.48,1.0
+CUST_10298,Female,34,False,False,USA,2024-09-16,2025-03-01,227,61,3,observed,83.46,27.819999999999997,Haircare,Paid Ads,0.45,0.25
+CUST_10299,Male,16,False,True,Canada,2023-08-11,2023-11-07,629,541,3,observed,109.04,36.34666666666667,Skincare,Email,0.5,1.0
+CUST_10300,Female,56,False,False,Kenya,2023-05-24,2024-02-01,708,455,3,observed,127.2,42.4,Makeup,Referral,0.42,1.0
+CUST_10301,Female,43,False,False,USA,2024-11-05,2025-01-21,177,100,5,observed,365.38,73.076,Haircare,Social Media,0.29,0.47
+CUST_10302,Female,24,False,False,UK,2024-05-21,2024-12-04,345,148,5,observed,227.94,45.588,Makeup,Organic Search,0.28,0.65
+CUST_10303,Female,16,False,True,UK,2024-02-01,2025-04-16,455,15,6,observed,121.82,20.30333333333333,Makeup,Email,0.55,0.39
+CUST_10304,Female,32,True,False,USA,2023-01-15,2023-10-10,837,569,3,observed,233.95,77.98333333333333,Wellness,Referral,0.21,1.0
+CUST_10305,Male,34,False,False,Canada,2023-03-26,2025-01-09,767,112,7,observed,424.14,60.59142857142857,Bodycare,Organic Search,0.4,0.56
+CUST_10306,Unknown,38,False,False,UK,2024-07-03,2024-12-17,302,135,2,observed,70.2,35.1,Skincare,Email,0.31,0.28
+CUST_10307,Male,52,False,False,USA,2024-03-20,2024-05-18,407,348,4,observed,220.25,55.0625,Bodycare,Paid Ads,0.13,1.0
+CUST_10308,Female,32,True,False,UK,2024-12-19,2024-12-21,133,131,4,observed,56.17,14.0425,Makeup,Social Media,0.26,0.49
+CUST_10309,Male,19,False,False,Kenya,2023-05-01,2023-05-31,731,701,6,observed,72.34,12.056666666666667,Makeup,Referral,0.51,1.0
+CUST_10310,Female,22,False,False,Nigeria,2024-01-04,2024-02-01,483,455,2,observed,40.56,20.28,Bodycare,Organic Search,0.19,1.0
+CUST_10311,Unknown,28,False,False,USA,2023-08-22,2025-01-24,618,97,4,imputed_median,35.22,,Skincare,Email,0.12,0.59
+CUST_10312,Female,34,False,False,UK,2023-07-03,2023-08-08,668,632,4,observed,470.92,117.73,Wellness,Paid Ads,0.04,1.0
+CUST_10313,Male,45,False,False,Kenya,2023-10-05,2023-12-23,574,495,5,observed,68.08,13.616,Skincare,Referral,0.4,1.0
+CUST_10314,Female,30,False,False,USA,2024-04-21,2024-09-12,375,231,7,observed,72.49,10.355714285714285,Skincare,Organic Search,0.23,1.0
+CUST_10315,Female,31,False,False,Nigeria,2023-11-08,2024-07-13,540,292,2,observed,166.73,83.365,Wellness,Paid Ads,0.14,1.0
+CUST_10316,Unknown,16,False,True,UK,2023-06-04,2023-06-10,697,691,2,observed,237.63,118.815,Makeup,Organic Search,0.46,1.0
+CUST_10317,Female,32,True,False,Canada,2023-11-11,2024-02-25,537,431,2,observed,357.34,178.67,Wellness,Organic Search,0.59,1.0
+CUST_10318,Male,34,False,False,USA,2023-02-14,2023-10-09,807,570,1,observed,46.64,46.64,Bodycare,Organic Search,0.18,1.0
+CUST_10319,Unknown,55,False,False,UK,2024-10-14,2025-01-22,199,99,7,observed,47.21,6.744285714285715,Wellness,Paid Ads,0.19,0.47
+CUST_10320,Male,43,False,False,Kenya,2024-02-07,2025-01-30,449,91,5,observed,299.84,59.967999999999996,Wellness,Organic Search,0.23,0.55
+CUST_10321,Male,22,False,False,Nigeria,2023-04-22,2023-09-28,740,581,5,observed,159.13,31.826,Bodycare,Referral,0.38,1.0
+CUST_10322,Female,25,False,False,UK,2024-04-07,2024-09-11,389,232,8,observed,132.47,16.55875,Skincare,Social Media,0.32,0.72
+CUST_10323,Unknown,32,True,False,Kenya,2023-06-01,2023-09-02,700,607,7,observed,332.97,47.56714285714286,Wellness,Social Media,0.14,1.0
+CUST_10324,Female,35,False,False,UK,2023-02-01,2024-03-21,820,406,5,observed,178.78,35.756,Makeup,Email,0.23,1.0
+CUST_10325,Female,37,False,False,UK,2023-05-05,2023-05-17,727,715,1,observed,148.31,148.31,Haircare,Email,0.45,1.0
+CUST_10326,Female,44,False,False,USA,2024-08-19,2024-12-29,255,123,5,observed,294.53,58.90599999999999,Skincare,Email,0.28,0.64
+CUST_10327,Male,35,False,False,Kenya,2023-05-06,2023-06-18,726,683,3,observed,309.8,103.26666666666667,Makeup,Email,0.29,1.0
+CUST_10328,Male,32,True,False,Canada,2023-06-26,2024-06-22,675,313,3,observed,273.15,91.05,Bodycare,Paid Ads,0.24,0.84
+CUST_10329,Female,32,False,False,Nigeria,2023-09-09,2024-07-07,600,298,3,observed,410.21,136.73666666666665,Wellness,Social Media,0.26,0.95
+CUST_10330,Male,37,False,False,UK,2024-10-20,2025-03-03,193,59,6,observed,373.54,62.25666666666667,Makeup,Email,0.07,0.42
+CUST_10331,Female,28,False,False,Canada,2023-12-19,2025-03-30,499,32,1,observed,55.42,55.42,Bodycare,Social Media,0.27,0.3
+CUST_10332,Unknown,29,False,False,Kenya,2023-03-01,2024-06-26,792,309,4,observed,513.07,128.2675,Haircare,Organic Search,0.05,1.0
+CUST_10333,Male,51,False,False,Kenya,2024-06-30,2024-07-28,305,277,3,observed,120.11,40.03666666666667,Makeup,Email,0.31,0.88
+CUST_10334,Female,40,False,False,UK,2023-06-30,2024-02-27,671,429,5,observed,321.66,64.33200000000001,Bodycare,Organic Search,0.25,1.0
+CUST_10335,Female,34,False,False,Nigeria,2023-05-26,2024-12-22,706,130,5,observed,56.9,11.379999999999999,Wellness,Paid Ads,0.27,0.6
+CUST_10336,Male,32,True,False,USA,2023-08-27,2024-04-07,613,389,4,imputed_median,284.94,,Bodycare,Paid Ads,0.21,1.0
+CUST_10337,Male,32,False,False,UK,2023-11-28,2024-01-27,520,460,4,imputed_median,153.68,,Haircare,Referral,0.71,1.0
+CUST_10338,Female,23,False,False,Kenya,2024-12-22,2025-04-02,130,29,5,observed,167.73,33.546,Bodycare,Paid Ads,0.17,0.32
+CUST_10339,Male,28,False,False,Canada,2024-10-26,2025-01-15,187,106,3,observed,66.93,22.310000000000002,Makeup,Paid Ads,0.53,0.45
+CUST_10340,Unknown,28,False,False,Canada,2023-11-11,2024-09-07,537,236,6,observed,407.28,67.88,Makeup,Referral,0.05,0.88
+CUST_10341,Female,29,False,False,Kenya,2024-09-18,2024-11-13,225,169,5,observed,152.18,30.436,Wellness,Organic Search,0.4,0.79
+CUST_10342,Male,20,False,False,Kenya,2023-06-21,2025-04-02,680,29,1,observed,148.55,148.55,Bodycare,Social Media,0.31,0.26
+CUST_10343,Male,26,False,False,USA,2023-12-25,2024-05-04,493,362,1,observed,161.82,161.82,Skincare,Email,0.27,1.0
+CUST_10344,Male,48,False,False,Canada,2024-01-23,2024-07-20,464,285,4,observed,164.23,41.0575,Wellness,Referral,0.32,0.97
+CUST_10345,Male,41,False,False,USA,2023-02-04,2023-12-02,817,516,4,imputed_median,240.06,,Skincare,Paid Ads,0.48,1.0
+CUST_10346,Male,30,False,False,USA,2024-07-14,2024-08-30,291,244,7,observed,436.59,62.37,Wellness,Email,0.22,0.93
+CUST_10347,Male,36,False,False,Canada,2023-06-10,2023-08-03,691,637,2,observed,264.77,132.385,Haircare,Referral,0.54,1.0
+CUST_10348,Unknown,24,False,False,Kenya,2023-11-01,2024-07-01,547,304,4,observed,91.92,22.98,Makeup,Paid Ads,0.02,1.0
+CUST_10349,Female,29,False,False,Canada,2023-03-31,2024-01-26,762,461,1,zero_with_spend_set_to_1,152.28,,Wellness,Organic Search,0.36,1.0
+CUST_10350,Male,47,False,False,Kenya,2023-03-25,2024-07-21,768,284,6,observed,400.33,66.72166666666666,Wellness,Social Media,0.12,0.97
+CUST_10351,Female,37,False,False,Canada,2023-07-09,2024-07-22,662,283,2,observed,273.94,136.97,Wellness,Email,0.51,0.97
+CUST_10352,Male,29,False,False,Kenya,2024-07-31,2024-08-31,274,243,8,observed,148.35,18.54375,Skincare,Social Media,0.26,0.9
+CUST_10353,Unknown,35,False,False,Nigeria,2023-08-21,2025-03-09,619,53,7,observed,213.73,30.532857142857143,Makeup,Referral,0.03,0.29
+CUST_10354,Male,37,False,False,UK,2024-05-02,2024-10-02,364,211,3,observed,276.88,92.29333333333334,Skincare,Referral,0.2,0.78
+CUST_10355,Unknown,26,False,False,Nigeria,2023-05-31,2023-10-01,701,578,2,observed,577.9,288.95,Haircare,Paid Ads,0.32,1.0
+CUST_10356,Male,32,True,False,USA,2024-11-30,2025-03-21,152,41,2,observed,40.66,20.33,Haircare,Social Media,0.21,0.32
+CUST_10357,Female,25,False,False,USA,2023-03-31,2024-05-01,762,365,1,observed,443.51,443.51,Bodycare,Organic Search,0.24,1.0
+CUST_10358,Unknown,16,False,True,Canada,2023-04-26,2024-06-23,736,312,2,observed,347.61,173.805,Makeup,Organic Search,0.42,0.94
+CUST_10359,Female,16,False,True,USA,2023-10-20,2025-04-20,559,11,4,observed,368.17,92.0425,Bodycare,Email,0.34,0.11
+CUST_10360,Unknown,39,False,False,USA,2023-06-26,2024-04-03,675,393,1,observed,496.18,496.18,Wellness,Social Media,0.06,1.0
+CUST_10361,Male,32,True,False,Canada,2023-10-03,2024-10-18,576,195,4,imputed_median,277.86,,Bodycare,Email,0.27,0.72
+CUST_10362,Female,48,False,False,UK,2023-05-18,2024-03-20,714,407,2,observed,148.86,74.43,Bodycare,Email,0.23,1.0
+CUST_10363,Unknown,16,False,True,UK,2024-03-28,2024-07-14,399,291,1,observed,479.65,479.65,Wellness,Social Media,0.17,1.0
+CUST_10364,Female,30,False,False,UK,2023-03-09,2024-01-21,784,466,7,observed,226.12,32.30285714285714,Makeup,Organic Search,0.42,1.0
+CUST_10365,Male,24,False,False,UK,2023-03-01,2023-11-11,792,537,7,observed,170.54,24.36285714285714,Bodycare,Social Media,0.21,1.0
+CUST_10366,Female,21,False,False,Nigeria,2024-02-11,2025-01-01,445,120,2,observed,739.8,369.9,Haircare,Referral,0.1,0.54
+CUST_10367,Male,25,False,False,Canada,2024-08-23,2025-01-11,251,110,5,observed,221.84,44.368,Bodycare,Organic Search,0.21,0.51
+CUST_10368,Female,32,True,False,USA,2023-06-16,2025-01-21,685,100,9,observed,103.27,11.474444444444444,Haircare,Paid Ads,0.28,0.51
+CUST_10369,Female,25,False,False,Nigeria,2023-01-21,2025-03-30,831,32,5,observed,213.32,42.664,Wellness,Paid Ads,0.27,0.23
+CUST_10370,Unknown,27,False,False,UK,2023-09-16,2024-07-24,593,281,5,observed,185.07,37.013999999999996,Bodycare,Email,0.53,1.0
+CUST_10371,Female,27,False,False,UK,2024-04-22,2024-09-23,374,220,3,observed,261.02,87.00666666666666,Wellness,Organic Search,0.17,0.89
+CUST_10372,Unknown,29,False,False,Kenya,2024-07-28,2024-12-19,277,133,7,observed,37.98,5.425714285714285,Skincare,Social Media,0.45,0.58
+CUST_10373,Female,36,False,False,Kenya,2024-11-02,2025-04-17,180,14,2,observed,3.64,1.82,Haircare,Referral,0.63,0.24
+CUST_10374,Male,37,False,False,UK,2023-01-27,2024-11-28,825,154,1,zero_with_spend_set_to_1,151.91,,Wellness,Organic Search,0.03,0.85
+CUST_10375,Unknown,31,False,False,Nigeria,2023-07-14,2024-06-29,657,306,6,observed,443.77,73.96166666666666,Makeup,Email,0.15,1.0
+CUST_10376,Female,28,False,False,UK,2024-11-04,2025-03-26,178,36,5,observed,203.93,40.786,Haircare,Referral,0.07,0.52
+CUST_10377,Male,32,False,False,Kenya,2024-11-01,2024-11-23,181,159,6,observed,282.29,47.04833333333334,Bodycare,Social Media,0.19,0.51
+CUST_10378,Female,31,False,False,Kenya,2024-04-19,2024-06-18,377,317,5,observed,286.62,57.324,Makeup,Referral,0.12,0.97
+CUST_10379,Female,26,False,False,UK,2024-05-27,2024-07-27,339,278,6,observed,438.74,73.12333333333333,Bodycare,Paid Ads,0.47,0.98
+CUST_10380,Male,23,False,False,Kenya,2024-02-24,2024-12-11,432,141,3,observed,325.62,108.54,Haircare,Paid Ads,0.64,0.49
+CUST_10381,Female,24,False,False,UK,2023-11-17,2024-01-15,531,472,4,imputed_median,58.14,,Haircare,Paid Ads,0.13,1.0
+CUST_10382,Male,16,False,True,USA,2023-05-13,2025-01-31,719,90,6,observed,34.3,5.716666666666666,Wellness,Email,0.1,0.39
+CUST_10383,Female,32,True,False,UK,2024-01-18,2024-01-25,469,462,6,observed,143.99,23.998333333333335,Makeup,Organic Search,0.05,1.0
+CUST_10384,Male,33,False,False,Kenya,2023-11-16,2024-03-27,532,400,3,observed,192.75,64.25,Bodycare,Organic Search,0.19,1.0
+CUST_10385,Female,21,False,False,Canada,2024-06-16,2025-04-17,319,14,7,observed,183.73,26.247142857142855,Haircare,Email,0.21,0.19
+CUST_10386,Female,32,False,False,UK,2024-02-18,2024-02-27,438,429,3,observed,74.03,24.676666666666666,Haircare,Organic Search,0.61,1.0
+CUST_10387,Unknown,40,False,False,USA,2024-01-11,2025-01-09,476,112,3,observed,261.34,87.11333333333333,Bodycare,Referral,0.21,0.52
+CUST_10388,Female,37,False,False,USA,2024-11-08,2024-12-05,174,147,4,observed,2276.7,569.175,Skincare,Email,0.33,0.68
+CUST_10389,Female,37,False,False,Canada,2024-12-19,2025-01-27,133,94,6,observed,181.23,30.205,Skincare,Organic Search,0.34,0.55
+CUST_10390,Unknown,30,False,False,Nigeria,2024-12-18,2025-01-22,134,99,5,observed,116.9,23.380000000000003,Makeup,Organic Search,0.49,0.6
+CUST_10391,Female,41,False,False,USA,2024-05-24,2024-09-02,342,241,2,observed,154.15,77.075,Makeup,Social Media,0.29,0.96
+CUST_10392,Male,34,False,False,USA,2024-07-15,2025-03-26,290,36,5,observed,125.01,25.002000000000002,Wellness,Organic Search,0.15,0.32
+CUST_10393,Female,28,False,False,USA,2024-08-10,2025-04-19,264,12,3,observed,219.84,73.28,Makeup,Organic Search,0.17,0.17
+CUST_10394,Female,20,False,False,Canada,2023-10-31,2024-07-27,548,278,2,observed,56.41,28.205,Haircare,Social Media,0.27,0.9
+CUST_10395,Female,20,False,False,Kenya,2024-03-12,2025-03-25,415,37,1,observed,362.71,362.71,Skincare,Paid Ads,0.3,0.43
+CUST_10396,Male,39,False,False,Canada,2024-09-28,2024-12-05,215,147,4,observed,393.28,98.32,Bodycare,Email,0.3,0.65
+CUST_10397,Male,23,False,False,Kenya,2024-01-30,2025-01-17,457,104,4,observed,272.51,68.1275,Haircare,Organic Search,0.16,0.39
+CUST_10398,Male,36,False,False,Nigeria,2024-05-09,2025-02-24,357,66,6,observed,92.03,15.338333333333333,Wellness,Referral,0.66,0.43
+CUST_10399,Female,29,False,False,UK,2024-05-09,2025-01-13,357,108,3,observed,192.47,64.15666666666667,Skincare,Social Media,0.45,0.44
+CUST_10400,Female,30,False,False,Nigeria,2024-08-13,2024-12-05,261,147,2,observed,89.3,44.65,Bodycare,Referral,0.13,0.72
+CUST_10401,Female,43,False,False,UK,2024-05-08,2024-11-01,358,181,2,observed,391.68,195.84,Haircare,Referral,0.17,0.82
+CUST_10402,Unknown,39,False,False,UK,2024-06-01,2025-01-27,334,94,5,observed,116.59,23.318,Skincare,Social Media,0.52,0.47
+CUST_10403,Male,30,False,False,Kenya,2023-02-21,2024-07-24,800,281,2,observed,270.58,135.29,Wellness,Organic Search,0.17,0.87
+CUST_10404,Male,46,False,False,Nigeria,2024-04-03,2024-05-18,393,348,4,observed,50.43,12.6075,Skincare,Organic Search,0.19,1.0
+CUST_10405,Female,23,False,False,USA,2024-07-24,2025-05-01,281,0,4,imputed_median,121.1,,Makeup,Social Media,0.29,0.18
+CUST_10406,Unknown,32,False,False,Canada,2023-12-16,2024-06-19,502,316,4,observed,216.59,54.1475,Wellness,Referral,0.36,1.0
+CUST_10407,Unknown,27,False,False,Kenya,2024-04-08,2024-06-05,388,330,4,observed,297.03,74.2575,Skincare,Social Media,0.03,1.0
+CUST_10408,Unknown,41,False,False,USA,2023-02-16,2023-08-03,805,637,4,observed,237.56,59.39,Wellness,Referral,0.21,1.0
+CUST_10409,Male,32,False,False,Canada,2023-08-09,2024-11-19,631,163,6,observed,208.78,34.79666666666667,Bodycare,Email,0.22,0.64
+CUST_10410,Female,48,False,False,Nigeria,2023-05-07,2024-08-10,725,264,4,observed,142.79,35.6975,Makeup,Email,0.14,0.86
+CUST_10411,Female,51,False,False,USA,2024-07-20,2025-02-26,285,64,5,observed,121.43,24.286,Makeup,Paid Ads,0.57,0.36
+CUST_10412,Unknown,18,False,False,UK,2023-04-17,2024-05-17,745,349,6,observed,155.02,25.83666666666667,Bodycare,Email,0.08,1.0
+CUST_10413,Male,28,False,False,UK,2023-10-08,2024-11-18,571,164,4,observed,68.86,17.215,Wellness,Paid Ads,0.07,0.52
+CUST_10414,Male,39,False,False,Nigeria,2023-11-03,2024-09-19,545,224,5,observed,101.01,20.202,Haircare,Referral,0.29,0.75
+CUST_10415,Female,16,False,True,UK,2024-12-28,2025-03-21,124,41,1,observed,60.62,60.62,Makeup,Social Media,0.11,0.34
+CUST_10416,Female,37,False,False,Nigeria,2024-05-06,2025-02-28,360,62,2,observed,469.02,234.51,Wellness,Referral,0.31,0.51
+CUST_10417,Female,27,False,False,Canada,2023-01-14,2024-07-02,838,303,7,observed,270.41,38.63,Skincare,Paid Ads,0.15,1.0
+CUST_10418,Female,32,False,False,UK,2023-10-21,2024-07-03,558,302,3,observed,160.55,53.51666666666667,Bodycare,Referral,0.72,1.0
+CUST_10419,Female,32,False,False,Canada,2023-04-15,2025-01-04,747,117,3,observed,248.54,82.84666666666666,Haircare,Referral,0.51,0.52
+CUST_10420,Male,39,False,False,Kenya,2024-12-10,2024-12-22,142,130,5,observed,118.03,23.606,Bodycare,Organic Search,0.14,0.53
+CUST_10421,Female,27,False,False,UK,2024-09-27,2025-04-14,216,17,3,observed,46.16,15.386666666666665,Haircare,Social Media,0.62,0.31
+CUST_10422,Unknown,34,False,False,Nigeria,2023-07-21,2024-02-04,650,452,2,observed,404.08,202.04,Skincare,Paid Ads,0.19,1.0
+CUST_10423,Unknown,39,False,False,USA,2024-03-14,2024-08-03,413,271,7,observed,151.93,21.704285714285714,Makeup,Organic Search,0.63,0.98
+CUST_10424,Female,16,False,True,UK,2023-02-10,2023-07-17,811,654,3,observed,174.77,58.25666666666667,Makeup,Social Media,0.05,1.0
+CUST_10425,Male,50,False,False,Nigeria,2024-01-02,2024-02-08,485,448,4,observed,161.99,40.4975,Haircare,Referral,0.04,1.0
+CUST_10426,Female,18,False,False,UK,2024-03-01,2024-12-04,426,148,3,observed,250.18,83.39333333333333,Haircare,Social Media,0.57,0.59
+CUST_10427,Female,30,False,False,UK,2024-09-25,2025-02-07,218,83,2,observed,324.97,162.485,Skincare,Social Media,0.17,0.56
+CUST_10428,Male,40,False,False,Nigeria,2024-09-28,2024-11-29,215,153,1,observed,66.76,66.76,Bodycare,Organic Search,0.17,0.54
+CUST_10429,Male,17,False,True,Kenya,2023-01-26,2024-07-08,826,297,3,observed,170.8,56.93333333333334,Makeup,Organic Search,0.15,1.0
+CUST_10430,Female,26,False,False,UK,2023-11-25,2024-02-17,523,439,6,observed,283.83,47.305,Makeup,Organic Search,0.3,1.0
+CUST_10431,Male,23,False,False,UK,2024-12-02,2025-03-20,150,42,3,observed,231.06,77.02,Wellness,Organic Search,0.25,0.26
+CUST_10432,Male,32,True,False,Kenya,2023-02-08,2023-05-08,813,724,3,observed,464.79,154.93,Bodycare,Referral,0.08,1.0
+CUST_10433,Male,41,False,False,Canada,2024-02-02,2024-09-19,454,224,2,observed,451.08,225.54,Skincare,Organic Search,0.41,0.75
+CUST_10434,Unknown,32,True,False,Nigeria,2023-03-06,2025-04-18,787,13,4,observed,567.32,141.83,Skincare,Referral,0.19,0.07
+CUST_10435,Female,20,False,False,Kenya,2024-09-13,2024-10-05,230,208,4,observed,265.01,66.2525,Wellness,Organic Search,0.27,0.74
+CUST_10436,Male,26,False,False,UK,2023-05-20,2024-06-23,712,312,5,observed,483.58,96.716,Bodycare,Paid Ads,0.36,1.0
+CUST_10437,Female,23,False,False,Kenya,2023-01-12,2024-07-31,840,274,6,observed,59.29,9.881666666666666,Skincare,Referral,0.17,0.73
+CUST_10438,Male,41,False,False,USA,2023-11-09,2024-06-11,539,324,3,observed,282.27,94.08999999999999,Bodycare,Referral,0.18,1.0
+CUST_10439,Male,17,False,True,UK,2024-09-23,2025-04-24,220,7,3,observed,611.45,203.8166666666667,Makeup,Referral,0.47,0.26
+CUST_10440,Male,47,False,False,USA,2023-10-25,2024-01-01,554,486,6,observed,262.11,43.685,Makeup,Social Media,0.36,1.0
+CUST_10441,Female,40,False,False,UK,2023-04-13,2024-01-29,749,458,3,observed,107.2,35.733333333333334,Bodycare,Social Media,0.02,1.0
+CUST_10442,Unknown,45,False,False,Nigeria,2023-06-06,2025-01-05,695,116,4,observed,218.49,54.6225,Wellness,Social Media,0.21,0.54
+CUST_10443,Male,55,False,False,Canada,2023-10-11,2024-10-13,568,200,2,observed,92.54,46.27,Wellness,Social Media,0.02,0.93
+CUST_10444,Female,40,False,False,USA,2023-06-29,2025-04-20,672,11,2,observed,95.29,47.645,Haircare,Paid Ads,0.54,0.16
+CUST_10445,Female,30,False,False,USA,2023-03-19,2023-04-07,774,755,4,observed,125.7,31.425,Makeup,Referral,0.26,1.0
+CUST_10446,Male,33,False,False,Nigeria,2023-09-24,2025-04-02,585,29,2,observed,268.24,134.12,Haircare,Paid Ads,0.73,0.41
+CUST_10447,Unknown,32,False,False,Kenya,2023-05-18,2024-09-04,714,239,5,observed,335.97,67.194,Bodycare,Paid Ads,0.28,1.0
+CUST_10448,Unknown,29,False,False,Nigeria,2023-05-24,2024-08-22,708,252,5,observed,39.72,7.944,Makeup,Paid Ads,0.29,0.68
+CUST_10449,Male,31,False,False,USA,2023-08-13,2024-12-24,627,128,6,observed,153.66,25.61,Haircare,Paid Ads,0.29,0.51
+CUST_10450,Unknown,28,False,False,Kenya,2024-02-02,2024-09-29,454,214,6,observed,55.88,9.313333333333334,Skincare,Social Media,0.12,0.85
+CUST_10451,Female,16,False,True,Nigeria,2024-10-10,2024-12-19,203,133,7,observed,213.37,30.481428571428573,Makeup,Email,0.08,0.8
+CUST_10452,Male,24,False,False,USA,2024-06-13,2024-10-19,322,194,6,observed,195.91,32.651666666666664,Makeup,Social Media,0.2,0.76
+CUST_10453,Male,33,False,False,Nigeria,2023-01-07,2024-06-03,845,332,2,observed,103.17,51.585,Haircare,Social Media,0.19,1.0
+CUST_10454,Male,32,False,False,UK,2024-01-06,2024-11-09,481,173,2,observed,352.56,176.28,Haircare,Social Media,0.63,0.74
+CUST_10455,Female,31,False,False,Canada,2024-05-05,2024-08-20,361,254,5,observed,153.74,30.748,Wellness,Organic Search,0.18,0.96
+CUST_10456,Male,29,False,False,UK,2023-05-18,2025-02-20,714,70,6,observed,197.8,32.96666666666667,Haircare,Social Media,0.28,0.44
+CUST_10457,Male,39,False,False,Canada,2024-09-05,2025-01-27,238,94,3,observed,123.59,41.196666666666665,Bodycare,Paid Ads,0.25,0.42
+CUST_10458,Male,39,False,False,Canada,2024-05-08,2024-08-03,358,271,6,observed,67.48,11.246666666666668,Haircare,Paid Ads,0.37,0.75
+CUST_10459,Unknown,25,False,False,Kenya,2023-06-21,2024-06-05,680,330,2,observed,350.08,175.04,Skincare,Email,0.51,0.99
+CUST_10460,Male,20,False,False,UK,2024-06-19,2025-03-04,316,58,5,observed,242.35,48.47,Makeup,Email,0.34,0.46
+CUST_10461,Unknown,16,False,True,Nigeria,2024-05-30,2024-07-29,336,276,5,observed,116.83,23.366,Makeup,Organic Search,0.49,0.91
+CUST_10462,Male,36,False,False,Kenya,2023-02-14,2025-01-28,807,93,2,observed,312.26,156.13,Wellness,Email,0.21,0.47
+CUST_10463,Female,45,False,False,Nigeria,2023-04-11,2024-06-19,751,316,1,observed,334.51,334.51,Haircare,Organic Search,0.35,1.0
+CUST_10464,Female,34,False,False,Nigeria,2024-02-23,2024-07-03,433,302,4,observed,131.29,32.8225,Skincare,Organic Search,0.09,1.0
+CUST_10465,Unknown,32,True,False,UK,2024-12-05,2025-02-23,147,67,4,observed,585.36,146.34,Wellness,Social Media,0.14,0.38
+CUST_10466,Female,46,False,False,Canada,2024-08-01,2025-02-04,273,86,7,observed,144.1,20.585714285714285,Wellness,Email,0.59,0.39
+CUST_10467,Unknown,27,False,False,Canada,2023-07-03,2024-07-16,668,289,6,observed,106.0,17.666666666666668,Bodycare,Email,0.5,0.86
+CUST_10468,Male,39,False,False,USA,2023-08-24,2024-11-23,616,159,5,observed,47.74,9.548,Skincare,Email,0.13,0.7
+CUST_10469,Female,34,False,False,Nigeria,2024-12-14,2024-12-27,138,125,6,observed,492.58,82.09666666666666,Skincare,Paid Ads,0.42,0.74
+CUST_10470,Male,37,False,False,Canada,2023-04-01,2023-06-05,761,696,3,observed,247.31,82.43666666666667,Makeup,Email,0.49,1.0
+CUST_10471,Male,29,False,False,Nigeria,2023-10-21,2023-12-18,558,500,2,observed,458.48,229.24,Wellness,Paid Ads,0.08,1.0
+CUST_10472,Unknown,20,False,False,USA,2024-09-05,2025-01-13,238,108,1,observed,419.37,419.37,Haircare,Social Media,0.35,0.52
+CUST_10473,Male,16,False,True,UK,2023-03-30,2024-01-06,763,481,2,observed,110.26,55.13,Wellness,Paid Ads,0.47,1.0
+CUST_10474,Unknown,32,True,False,USA,2023-04-03,2024-10-16,759,197,2,observed,150.89,75.445,Makeup,Social Media,0.51,0.78
+CUST_10475,Male,41,False,False,UK,2024-04-10,2024-11-02,386,180,3,observed,90.63,30.209999999999997,Wellness,Referral,0.04,0.71
+CUST_10476,Female,43,False,False,Kenya,2023-04-30,2024-10-06,732,207,4,observed,117.58,29.395,Makeup,Email,0.24,0.73
+CUST_10477,Male,45,False,False,UK,2023-12-14,2025-04-19,504,12,5,observed,156.55,31.310000000000002,Makeup,Email,0.15,0.22
+CUST_10478,Female,50,False,False,Canada,2024-10-10,2025-04-29,203,2,5,observed,320.6,64.12,Haircare,Email,0.12,0.12
+CUST_10479,Female,45,False,False,USA,2024-12-18,2025-02-23,134,67,4,observed,45.28,11.32,Bodycare,Paid Ads,0.26,0.39
+CUST_10480,Male,33,False,False,UK,2024-08-10,2024-12-25,264,127,1,observed,51.37,51.37,Haircare,Paid Ads,0.64,0.58
+CUST_10481,Male,35,False,False,Kenya,2023-07-31,2024-03-21,640,406,4,observed,61.86,15.465,Makeup,Organic Search,0.1,1.0
+CUST_10482,Female,24,False,False,Canada,2024-09-20,2024-09-21,223,222,5,observed,83.38,16.676,Skincare,Social Media,0.22,0.57
+CUST_10483,Unknown,24,False,False,Nigeria,2023-10-09,2025-02-22,570,68,2,observed,31.84,15.92,Makeup,Paid Ads,0.44,0.42
+CUST_10484,Unknown,31,False,False,Nigeria,2024-03-09,2024-11-08,418,174,2,observed,142.33,71.165,Bodycare,Paid Ads,0.09,0.66
+CUST_10485,Male,35,False,False,Nigeria,2024-04-16,2024-09-24,380,219,2,observed,258.15000000000003,129.07500000000002,Haircare,Organic Search,0.28,0.7
+CUST_10486,Female,29,False,False,Kenya,2023-07-11,2025-01-22,660,99,5,observed,249.01,49.802,Makeup,Paid Ads,0.19,0.51
+CUST_10487,Male,36,False,False,Canada,2024-12-18,2025-03-23,134,39,1,observed,157.96,157.96,Wellness,Paid Ads,0.24,0.5
+CUST_10488,Unknown,36,False,False,USA,2023-10-04,2024-06-01,575,334,7,observed,142.84,20.405714285714286,Haircare,Paid Ads,0.37,0.99
+CUST_10489,Male,44,False,False,UK,2024-03-07,2024-11-17,420,165,4,observed,14.84,3.71,Makeup,Social Media,0.37,0.59
+CUST_10490,Male,16,False,True,Nigeria,2024-08-04,2024-08-28,270,246,2,observed,166.84,83.42,Skincare,Social Media,0.19,0.9
+CUST_10491,Male,27,False,False,USA,2024-04-05,2025-04-21,391,10,4,observed,217.65,54.4125,Makeup,Social Media,0.23,0.23
+CUST_10492,Female,32,True,False,USA,2023-12-26,2025-03-14,492,48,2,observed,474.37,237.185,Makeup,Referral,0.17,0.58
+CUST_10493,Male,31,False,False,Kenya,2023-12-30,2024-06-13,488,322,3,observed,218.95,72.98333333333333,Wellness,Email,0.47,1.0
+CUST_10494,Unknown,36,False,False,UK,2023-06-21,2025-04-06,680,25,5,observed,190.31,38.062,Makeup,Organic Search,0.08,0.35
+CUST_10495,Female,34,False,False,UK,2023-11-18,2024-10-07,530,206,7,observed,161.86,23.122857142857146,Makeup,Social Media,0.32,0.67
+CUST_10496,Male,16,False,True,Kenya,2024-08-24,2025-01-04,250,117,3,observed,662.45,220.8166666666667,Haircare,Paid Ads,0.31,0.45
+CUST_10497,Male,53,False,False,USA,2023-08-04,2024-01-21,636,466,1,observed,165.94,165.94,Wellness,Organic Search,0.2,1.0
+CUST_10498,Male,35,False,False,USA,2023-04-17,2024-01-10,745,477,3,observed,270.37,90.12333333333333,Wellness,Paid Ads,0.21,1.0
+CUST_10499,Female,36,False,False,UK,2023-05-15,2024-11-04,717,178,5,observed,153.72,30.744,Bodycare,Social Media,0.22,0.79
+CUST_10500,Male,32,False,False,Nigeria,2023-10-06,2025-04-19,573,12,2,observed,87.18,43.59,Makeup,Referral,0.05,0.19
+CUST_10501,Male,49,False,False,Nigeria,2024-03-21,2024-12-14,406,138,5,observed,185.27,37.054,Bodycare,Paid Ads,0.31,0.55
+CUST_10502,Female,17,False,True,Kenya,2024-02-27,2024-07-09,429,296,5,observed,1059.1,211.82,Makeup,Paid Ads,0.31,1.0
+CUST_10503,Female,46,False,False,Nigeria,2023-01-09,2024-12-13,843,139,3,observed,383.5,127.83333333333333,Wellness,Email,0.44,0.54
+CUST_10504,Female,34,False,False,USA,2024-07-15,2025-01-22,290,99,5,observed,500.58,100.116,Wellness,Paid Ads,0.19,0.55
+CUST_10505,Male,56,False,False,UK,2023-09-27,2023-12-17,582,501,5,observed,207.21,41.442,Makeup,Social Media,0.2,1.0
+CUST_10506,Female,24,False,False,Nigeria,2023-10-03,2024-11-28,576,154,4,observed,210.78,52.695,Haircare,Email,0.03,0.67
+CUST_10507,Unknown,26,False,False,Nigeria,2024-05-18,2024-08-22,348,252,6,observed,147.15,24.525000000000002,Makeup,Organic Search,0.18,1.0
+CUST_10508,Female,26,False,False,Canada,2023-01-09,2023-09-04,843,605,6,observed,1821.25,303.5416666666667,Haircare,Social Media,0.28,1.0
+CUST_10509,Male,25,False,False,Canada,2024-12-14,2024-12-22,138,130,2,observed,211.53,105.765,Haircare,Email,0.48,0.52
+CUST_10510,Female,16,False,True,UK,2023-07-16,2024-03-28,655,399,4,observed,403.99,100.9975,Skincare,Paid Ads,0.19,1.0
+CUST_10511,Male,19,False,False,Canada,2023-09-11,2023-10-15,598,564,6,observed,292.36,48.72666666666667,Skincare,Paid Ads,0.1,1.0
+CUST_10512,Male,29,False,False,Kenya,2023-11-27,2024-05-07,521,359,3,observed,390.21,130.07,Makeup,Social Media,0.36,1.0
+CUST_10513,Male,33,False,False,UK,2024-01-05,2025-04-03,482,28,6,observed,154.56,25.76,Skincare,Email,0.47,0.32
+CUST_10514,Female,32,True,False,Kenya,2024-08-21,2024-09-20,253,223,4,observed,362.5,90.625,Skincare,Email,0.05,0.73
+CUST_10515,Unknown,16,False,True,USA,2023-09-12,2024-02-20,597,436,5,observed,215.02,43.004000000000005,Bodycare,Organic Search,0.09,1.0
+CUST_10516,Female,38,False,False,UK,2024-12-19,2025-01-15,133,106,6,observed,424.22,70.70333333333333,Makeup,Social Media,0.79,0.56
+CUST_10517,Male,30,False,False,USA,2024-12-06,2025-03-12,146,50,5,observed,95.78,19.156,Skincare,Email,0.35,0.35
+CUST_10518,Unknown,45,False,False,Canada,2023-07-14,2025-02-13,657,77,1,observed,73.15,73.15,Wellness,Referral,0.64,0.56
+CUST_10519,Unknown,38,False,False,Nigeria,2023-06-08,2024-09-10,693,233,5,observed,72.96,14.591999999999999,Bodycare,Referral,0.76,0.86
+CUST_10520,Male,27,False,False,USA,2024-09-26,2024-12-28,217,124,4,observed,100.99,25.2475,Skincare,Referral,0.35,0.64
+CUST_10521,Male,26,False,False,Canada,2024-07-18,2024-10-04,287,209,2,observed,120.72,60.36,Bodycare,Referral,0.2,0.81
+CUST_10522,Female,32,True,False,UK,2023-07-02,2023-08-03,669,637,5,observed,10.92,2.184,Skincare,Email,0.66,1.0
+CUST_10523,Male,30,False,False,Nigeria,2023-09-20,2023-11-09,589,539,4,observed,35.86,8.965,Skincare,Paid Ads,0.29,1.0
+CUST_10524,Male,35,False,False,USA,2024-04-24,2025-03-17,372,45,2,observed,177.37,88.685,Wellness,Organic Search,0.44,0.03
+CUST_10525,Unknown,24,False,False,USA,2023-03-14,2024-01-19,779,468,5,observed,619.5,123.9,Makeup,Paid Ads,0.5,1.0
+CUST_10526,Unknown,32,False,False,UK,2024-06-22,2024-10-27,313,186,6,observed,241.93,40.321666666666665,Makeup,Email,0.1,0.64
+CUST_10527,Female,33,False,False,Nigeria,2024-01-02,2024-12-12,485,140,6,observed,13.04,2.1733333333333333,Skincare,Paid Ads,0.45,0.52
+CUST_10528,Unknown,43,False,False,Kenya,2024-11-04,2024-12-14,178,138,3,observed,221.92,73.97333333333333,Bodycare,Referral,0.34,0.66
+CUST_10529,Female,34,False,False,Canada,2024-10-10,2025-01-28,203,93,5,observed,218.77,43.754000000000005,Haircare,Paid Ads,0.46,0.49
+CUST_10530,Male,26,False,False,Kenya,2024-01-04,2024-08-22,483,252,5,observed,326.18,65.236,Skincare,Referral,0.02,0.95
+CUST_10531,Female,42,False,False,Kenya,2023-01-07,2023-11-10,845,538,1,observed,452.75,452.75,Bodycare,Social Media,0.51,1.0
+CUST_10532,Unknown,32,False,False,Nigeria,2024-08-08,2024-10-26,266,187,4,observed,383.52,95.88,Haircare,Social Media,0.12,0.78
+CUST_10533,Unknown,36,False,False,Kenya,2023-11-04,2024-02-06,544,450,3,observed,67.97,22.656666666666666,Haircare,Social Media,0.11,1.0
+CUST_10534,Male,30,False,False,Nigeria,2023-04-08,2024-12-07,754,145,5,observed,375.53,75.106,Makeup,Organic Search,0.17,0.59
+CUST_10535,Female,29,False,False,Canada,2024-03-02,2024-05-02,425,364,2,observed,23.89,11.945,Makeup,Email,0.15,1.0
+CUST_10536,Female,25,False,False,USA,2023-11-23,2024-04-24,525,372,2,observed,79.63,39.815,Haircare,Email,0.28,1.0
+CUST_10537,Male,52,False,False,Nigeria,2024-05-31,2024-07-16,335,289,2,observed,200.31,100.155,Wellness,Social Media,0.35,1.0
+CUST_10538,Female,43,False,False,USA,2024-07-15,2025-02-04,290,86,7,observed,110.82,15.831428571428571,Wellness,Paid Ads,0.21,0.45
+CUST_10539,Male,29,False,False,UK,2024-05-14,2024-12-02,352,150,4,observed,151.65,37.9125,Makeup,Referral,0.44,0.78
+CUST_10540,Male,19,False,False,Kenya,2024-03-16,2024-08-28,411,246,4,observed,90.88,22.72,Skincare,Email,0.46,0.86
+CUST_10541,Female,28,False,False,Kenya,2023-12-19,2024-10-18,499,195,2,observed,179.73,89.865,Haircare,Referral,0.34,0.76
+CUST_10542,Male,30,False,False,Canada,2023-02-15,2023-10-12,806,567,4,observed,93.12,23.28,Skincare,Organic Search,0.38,1.0
+CUST_10543,Male,34,False,False,UK,2023-10-22,2023-11-05,557,543,4,observed,67.74,16.935,Bodycare,Organic Search,0.43,1.0
+CUST_10544,Female,29,False,False,Nigeria,2023-08-05,2024-02-29,635,427,5,observed,79.02,15.803999999999998,Makeup,Paid Ads,0.31,1.0
+CUST_10545,Female,40,False,False,Nigeria,2023-02-14,2023-11-02,807,546,3,observed,81.31,27.103333333333335,Makeup,Email,0.39,1.0
+CUST_10546,Female,27,False,False,Kenya,2024-11-09,2025-04-26,173,5,1,observed,192.97,192.97,Bodycare,Email,0.15,0.43
+CUST_10547,Male,50,False,False,Nigeria,2024-12-27,2025-01-08,125,113,1,observed,91.96,91.96,Makeup,Paid Ads,0.24,0.44
+CUST_10548,Male,28,False,False,Canada,2024-07-28,2024-08-08,277,266,3,observed,47.03,15.676666666666668,Bodycare,Email,0.43,1.0
+CUST_10549,Male,32,True,False,Kenya,2023-12-30,2024-11-14,488,168,5,observed,119.41,23.881999999999998,Makeup,Organic Search,0.11,0.88
+CUST_10550,Female,22,False,False,USA,2024-07-22,2024-12-12,283,140,5,observed,480.89,96.178,Wellness,Organic Search,0.35,0.58
+CUST_10551,Male,42,False,False,Nigeria,2024-10-02,2025-03-26,211,36,5,observed,75.3,15.059999999999999,Haircare,Social Media,0.58,0.16
+CUST_10552,Unknown,54,False,False,Nigeria,2023-05-15,2023-12-12,717,506,3,observed,651.22,217.07333333333335,Haircare,Social Media,0.79,1.0
+CUST_10553,Unknown,37,False,False,Canada,2023-05-29,2025-03-30,703,32,3,observed,510.96,170.32,Bodycare,Referral,0.23,0.37
+CUST_10554,Female,37,False,False,UK,2023-01-31,2025-03-24,821,38,4,observed,153.39,38.3475,Wellness,Social Media,0.35,0.28
+CUST_10555,Male,41,False,False,USA,2023-05-15,2023-11-20,717,528,4,imputed_median,349.42,,Makeup,Referral,0.06,1.0
+CUST_10556,Unknown,25,False,False,UK,2023-08-25,2023-09-20,615,589,5,observed,287.45,57.489999999999995,Wellness,Referral,0.03,1.0
+CUST_10557,Male,34,False,False,Kenya,2023-07-08,2024-08-07,663,267,2,observed,509.46,254.73,Haircare,Email,0.45,0.95
+CUST_10558,Female,52,False,False,Canada,2023-08-16,2024-03-10,624,417,2,observed,260.78,130.39,Wellness,Email,0.18,1.0
+CUST_10559,Female,27,False,False,UK,2024-03-13,2024-10-06,414,207,6,observed,218.1,36.35,Wellness,Email,0.35,0.71
+CUST_10560,Unknown,28,False,False,Nigeria,2024-08-31,2025-01-15,243,106,7,observed,48.6,6.942857142857143,Skincare,Email,0.26,0.59
+CUST_10561,Male,43,False,False,USA,2023-09-09,2025-02-21,600,69,3,observed,98.88,32.96,Skincare,Referral,0.42,0.51
+CUST_10562,Female,38,False,False,Canada,2024-02-12,2024-07-16,444,289,8,observed,74.42,9.3025,Haircare,Referral,0.49,0.94
+CUST_10563,Female,43,False,False,UK,2024-04-19,2025-03-15,377,47,2,observed,182.77,91.385,Skincare,Referral,0.26,0.32
+CUST_10564,Unknown,27,False,False,Canada,2023-11-28,2025-03-03,520,59,4,imputed_median,631.06,,Haircare,Organic Search,0.35,0.35
+CUST_10565,Female,16,False,True,UK,2023-05-07,2023-08-08,725,632,4,observed,19.94,4.985,Bodycare,Email,0.47,1.0
+CUST_10566,Unknown,41,False,False,UK,2024-01-23,2024-10-30,464,183,4,observed,289.16,72.29,Bodycare,Paid Ads,0.25,0.74
+CUST_10567,Male,33,False,False,UK,2024-12-30,2025-01-05,122,116,4,observed,260.68,65.17,Wellness,Paid Ads,0.14,0.37
+CUST_10568,Female,19,False,False,UK,2023-01-04,2024-10-02,848,211,7,observed,1379.75,197.10714285714286,Wellness,Referral,0.1,0.87
+CUST_10569,Female,17,False,True,Canada,2023-09-01,2024-04-10,608,386,3,observed,148.53,49.51,Wellness,Referral,0.35,1.0
+CUST_10570,Unknown,32,True,False,Nigeria,2023-10-12,2024-05-11,567,355,3,observed,116.26,38.75333333333334,Bodycare,Organic Search,0.05,1.0
+CUST_10571,Unknown,29,False,False,Kenya,2023-12-06,2024-03-04,512,423,4,observed,302.42,75.605,Haircare,Social Media,0.16,1.0
+CUST_10572,Unknown,17,False,True,Nigeria,2024-08-09,2024-11-07,265,175,2,observed,55.98,27.99,Bodycare,Organic Search,0.29,0.54
+CUST_10573,Female,41,False,False,Canada,2023-03-11,2025-04-25,782,6,2,observed,139.32,69.66,Bodycare,Organic Search,0.13,0.18
+CUST_10574,Female,21,False,False,Canada,2024-06-21,2024-10-06,314,207,4,observed,118.6,29.65,Skincare,Referral,0.33,0.65
+CUST_10575,Female,40,False,False,Nigeria,2024-12-24,2025-03-07,128,55,1,observed,95.13,95.13,Bodycare,Referral,0.19,0.32
+CUST_10576,Female,60,False,False,Nigeria,2024-07-30,2025-04-10,275,21,4,observed,249.86,62.465,Wellness,Referral,0.17,0.28
+CUST_10577,Male,22,False,False,UK,2023-01-02,2023-05-03,850,729,4,imputed_median,635.5,,Skincare,Paid Ads,0.28,1.0
+CUST_10578,Unknown,31,False,False,Canada,2023-02-16,2024-01-23,805,464,8,observed,149.5,18.6875,Haircare,Paid Ads,0.46,1.0
+CUST_10579,Female,36,False,False,USA,2023-11-12,2024-09-14,536,229,1,observed,64.05,64.05,Skincare,Social Media,0.57,0.8
+CUST_10580,Female,37,False,False,Nigeria,2024-09-22,2024-09-29,221,214,4,observed,908.14,227.035,Bodycare,Email,0.63,0.84
+CUST_10581,Male,32,False,False,UK,2024-05-08,2024-07-26,358,279,2,observed,303.76,151.88,Makeup,Email,0.41,1.0
+CUST_10582,Male,26,False,False,USA,2024-06-17,2024-11-17,318,165,4,observed,133.07,33.2675,Makeup,Paid Ads,0.04,0.71
+CUST_10583,Unknown,36,False,False,Kenya,2023-03-09,2023-08-08,784,632,3,observed,108.4,36.13333333333333,Wellness,Paid Ads,0.14,1.0
+CUST_10584,Unknown,28,False,False,UK,2024-09-01,2024-09-30,242,213,8,observed,489.41,61.17625,Bodycare,Social Media,0.63,0.8
+CUST_10585,Male,43,False,False,UK,2024-01-16,2024-09-03,471,240,2,observed,115.05,57.525,Makeup,Organic Search,0.31,0.81
+CUST_10586,Female,47,False,False,UK,2023-04-05,2024-07-02,757,303,4,observed,216.47,54.1175,Makeup,Social Media,0.56,0.98
+CUST_10587,Male,25,False,False,Nigeria,2023-11-14,2024-10-14,534,199,4,observed,138.36,34.59,Makeup,Paid Ads,0.27,0.58
+CUST_10588,Male,24,False,False,Canada,2024-02-01,2025-01-31,455,90,11,observed,233.19,21.19909090909091,Bodycare,Referral,0.47,0.34
+CUST_10589,Female,30,False,False,USA,2023-04-16,2024-09-30,746,213,3,observed,238.29,79.42999999999999,Skincare,Social Media,0.15,0.75
+CUST_10590,Male,24,False,False,UK,2023-10-21,2024-07-30,558,275,2,observed,145.01,72.505,Skincare,Paid Ads,0.21,0.87
+CUST_10591,Female,25,False,False,Nigeria,2024-07-27,2025-04-16,278,15,5,observed,242.56,48.512,Makeup,Paid Ads,0.26,0.42
+CUST_10592,Female,35,False,False,UK,2023-03-14,2024-01-26,779,461,8,observed,86.33,10.79125,Wellness,Organic Search,0.04,1.0
+CUST_10593,Male,16,False,True,USA,2023-04-19,2024-05-15,743,351,3,observed,480.74,160.24666666666667,Haircare,Referral,0.44,1.0
+CUST_10594,Male,41,False,False,Kenya,2023-12-07,2024-06-26,511,309,2,observed,346.12,173.06,Makeup,Email,0.2,1.0
+CUST_10595,Unknown,33,False,False,Canada,2023-04-10,2024-07-19,752,286,3,observed,282.62,94.20666666666666,Wellness,Paid Ads,0.18,1.0
+CUST_10596,Male,45,False,False,Nigeria,2023-09-22,2024-09-28,587,215,7,observed,382.9,54.699999999999996,Bodycare,Social Media,0.35,0.94
+CUST_10597,Male,29,False,False,USA,2024-05-01,2024-06-27,365,308,3,observed,514.65,171.54999999999998,Haircare,Social Media,0.22,1.0
+CUST_10598,Unknown,42,False,False,Nigeria,2023-04-16,2024-06-04,746,331,5,observed,306.45,61.29,Bodycare,Organic Search,0.06,1.0
+CUST_10599,Female,25,False,False,Canada,2024-08-27,2024-12-10,247,142,7,observed,34.81,4.972857142857143,Haircare,Email,0.3,0.5
+CUST_10600,Female,34,False,False,Nigeria,2024-03-17,2025-04-22,410,9,2,observed,132.66,66.33,Bodycare,Paid Ads,0.3,0.33
+CUST_10601,Male,31,False,False,USA,2024-12-29,2025-03-12,123,50,4,observed,355.77,88.9425,Makeup,Referral,0.5,0.38
+CUST_10602,Female,22,False,False,UK,2023-11-12,2024-12-31,536,121,4,observed,632.36,158.09,Makeup,Email,0.54,0.51
+CUST_10603,Female,28,False,False,USA,2023-04-03,2023-11-11,759,537,3,observed,201.65,67.21666666666667,Skincare,Paid Ads,0.18,1.0
+CUST_10604,Male,41,False,False,Canada,2024-09-22,2025-02-16,221,74,2,observed,70.88,35.44,Bodycare,Social Media,0.47,0.56
+CUST_10605,Male,47,False,False,Kenya,2023-04-02,2024-11-18,760,164,4,imputed_median,20.05,,Wellness,Social Media,0.07,0.59
+CUST_10606,Female,36,False,False,Nigeria,2023-02-24,2023-02-24,797,797,3,observed,49.96,16.653333333333332,Bodycare,Social Media,0.17,1.0
+CUST_10607,Female,30,False,False,Nigeria,2024-02-08,2024-12-24,448,128,3,observed,198.88,66.29333333333334,Wellness,Paid Ads,0.16,0.51
+CUST_10608,Male,20,False,False,UK,2024-07-22,2025-02-03,283,87,1,zero_with_spend_set_to_1,217.38,,Wellness,Paid Ads,0.46,0.38
+CUST_10609,Male,32,True,False,USA,2023-05-28,2024-10-07,704,206,2,observed,62.25,31.125,Haircare,Email,0.34,0.77
+CUST_10610,Male,57,False,False,Nigeria,2024-03-11,2025-01-24,416,97,4,observed,82.19,20.5475,Makeup,Email,0.15,0.4
+CUST_10611,Female,40,False,False,Canada,2024-09-11,2024-09-12,232,231,8,observed,101.4,12.675,Haircare,Social Media,0.45,0.99
+CUST_10612,Male,18,False,False,Nigeria,2024-01-11,2024-01-28,476,459,3,observed,90.57,30.189999999999998,Bodycare,Email,0.24,1.0
+CUST_10613,Female,47,False,False,Nigeria,2023-10-14,2025-02-01,565,89,2,observed,401.03,200.515,Makeup,Email,0.83,0.49
+CUST_10614,Female,27,False,False,Nigeria,2024-08-16,2025-01-22,258,99,3,observed,296.15,98.71666666666665,Makeup,Email,0.4,0.43
+CUST_10615,Male,34,False,False,Canada,2024-08-10,2025-01-26,264,95,2,observed,267.13,133.565,Bodycare,Organic Search,0.46,0.42
+CUST_10616,Unknown,40,False,False,Nigeria,2023-09-24,2023-11-25,585,523,5,observed,332.37,66.474,Makeup,Social Media,0.36,1.0
+CUST_10617,Unknown,32,True,False,Canada,2023-03-26,2023-08-02,767,638,3,observed,70.97,23.656666666666666,Bodycare,Referral,0.15,1.0
+CUST_10618,Female,28,False,False,Kenya,2023-01-15,2025-02-12,837,78,6,observed,28.99,4.831666666666666,Makeup,Email,0.44,0.48
+CUST_10619,Female,21,False,False,Kenya,2024-12-18,2025-02-16,134,74,4,observed,40.15,10.0375,Skincare,Organic Search,0.32,0.41
+CUST_10620,Male,26,False,False,UK,2024-05-22,2024-12-19,344,133,3,observed,237.8,79.26666666666667,Wellness,Paid Ads,0.33,0.56
+CUST_10621,Male,21,False,False,Kenya,2023-02-25,2024-12-13,796,139,1,observed,192.12,192.12,Skincare,Email,0.13,0.51
+CUST_10622,Male,49,False,False,Nigeria,2023-08-28,2024-09-19,612,224,4,observed,160.1,40.025,Bodycare,Email,0.3,1.0
+CUST_10623,Female,41,False,False,Canada,2024-01-27,2025-01-08,460,113,4,observed,123.13,30.7825,Skincare,Referral,0.22,0.43
+CUST_10624,Female,33,False,False,Canada,2024-09-17,2025-03-02,226,60,9,observed,275.78,30.64222222222222,Bodycare,Social Media,0.16,0.09
+CUST_10625,Unknown,52,False,False,UK,2024-11-19,2025-04-18,163,13,2,observed,39.08,19.54,Haircare,Organic Search,0.44,0.1
+CUST_10626,Female,26,False,False,USA,2024-02-26,2024-04-16,430,380,4,observed,164.66,41.165,Bodycare,Social Media,0.3,1.0
+CUST_10627,Female,39,False,False,USA,2024-09-26,2024-10-19,217,194,6,observed,142.49,23.748333333333335,Haircare,Organic Search,0.16,0.84
+CUST_10628,Female,35,False,False,Nigeria,2023-05-14,2024-06-01,718,334,3,observed,680.81,226.93666666666664,Makeup,Paid Ads,0.45,1.0
+CUST_10629,Female,16,False,True,Kenya,2023-10-29,2025-02-18,550,72,3,observed,321.92,107.30666666666667,Wellness,Social Media,0.06,0.48
+CUST_10630,Male,52,False,False,Kenya,2023-09-21,2024-03-04,588,423,1,zero_with_spend_set_to_1,87.38,,Skincare,Social Media,0.68,1.0
+CUST_10631,Female,28,False,False,Kenya,2023-07-02,2024-09-25,669,218,4,observed,208.33,52.0825,Haircare,Paid Ads,0.58,0.92
+CUST_10632,Male,31,False,False,Nigeria,2024-03-17,2024-07-06,410,299,3,observed,987.92,329.3066666666667,Wellness,Organic Search,0.24,1.0
+CUST_10633,Female,29,False,False,Nigeria,2023-09-14,2024-12-13,595,139,4,imputed_median,422.51,,Skincare,Email,0.07,0.56
+CUST_10634,Female,44,False,False,Kenya,2024-02-05,2024-11-25,451,157,4,imputed_median,139.8,,Wellness,Email,0.18,0.63
+CUST_10635,Female,37,False,False,USA,2024-01-29,2025-01-15,458,106,3,observed,214.48,71.49333333333333,Makeup,Social Media,0.34,0.43
+CUST_10636,Female,25,False,False,Canada,2023-02-26,2024-12-04,795,148,6,observed,131.94,21.99,Bodycare,Social Media,0.31,0.76
+CUST_10637,Female,45,False,False,Kenya,2024-10-25,2024-12-15,188,137,5,observed,106.1,21.22,Wellness,Social Media,0.1,0.46
+CUST_10638,Male,51,False,False,Kenya,2024-05-13,2024-06-25,353,310,3,observed,145.5,48.5,Haircare,Paid Ads,0.26,0.86
+CUST_10639,Female,43,False,False,Nigeria,2023-09-02,2025-01-14,607,107,2,observed,84.68,42.34,Bodycare,Email,0.49,0.29
+CUST_10640,Female,32,True,False,USA,2023-12-12,2025-01-18,506,103,9,observed,278.16,30.90666666666667,Haircare,Referral,0.24,0.49
+CUST_10641,Male,33,False,False,Nigeria,2023-06-02,2025-01-15,699,106,5,observed,587.43,117.48599999999999,Haircare,Organic Search,0.11,0.43
+CUST_10642,Male,47,False,False,Nigeria,2023-02-16,2023-10-22,805,557,4,observed,71.76,17.94,Haircare,Social Media,0.15,1.0
+CUST_10643,Female,34,False,False,UK,2024-08-28,2024-09-13,246,230,6,observed,335.05,55.84166666666667,Wellness,Referral,0.42,0.74
+CUST_10644,Male,25,False,False,UK,2024-03-12,2024-08-31,415,243,3,observed,25.75,8.583333333333334,Wellness,Referral,0.05,0.96
+CUST_10645,Unknown,36,False,False,UK,2023-02-16,2024-10-15,805,198,6,observed,268.82,44.803333333333335,Bodycare,Email,0.38,0.84
+CUST_10646,Male,38,False,False,Nigeria,2023-06-18,2024-09-09,683,234,4,observed,368.25,92.0625,Haircare,Referral,0.26,0.76
+CUST_10647,Male,36,False,False,USA,2024-05-13,2024-06-23,353,312,4,imputed_median,159.56,,Skincare,Referral,0.55,1.0
+CUST_10648,Female,22,False,False,Canada,2024-12-09,2025-01-10,143,111,7,observed,52.79,7.541428571428571,Makeup,Paid Ads,0.37,0.57
+CUST_10649,Male,24,False,False,USA,2024-09-02,2024-10-18,241,195,3,observed,428.91,142.97,Skincare,Social Media,0.54,0.73
+CUST_10650,Female,31,False,False,Nigeria,2023-08-30,2024-03-13,610,414,2,observed,236.73,118.365,Skincare,Referral,0.07,1.0
+CUST_10651,Unknown,27,False,False,UK,2023-10-11,2023-12-04,568,514,4,observed,205.71,51.4275,Wellness,Paid Ads,0.24,1.0
+CUST_10652,Female,16,False,True,Kenya,2023-10-19,2024-05-20,560,346,8,observed,194.39,24.29875,Wellness,Organic Search,0.07,1.0
+CUST_10653,Unknown,24,False,False,USA,2024-05-11,2025-01-29,355,92,4,observed,290.69,72.6725,Wellness,Social Media,0.64,0.48
+CUST_10654,Male,40,False,False,Kenya,2023-08-24,2023-12-14,616,504,4,observed,413.15,103.2875,Wellness,Email,0.1,1.0
+CUST_10655,Male,37,False,False,Nigeria,2024-05-11,2024-06-07,355,328,7,observed,302.44,43.205714285714286,Makeup,Email,0.36,1.0
+CUST_10656,Female,37,False,False,UK,2024-10-09,2025-01-08,204,113,5,observed,279.4,55.879999999999995,Haircare,Referral,0.5,0.55
+CUST_10657,Female,45,False,False,USA,2024-04-21,2024-12-11,375,141,2,observed,354.97,177.485,Haircare,Referral,0.09,0.41
+CUST_10658,Male,42,False,False,Nigeria,2023-06-24,2025-02-04,677,86,6,observed,215.48,35.913333333333334,Skincare,Referral,0.28,0.32
+CUST_10659,Male,42,False,False,UK,2024-08-28,2024-12-27,246,125,3,observed,233.02,77.67333333333333,Wellness,Paid Ads,0.06,0.45
+CUST_10660,Male,31,False,False,Nigeria,2023-08-16,2025-04-12,624,19,2,observed,82.6,41.3,Skincare,Organic Search,0.38,0.31
+CUST_10661,Female,30,False,False,Nigeria,2023-02-04,2024-04-14,817,382,6,observed,76.36,12.726666666666667,Skincare,Paid Ads,0.53,1.0
+CUST_10662,Female,23,False,False,USA,2024-12-10,2025-03-24,142,38,2,observed,295.36,147.68,Bodycare,Organic Search,0.08,0.2
+CUST_10663,Female,35,False,False,Kenya,2023-06-15,2024-09-27,686,216,3,observed,262.63,87.54333333333334,Skincare,Email,0.27,0.79
+CUST_10664,Male,16,False,True,Canada,2023-07-09,2024-07-22,662,283,8,observed,231.82,28.9775,Skincare,Organic Search,0.27,1.0
+CUST_10665,Male,40,False,False,Kenya,2024-06-27,2024-07-13,308,292,1,zero_with_spend_set_to_1,203.51,,Makeup,Paid Ads,0.02,0.89
+CUST_10666,Female,16,False,True,Kenya,2023-02-26,2024-08-06,795,268,6,observed,173.44,28.906666666666666,Skincare,Social Media,0.38,1.0
+CUST_10667,Male,56,False,False,Kenya,2024-01-11,2024-04-09,476,387,3,observed,622.87,207.62333333333333,Makeup,Paid Ads,0.16,1.0
+CUST_10668,Male,26,False,False,UK,2024-07-06,2024-09-02,299,241,5,observed,236.07,47.214,Makeup,Paid Ads,0.47,0.99
+CUST_10669,Male,38,False,False,Kenya,2024-05-30,2025-01-01,336,120,2,observed,59.64,29.82,Bodycare,Referral,0.1,0.48
+CUST_10670,Unknown,39,False,False,Canada,2024-12-27,2025-03-05,125,57,5,observed,490.27,98.054,Bodycare,Social Media,0.34,0.47
+CUST_10671,Female,16,False,True,Canada,2023-03-31,2023-06-21,762,680,4,observed,44.13,11.0325,Skincare,Social Media,0.1,1.0
+CUST_10672,Female,26,False,False,Canada,2023-06-04,2023-12-30,697,488,4,observed,285.65,71.4125,Bodycare,Referral,0.1,1.0
+CUST_10673,Male,24,False,False,Canada,2024-03-30,2025-04-11,397,20,1,observed,119.51,119.51,Skincare,Paid Ads,0.28,0.31
+CUST_10674,Unknown,38,False,False,Canada,2024-08-15,2025-02-06,259,84,3,observed,97.69,32.56333333333333,Wellness,Referral,0.25,0.41
+CUST_10675,Unknown,18,False,False,Kenya,2024-08-03,2024-10-09,271,204,3,observed,386.6,128.86666666666667,Bodycare,Social Media,0.1,0.72
+CUST_10676,Female,35,False,False,USA,2023-06-01,2024-05-27,700,339,3,observed,106.76,35.586666666666666,Makeup,Referral,0.3,1.0
+CUST_10677,Female,22,False,False,UK,2024-12-26,2025-03-24,126,38,5,observed,132.78,26.556,Haircare,Organic Search,0.13,0.31
+CUST_10678,Female,43,False,False,Canada,2023-09-24,2024-10-06,585,207,3,observed,286.31,95.43666666666667,Skincare,Social Media,0.49,0.68
+CUST_10679,Male,47,False,False,Nigeria,2023-06-16,2024-12-13,685,139,4,observed,20.23,5.0575,Wellness,Paid Ads,0.2,0.53
+CUST_10680,Male,16,False,True,UK,2023-01-05,2025-01-30,847,91,5,observed,143.37,28.674,Bodycare,Social Media,0.76,0.59
+CUST_10681,Unknown,33,False,False,Nigeria,2024-03-28,2024-09-17,399,226,5,observed,199.37,39.874,Skincare,Referral,0.23,0.79
+CUST_10682,Female,30,False,False,Canada,2024-09-24,2025-04-27,219,4,3,observed,43.37,14.456666666666665,Bodycare,Paid Ads,0.14,0.16
+CUST_10683,Unknown,37,False,False,Kenya,2023-07-20,2023-08-12,651,628,2,observed,170.3,85.15,Skincare,Email,0.35,1.0
+CUST_10684,Male,42,False,False,Nigeria,2024-09-11,2025-01-19,232,102,1,zero_with_spend_set_to_1,51.5,,Bodycare,Email,0.25,0.41
+CUST_10685,Female,41,False,False,USA,2023-10-19,2024-10-06,560,207,2,observed,196.88,98.44,Makeup,Email,0.19,0.69
+CUST_10686,Male,35,False,False,Kenya,2023-06-17,2024-08-24,684,250,6,observed,56.4,9.4,Makeup,Paid Ads,0.11,0.87
+CUST_10687,Male,46,False,False,Nigeria,2023-12-10,2024-01-12,508,475,6,observed,210.86,35.14333333333334,Wellness,Email,0.37,1.0
+CUST_10688,Female,33,False,False,Nigeria,2024-04-18,2025-04-16,378,15,1,zero_with_spend_set_to_1,36.72,,Haircare,Email,0.28,0.23
+CUST_10689,Female,28,False,False,USA,2023-11-06,2024-09-12,542,231,7,observed,159.46,22.78,Haircare,Organic Search,0.47,0.74
+CUST_10690,Male,55,False,False,Canada,2023-05-08,2025-03-07,724,55,5,observed,524.47,104.894,Haircare,Paid Ads,0.2,0.47
+CUST_10691,Female,40,False,False,Kenya,2024-05-19,2024-06-22,347,313,5,observed,89.42,17.884,Wellness,Social Media,0.14,1.0
+CUST_10692,Male,32,False,False,USA,2024-01-18,2024-10-06,469,207,3,observed,1090.9,363.6333333333334,Bodycare,Organic Search,0.15,0.89
+CUST_10693,Male,38,False,False,UK,2024-01-01,2024-03-24,486,403,1,zero_with_spend_set_to_1,389.19,,Bodycare,Social Media,0.25,1.0
+CUST_10694,Unknown,18,False,False,USA,2024-06-10,2024-09-17,325,226,1,observed,510.61,510.61,Skincare,Paid Ads,0.34,0.92
+CUST_10695,Unknown,33,False,False,Kenya,2024-12-02,2025-02-17,150,73,5,observed,144.43,28.886000000000003,Bodycare,Referral,0.32,0.49
+CUST_10696,Female,37,False,False,USA,2023-05-21,2024-11-01,711,181,1,observed,80.29,80.29,Wellness,Paid Ads,0.14,0.66
+CUST_10697,Female,38,False,False,Nigeria,2023-08-15,2024-02-23,625,433,4,observed,160.98,40.245,Makeup,Referral,0.3,1.0
+CUST_10698,Female,46,False,False,USA,2023-04-30,2023-09-11,732,598,4,observed,167.86,41.965,Bodycare,Paid Ads,0.22,1.0
+CUST_10699,Male,35,False,False,Nigeria,2024-06-19,2024-12-11,316,141,2,observed,296.13,148.065,Skincare,Paid Ads,0.18,0.3
+CUST_10700,Male,37,False,False,UK,2023-05-14,2023-08-02,718,638,4,observed,469.32,117.33,Skincare,Email,0.13,1.0
+CUST_10701,Male,32,True,False,USA,2023-02-03,2025-04-25,818,6,4,observed,90.28,22.57,Wellness,Social Media,0.1,0.23
+CUST_10702,Female,36,False,False,USA,2023-04-09,2023-08-13,753,627,6,observed,169.53,28.255,Haircare,Social Media,0.48,1.0
+CUST_10703,Female,18,False,False,Kenya,2024-08-16,2025-02-10,258,80,3,observed,133.8,44.6,Makeup,Referral,0.38,0.45
+CUST_10704,Female,33,False,False,Nigeria,2023-01-15,2024-07-09,837,296,2,observed,160.4,80.2,Bodycare,Referral,0.26,1.0
+CUST_10705,Female,35,False,False,USA,2023-08-08,2025-01-05,632,116,1,observed,344.04,344.04,Makeup,Organic Search,0.06,0.43
+CUST_10706,Male,33,False,False,Canada,2024-03-10,2024-06-27,417,308,3,observed,309.81,103.27,Bodycare,Organic Search,0.49,1.0
+CUST_10707,Unknown,38,False,False,Kenya,2024-12-22,2025-03-05,130,57,5,observed,8.99,1.798,Bodycare,Email,0.07,0.47
+CUST_10708,Female,40,False,False,Kenya,2024-12-04,2025-03-27,148,35,7,observed,160.97,22.995714285714286,Wellness,Organic Search,0.27,0.31
+CUST_10709,Male,28,False,False,Kenya,2023-07-03,2023-07-16,668,655,4,observed,143.96,35.99,Skincare,Referral,0.07,1.0
+CUST_10710,Female,25,False,False,Canada,2024-02-15,2025-02-04,441,86,6,observed,130.87,21.811666666666667,Haircare,Paid Ads,0.17,0.43
+CUST_10711,Female,50,False,False,Canada,2023-05-06,2023-12-30,726,488,1,observed,239.21,239.21,Bodycare,Referral,0.13,1.0
+CUST_10712,Unknown,31,False,False,Canada,2023-12-31,2024-08-30,487,244,7,observed,484.94,69.27714285714286,Wellness,Paid Ads,0.41,0.87
+CUST_10713,Male,26,False,False,Kenya,2024-05-16,2025-01-25,350,96,9,observed,182.92,20.324444444444442,Skincare,Organic Search,0.33,0.39
+CUST_10714,Female,33,False,False,USA,2023-07-03,2024-07-28,668,277,4,observed,458.79,114.6975,Bodycare,Organic Search,0.54,0.96
+CUST_10715,Female,20,False,False,Nigeria,2024-05-19,2025-01-12,347,109,2,observed,142.36,71.18,Wellness,Referral,0.53,0.7
+CUST_10716,Female,46,False,False,Nigeria,2024-07-13,2024-07-22,292,283,4,observed,57.64,14.41,Wellness,Organic Search,0.2,0.9
+CUST_10717,Male,38,False,False,Canada,2024-03-29,2024-11-19,398,163,3,observed,89.7,29.900000000000002,Bodycare,Paid Ads,0.18,0.65
+CUST_10718,Male,33,False,False,Kenya,2024-02-03,2024-10-09,453,204,5,observed,82.36,16.472,Wellness,Referral,0.49,0.77
+CUST_10719,Unknown,16,False,True,Nigeria,2023-06-10,2024-11-09,691,173,6,observed,128.74,21.456666666666667,Makeup,Referral,0.65,0.65
+CUST_10720,Female,38,False,False,Kenya,2023-11-25,2024-01-26,523,461,4,imputed_median,178.03,,Bodycare,Referral,0.43,1.0
+CUST_10721,Female,44,False,False,Kenya,2024-01-25,2024-03-14,462,413,3,observed,39.58,13.193333333333333,Wellness,Paid Ads,0.12,1.0
+CUST_10722,Male,31,False,False,Kenya,2024-08-29,2024-09-19,245,224,5,observed,355.55,71.11,Bodycare,Paid Ads,0.33,0.82
+CUST_10723,Female,20,False,False,USA,2024-04-16,2025-03-18,380,44,1,zero_with_spend_set_to_1,433.76,,Wellness,Email,0.12,0.41
+CUST_10724,Unknown,32,True,False,Kenya,2024-01-22,2024-11-09,465,173,6,observed,228.28,38.04666666666667,Wellness,Paid Ads,0.3,0.75
+CUST_10725,Female,22,False,False,Kenya,2023-06-20,2025-03-10,681,52,4,observed,117.41,29.3525,Haircare,Organic Search,0.11,0.34
+CUST_10726,Unknown,23,False,False,Kenya,2023-02-18,2023-12-19,803,499,4,observed,225.98,56.495,Haircare,Organic Search,0.11,1.0
+CUST_10727,Unknown,16,False,True,Kenya,2023-10-07,2023-12-14,572,504,5,observed,162.88,32.576,Wellness,Organic Search,0.56,1.0
+CUST_10728,Female,27,False,False,Kenya,2024-03-19,2025-02-21,408,69,7,observed,428.83,61.26142857142857,Wellness,Referral,0.46,0.29
+CUST_10729,Male,40,False,False,Nigeria,2023-07-04,2023-07-23,667,648,5,observed,732.76,146.552,Haircare,Paid Ads,0.35,1.0
+CUST_10730,Male,16,False,True,Nigeria,2024-09-21,2025-04-27,222,4,2,observed,459.31,229.655,Makeup,Organic Search,0.56,0.27
+CUST_10731,Unknown,38,False,False,Canada,2023-06-01,2024-02-02,700,454,5,observed,529.68,105.93599999999999,Bodycare,Email,0.08,1.0
+CUST_10732,Female,27,False,False,USA,2024-10-11,2024-12-02,202,150,3,observed,377.86,125.95333333333333,Bodycare,Social Media,0.09,0.61
+CUST_10733,Unknown,16,False,True,UK,2023-04-27,2023-09-27,735,582,6,observed,104.67,17.445,Bodycare,Referral,0.7,1.0
+CUST_10734,Male,32,False,False,USA,2023-07-26,2024-01-05,645,482,5,observed,144.23,28.845999999999997,Bodycare,Paid Ads,0.51,1.0
+CUST_10735,Female,35,False,False,Canada,2023-01-21,2023-03-18,831,775,3,observed,197.17,65.72333333333333,Makeup,Organic Search,0.12,1.0
+CUST_10736,Male,17,False,True,USA,2024-02-11,2025-04-15,445,16,1,observed,412.71,412.71,Skincare,Referral,0.43,0.08
+CUST_10737,Female,39,False,False,Nigeria,2024-06-21,2024-10-27,314,186,1,observed,405.03,405.03,Makeup,Social Media,0.09,0.72
+CUST_10738,Female,33,False,False,Canada,2023-08-30,2024-11-05,610,177,5,observed,79.63,15.925999999999998,Haircare,Email,0.17,0.49
+CUST_10739,Male,16,False,True,Nigeria,2023-02-27,2024-07-13,794,292,4,observed,358.45,89.6125,Skincare,Email,0.57,1.0
+CUST_10740,Male,33,False,False,Kenya,2023-05-29,2024-06-03,703,332,4,observed,94.5,23.625,Bodycare,Referral,0.36,1.0
+CUST_10741,Female,20,False,False,USA,2024-12-08,2025-02-07,144,83,5,observed,140.65,28.130000000000003,Bodycare,Organic Search,0.31,0.47
+CUST_10742,Unknown,33,False,False,Canada,2024-02-02,2024-02-06,454,450,8,observed,331.93,41.49125,Bodycare,Paid Ads,0.28,1.0
+CUST_10743,Female,35,False,False,UK,2024-03-25,2025-02-11,402,79,3,observed,304.78,101.59333333333332,Wellness,Social Media,0.41,0.49
+CUST_10744,Female,24,False,False,Canada,2024-04-27,2024-11-24,369,158,3,observed,234.53,78.17666666666666,Wellness,Organic Search,0.11,0.69
+CUST_10745,Male,35,False,False,Nigeria,2023-03-09,2024-03-03,784,424,4,observed,347.05,86.7625,Makeup,Email,0.31,1.0
+CUST_10746,Female,40,False,False,UK,2024-10-07,2025-01-28,206,93,6,observed,237.91,39.651666666666664,Wellness,Social Media,0.29,0.61
+CUST_10747,Female,28,False,False,USA,2023-06-11,2024-02-21,690,435,6,observed,276.83,46.13833333333333,Haircare,Email,0.55,1.0
+CUST_10748,Female,45,False,False,UK,2023-09-24,2024-03-19,585,408,3,observed,740.73,246.91,Bodycare,Email,0.07,1.0
+CUST_10749,Female,31,False,False,Canada,2024-08-07,2024-11-29,267,153,4,imputed_median,214.75,,Makeup,Paid Ads,0.23,0.68
+CUST_10750,Female,31,False,False,UK,2023-09-26,2024-03-16,583,411,4,observed,354.57,88.6425,Makeup,Organic Search,0.12,1.0
+CUST_10751,Female,31,False,False,Nigeria,2023-05-01,2023-05-15,731,717,4,observed,289.99,72.4975,Wellness,Email,0.39,1.0
+CUST_10752,Female,35,False,False,UK,2023-07-15,2024-04-12,656,384,5,observed,91.77,18.354,Haircare,Paid Ads,0.27,1.0
+CUST_10753,Unknown,35,False,False,Kenya,2024-11-24,2025-01-11,158,110,3,observed,324.01,108.00333333333333,Haircare,Social Media,0.46,0.38
+CUST_10754,Male,26,False,False,UK,2024-01-14,2024-11-07,473,175,3,observed,283.59,94.52999999999999,Skincare,Social Media,0.08,0.54
+CUST_10755,Male,30,False,False,Canada,2024-12-26,2025-02-18,126,72,1,zero_with_spend_set_to_1,419.08,,Skincare,Organic Search,0.25,0.29
+CUST_10756,Female,37,False,False,Canada,2023-12-29,2024-11-03,489,179,3,observed,574.05,191.35,Makeup,Organic Search,0.1,0.87
+CUST_10757,Female,57,False,False,Nigeria,2024-01-26,2024-06-28,461,307,4,observed,137.87,34.4675,Haircare,Referral,0.53,1.0
+CUST_10758,Female,37,False,False,Kenya,2023-06-23,2024-11-19,678,163,4,observed,436.04,109.01,Wellness,Social Media,0.19,0.63
+CUST_10759,Unknown,16,False,True,Kenya,2023-04-30,2024-03-15,732,412,4,observed,77.01,19.2525,Bodycare,Email,0.26,1.0
+CUST_10760,Female,39,False,False,Kenya,2024-09-19,2025-04-19,224,12,6,observed,165.55,27.59166666666667,Bodycare,Paid Ads,0.41,0.08
+CUST_10761,Female,33,False,False,Canada,2023-06-04,2024-12-24,697,128,2,observed,293.25,146.625,Wellness,Paid Ads,0.3,0.77
+CUST_10762,Female,42,False,False,USA,2024-04-26,2024-09-06,370,237,4,observed,187.11,46.7775,Skincare,Email,0.33,0.78
+CUST_10763,Female,40,False,False,Nigeria,2024-05-11,2024-12-31,355,121,6,observed,202.55,33.75833333333333,Haircare,Organic Search,0.35,0.57
+CUST_10764,Male,44,False,False,UK,2023-06-22,2024-11-23,679,159,5,observed,630.23,126.046,Makeup,Organic Search,0.18,0.83
+CUST_10765,Unknown,33,False,False,UK,2024-03-02,2024-04-10,425,386,1,observed,139.74,139.74,Skincare,Organic Search,0.47,1.0
+CUST_10766,Female,45,False,False,USA,2024-02-08,2024-08-17,448,257,6,observed,271.28,45.21333333333333,Bodycare,Organic Search,0.09,1.0
+CUST_10767,Male,30,False,False,Canada,2024-04-09,2025-02-24,387,66,4,observed,100.88,25.22,Skincare,Organic Search,0.27,0.4
+CUST_10768,Unknown,19,False,False,Kenya,2024-08-05,2024-10-10,269,203,4,observed,127.14,31.785,Bodycare,Organic Search,0.29,0.64
+CUST_10769,Female,19,False,False,Nigeria,2024-01-26,2024-03-13,461,414,3,observed,107.89,35.96333333333333,Wellness,Paid Ads,0.4,1.0
+CUST_10770,Male,43,False,False,Canada,2023-10-19,2024-03-24,560,403,5,observed,230.03,46.006,Wellness,Social Media,0.44,1.0
+CUST_10771,Unknown,40,False,False,USA,2024-01-12,2024-09-30,475,213,8,observed,83.18,10.3975,Wellness,Referral,0.14,0.86
+CUST_10772,Unknown,42,False,False,Canada,2024-01-13,2024-11-22,474,160,6,observed,258.54,43.09,Skincare,Social Media,0.42,0.65
+CUST_10773,Male,36,False,False,UK,2024-05-22,2025-02-15,344,75,6,observed,289.98,48.330000000000005,Bodycare,Organic Search,0.3,0.5
+CUST_10774,Male,20,False,False,UK,2024-12-01,2025-02-15,151,75,2,observed,235.42,117.71,Bodycare,Referral,0.33,0.43
+CUST_10775,Female,30,False,False,Nigeria,2023-04-21,2024-09-24,741,219,7,observed,51.62,7.374285714285714,Makeup,Social Media,0.05,0.71
+CUST_10776,Female,38,False,False,Nigeria,2023-01-17,2023-05-13,835,719,3,observed,223.56,74.52,Haircare,Organic Search,0.56,1.0
+CUST_10777,Female,39,False,False,Kenya,2023-11-18,2025-02-25,530,65,1,observed,10.42,10.42,Bodycare,Paid Ads,0.52,0.22
+CUST_10778,Male,24,False,False,Nigeria,2023-09-23,2024-01-09,586,478,6,observed,2700.05,450.0083333333334,Wellness,Paid Ads,0.05,1.0
+CUST_10779,Male,28,False,False,Canada,2024-11-04,2025-04-07,178,24,4,observed,28.94,7.235,Makeup,Email,0.17,0.09
+CUST_10780,Female,32,False,False,UK,2023-01-15,2023-07-29,837,642,5,observed,1733.85,346.77,Haircare,Paid Ads,0.33,1.0
+CUST_10781,Male,37,False,False,UK,2024-03-22,2025-02-05,405,85,4,observed,314.2,78.55,Skincare,Email,0.17,0.36
+CUST_10782,Male,28,False,False,USA,2023-04-30,2023-10-17,732,562,3,observed,706.36,235.45333333333335,Wellness,Email,0.25,1.0
+CUST_10783,Female,43,False,False,Nigeria,2023-09-06,2024-03-30,603,397,4,observed,108.4,27.1,Wellness,Organic Search,0.25,1.0
+CUST_10784,Female,32,False,False,Canada,2024-03-01,2024-11-09,426,173,3,observed,326.13,108.71,Makeup,Organic Search,0.55,0.77
+CUST_10785,Male,21,False,False,Nigeria,2024-08-28,2025-03-01,246,61,2,observed,256.67,128.335,Wellness,Organic Search,0.14,0.31
+CUST_10786,Unknown,32,True,False,Nigeria,2023-11-20,2024-01-24,528,463,6,observed,80.64,13.44,Wellness,Referral,0.25,1.0
+CUST_10787,Female,16,False,True,Canada,2023-01-22,2023-07-06,830,665,4,observed,22.56,5.64,Bodycare,Referral,0.3,1.0
+CUST_10788,Male,44,False,False,Kenya,2024-09-08,2025-04-14,235,17,2,observed,424.83,212.415,Haircare,Email,0.19,0.12
+CUST_10789,Male,28,False,False,Kenya,2024-04-28,2024-07-19,368,286,6,observed,257.2,42.86666666666667,Skincare,Paid Ads,0.27,1.0
+CUST_10790,Male,40,False,False,Nigeria,2024-05-18,2024-07-08,348,297,6,observed,43.47,7.245,Wellness,Paid Ads,0.38,0.91
+CUST_10791,Unknown,32,True,False,USA,2024-01-03,2025-03-29,484,33,6,observed,167.4,27.900000000000002,Haircare,Referral,0.18,0.24
+CUST_10792,Female,37,False,False,Kenya,2024-03-16,2024-05-13,411,353,2,observed,26.95,13.475,Haircare,Social Media,0.42,1.0
+CUST_10793,Female,18,False,False,Nigeria,2023-10-01,2024-03-03,578,424,1,observed,275.71,275.71,Makeup,Organic Search,0.12,1.0
+CUST_10794,Male,45,False,False,USA,2023-04-19,2025-01-03,743,118,5,observed,123.85,24.77,Skincare,Organic Search,0.07,0.57
+CUST_10795,Unknown,22,False,False,USA,2023-07-30,2024-08-03,641,271,4,observed,126.73,31.6825,Wellness,Email,0.35,0.97
+CUST_10796,Female,29,False,False,Kenya,2023-12-09,2025-01-31,509,90,1,observed,322.16,322.16,Wellness,Organic Search,0.06,0.6
+CUST_10797,Male,47,False,False,Canada,2023-12-16,2024-05-10,502,356,5,observed,141.85,28.369999999999997,Bodycare,Email,0.14,1.0
+CUST_10798,Female,48,False,False,UK,2023-06-05,2024-11-28,696,154,3,observed,564.7,188.23333333333335,Wellness,Email,0.4,0.63
+CUST_10799,Male,36,False,False,Nigeria,2024-11-29,2025-03-01,153,61,6,observed,79.59,13.265,Skincare,Referral,0.43,0.24
+CUST_10800,Female,35,False,False,Kenya,2024-02-16,2025-03-17,440,45,3,observed,106.8,35.6,Skincare,Paid Ads,0.21,0.3
+CUST_10801,Unknown,33,False,False,Nigeria,2023-10-30,2025-01-01,549,120,6,observed,566.87,94.47833333333334,Makeup,Social Media,0.28,0.53
+CUST_10802,Female,32,True,False,Kenya,2024-06-24,2024-09-07,311,236,8,observed,100.43,12.55375,Haircare,Referral,0.23,0.82
+CUST_10803,Unknown,32,False,False,Kenya,2024-10-26,2025-02-06,187,84,3,observed,306.95,102.31666666666666,Skincare,Social Media,0.21,0.36
+CUST_10804,Male,30,False,False,UK,2024-06-16,2025-03-19,319,43,3,observed,205.87,68.62333333333333,Makeup,Social Media,0.59,0.22
+CUST_10805,Male,32,True,False,Nigeria,2024-08-29,2024-11-03,245,179,5,observed,35.47,7.093999999999999,Wellness,Organic Search,0.09,0.69
+CUST_10806,Female,45,False,False,Kenya,2024-10-04,2025-02-10,209,80,2,observed,143.7,71.85,Skincare,Referral,0.41,0.54
+CUST_10807,Female,33,False,False,UK,2024-08-18,2024-12-15,256,137,3,observed,217.08,72.36,Makeup,Email,0.15,0.71
+CUST_10808,Unknown,36,False,False,USA,2023-12-02,2024-06-16,516,319,2,observed,105.54,52.77,Skincare,Email,0.36,1.0
+CUST_10809,Male,44,False,False,USA,2024-03-11,2024-05-16,416,350,4,observed,413.8,103.45,Bodycare,Email,0.12,1.0
+CUST_10810,Unknown,33,False,False,Canada,2023-09-28,2025-02-19,581,71,7,observed,166.75,23.821428571428573,Wellness,Email,0.26,0.42
+CUST_10811,Male,34,False,False,UK,2024-05-11,2024-12-31,355,121,3,observed,171.55,57.18333333333334,Makeup,Paid Ads,0.42,0.51
+CUST_10812,Male,23,False,False,UK,2024-07-26,2025-01-31,279,90,2,observed,382.92,191.46,Wellness,Social Media,0.44,0.44
+CUST_10813,Unknown,32,False,False,Nigeria,2023-06-06,2023-10-04,695,575,6,observed,323.0,53.833333333333336,Bodycare,Organic Search,0.59,1.0
+CUST_10814,Male,32,False,False,Nigeria,2024-03-07,2024-03-31,420,396,3,observed,516.28,172.09333333333333,Bodycare,Email,0.52,1.0
+CUST_10815,Female,28,False,False,Kenya,2023-03-11,2023-04-25,782,737,4,observed,113.57,28.3925,Makeup,Social Media,0.41,1.0
+CUST_10816,Male,31,False,False,Nigeria,2023-05-16,2023-10-04,716,575,7,observed,567.56,81.08,Wellness,Paid Ads,0.23,1.0
+CUST_10817,Female,27,False,False,Nigeria,2024-11-11,2025-04-19,171,12,2,observed,159.32,79.66,Wellness,Organic Search,0.67,0.26
+CUST_10818,Male,40,False,False,USA,2023-06-19,2023-07-14,682,657,9,observed,451.19,50.132222222222225,Bodycare,Organic Search,0.41,1.0
+CUST_10819,Unknown,24,False,False,Nigeria,2024-07-08,2025-04-29,297,2,3,observed,78.94,26.313333333333333,Makeup,Email,0.26,0.19
+CUST_10820,Unknown,19,False,False,USA,2024-11-05,2025-03-21,177,41,5,observed,1872.85,374.57,Haircare,Referral,0.38,0.35
+CUST_10821,Male,22,False,False,Nigeria,2024-09-13,2024-12-04,230,148,6,observed,56.54,9.423333333333334,Skincare,Paid Ads,0.3,0.69
+CUST_10822,Male,32,True,False,Nigeria,2023-11-21,2024-12-16,527,136,4,observed,163.51,40.8775,Skincare,Social Media,0.1,0.75
+CUST_10823,Male,27,False,False,USA,2023-06-07,2024-04-16,694,380,5,observed,141.17,28.233999999999998,Skincare,Social Media,0.37,1.0
+CUST_10824,Male,32,True,False,USA,2023-11-02,2024-12-05,546,147,6,observed,318.94,53.156666666666666,Bodycare,Organic Search,0.4,0.47
+CUST_10825,Female,39,False,False,Nigeria,2024-08-23,2024-10-22,251,191,1,observed,159.34,159.34,Wellness,Social Media,0.27,0.68
+CUST_10826,Female,36,False,False,Nigeria,2024-02-21,2024-03-25,435,402,8,observed,361.97,45.24625,Haircare,Organic Search,0.44,1.0
+CUST_10827,Female,22,False,False,Nigeria,2024-11-22,2024-12-17,160,135,5,observed,138.2,27.639999999999997,Haircare,Email,0.35,0.61
+CUST_10828,Male,37,False,False,Nigeria,2023-07-28,2023-12-20,643,498,5,observed,166.76,33.352,Haircare,Email,0.5,1.0
+CUST_10829,Unknown,32,False,False,USA,2024-04-20,2025-03-03,376,59,3,observed,204.85,68.28333333333333,Skincare,Email,0.19,0.33
+CUST_10830,Female,35,False,False,Canada,2023-12-26,2025-03-01,492,61,3,observed,547.73,182.57666666666668,Makeup,Paid Ads,0.18,0.51
+CUST_10831,Unknown,46,False,False,Kenya,2023-04-02,2024-05-10,760,356,8,observed,195.29,24.41125,Makeup,Email,0.47,1.0
+CUST_10832,Male,16,False,True,Kenya,2024-11-29,2025-02-24,153,66,2,observed,455.27,227.635,Wellness,Social Media,0.15,0.31
+CUST_10833,Female,35,False,False,Nigeria,2023-12-03,2023-12-19,515,499,3,observed,405.06,135.02,Skincare,Organic Search,0.41,1.0
+CUST_10834,Female,19,False,False,Canada,2024-07-23,2025-03-30,282,32,9,observed,277.72,30.85777777777778,Skincare,Email,0.42,0.13
+CUST_10835,Female,29,False,False,Canada,2024-09-07,2024-12-07,236,145,3,observed,65.9,21.96666666666667,Skincare,Social Media,0.2,0.51
+CUST_10836,Male,28,False,False,UK,2023-01-21,2025-03-07,831,55,8,observed,130.64,16.33,Bodycare,Referral,0.34,0.35
+CUST_10837,Female,38,False,False,UK,2023-08-28,2025-01-14,612,107,6,observed,365.64,60.94,Wellness,Referral,0.08,0.35
+CUST_10838,Male,32,True,False,Canada,2023-04-24,2024-02-02,738,454,3,observed,426.77,142.25666666666666,Makeup,Referral,0.13,1.0
+CUST_10839,Unknown,26,False,False,USA,2024-08-25,2024-09-26,249,217,3,observed,146.51,48.836666666666666,Makeup,Referral,0.45,0.82
+CUST_10840,Female,33,False,False,USA,2024-12-10,2025-04-25,142,6,9,observed,545.15,60.57222222222222,Wellness,Email,0.56,0.21
+CUST_10841,Female,16,False,True,Kenya,2024-03-18,2024-10-12,409,201,6,observed,730.0,121.66666666666667,Wellness,Referral,0.2,0.85
+CUST_10842,Female,27,False,False,UK,2023-02-18,2023-11-29,803,519,3,observed,132.27,44.09,Bodycare,Paid Ads,0.12,1.0
+CUST_10843,Female,29,False,False,Nigeria,2023-01-26,2025-02-19,826,71,7,observed,482.86,68.98,Skincare,Paid Ads,0.43,0.38
+CUST_10844,Male,37,False,False,USA,2024-10-03,2025-03-12,210,50,3,observed,278.32,92.77333333333333,Skincare,Social Media,0.39,0.19
+CUST_10845,Female,41,False,False,Canada,2023-09-02,2024-08-15,607,259,2,observed,760.39,380.195,Makeup,Organic Search,0.09,0.99
+CUST_10846,Unknown,44,False,False,USA,2024-10-02,2025-01-24,211,97,6,observed,118.07,19.67833333333333,Skincare,Email,0.09,0.56
+CUST_10847,Female,46,False,False,USA,2023-05-11,2023-07-13,721,658,6,observed,181.15,30.191666666666666,Bodycare,Email,0.1,1.0
+CUST_10848,Female,28,False,False,USA,2024-07-26,2024-08-21,279,253,4,observed,251.65,62.9125,Skincare,Email,0.44,0.76
+CUST_10849,Male,28,False,False,Nigeria,2023-01-11,2024-04-19,841,377,4,observed,125.06,31.265,Makeup,Social Media,0.14,1.0
+CUST_10850,Female,34,False,False,Kenya,2024-08-24,2024-10-12,250,201,6,observed,879.9,146.65,Skincare,Paid Ads,0.3,0.7
+CUST_10851,Unknown,16,False,True,Nigeria,2023-09-20,2024-09-17,589,226,4,observed,467.96,116.99,Wellness,Paid Ads,0.07,0.77
+CUST_10852,Female,16,False,True,Kenya,2024-08-21,2024-12-10,253,142,4,observed,146.55,36.6375,Bodycare,Referral,0.55,0.69
+CUST_10853,Male,33,False,False,Kenya,2024-09-09,2024-12-05,234,147,6,observed,850.44,141.74,Makeup,Paid Ads,0.41,0.54
+CUST_10854,Female,29,False,False,Nigeria,2023-02-25,2024-05-02,796,364,4,observed,179.41,44.8525,Haircare,Social Media,0.09,1.0
+CUST_10855,Male,43,False,False,Canada,2024-09-06,2025-03-02,237,60,7,observed,324.28,46.325714285714284,Bodycare,Email,0.54,0.32
+CUST_10856,Female,30,False,False,Canada,2023-02-13,2024-07-04,808,301,4,observed,1152.05,288.0125,Haircare,Email,0.27,1.0
+CUST_10857,Unknown,29,False,False,Canada,2023-12-06,2024-12-24,512,128,5,observed,10.23,2.0460000000000003,Skincare,Organic Search,0.06,0.52
+CUST_10858,Female,32,True,False,USA,2023-05-26,2024-03-18,706,409,6,observed,233.28,38.88,Bodycare,Organic Search,0.25,1.0
+CUST_10859,Male,20,False,False,UK,2023-08-13,2024-05-07,627,359,2,observed,279.04,139.52,Makeup,Paid Ads,0.21,1.0
+CUST_10860,Female,36,False,False,Kenya,2023-04-14,2023-05-05,748,727,5,observed,63.67,12.734,Skincare,Paid Ads,0.17,1.0
+CUST_10861,Female,19,False,False,Kenya,2024-01-17,2024-12-20,470,132,4,observed,299.31,74.8275,Makeup,Organic Search,0.1,0.36
+CUST_10862,Female,37,False,False,UK,2023-07-14,2024-01-26,657,461,3,observed,318.75,106.25,Bodycare,Paid Ads,0.34,1.0
+CUST_10863,Female,23,False,False,Nigeria,2023-07-13,2025-01-11,658,110,2,observed,50.85,25.425,Haircare,Social Media,0.14,0.47
+CUST_10864,Male,29,False,False,Nigeria,2024-05-15,2024-08-30,351,244,4,observed,315.23,78.8075,Makeup,Referral,0.36,0.89
+CUST_10865,Male,36,False,False,Nigeria,2024-01-19,2024-09-30,468,213,5,observed,341.82,68.364,Bodycare,Email,0.16,0.82
+CUST_10866,Male,33,False,False,Nigeria,2024-02-15,2025-01-06,441,115,4,observed,85.43,21.3575,Skincare,Paid Ads,0.35,0.6
+CUST_10867,Male,18,False,False,Canada,2023-08-12,2024-06-20,628,315,4,observed,196.55,49.1375,Haircare,Social Media,0.29,1.0
+CUST_10868,Female,30,False,False,UK,2023-03-28,2024-01-24,765,463,1,observed,233.55,233.55,Makeup,Referral,0.42,1.0
+CUST_10869,Unknown,41,False,False,Canada,2024-04-23,2024-11-30,373,152,2,observed,35.91,17.955,Bodycare,Organic Search,0.26,0.53
+CUST_10870,Male,33,False,False,Kenya,2024-10-22,2024-11-10,191,172,6,observed,73.27,12.211666666666666,Makeup,Organic Search,0.12,0.63
+CUST_10871,Female,37,False,False,USA,2023-05-02,2023-07-14,730,657,2,observed,116.42,58.21,Bodycare,Social Media,0.29,1.0
+CUST_10872,Female,47,False,False,Kenya,2023-07-15,2025-03-24,656,38,2,observed,240.71,120.355,Makeup,Organic Search,0.06,0.26
+CUST_10873,Female,40,False,False,Kenya,2024-02-18,2024-09-12,438,231,5,observed,194.11,38.822,Skincare,Referral,0.26,0.93
+CUST_10874,Male,32,False,False,UK,2023-08-21,2024-03-22,619,405,1,zero_with_spend_set_to_1,164.72,,Makeup,Email,0.09,1.0
+CUST_10875,Female,28,False,False,Kenya,2023-07-12,2024-09-23,659,220,4,observed,313.79,78.4475,Haircare,Referral,0.23,0.72
+CUST_10876,Female,41,False,False,Nigeria,2023-05-12,2024-03-19,720,408,3,observed,1314.8,438.26666666666665,Bodycare,Email,0.51,1.0
+CUST_10877,Male,36,False,False,Canada,2024-12-08,2025-04-24,144,7,6,observed,79.14,13.19,Makeup,Paid Ads,0.52,0.32
+CUST_10878,Male,16,False,True,Kenya,2024-08-04,2025-02-20,270,70,5,observed,358.68,71.736,Wellness,Email,0.45,0.42
+CUST_10879,Male,40,False,False,Kenya,2024-08-06,2025-03-25,268,37,2,observed,611.01,305.505,Haircare,Referral,0.13,0.1
+CUST_10880,Male,32,True,False,Nigeria,2024-05-15,2024-05-28,351,338,5,observed,476.73,95.346,Wellness,Paid Ads,0.36,1.0
+CUST_10881,Female,39,False,False,USA,2024-04-10,2024-05-09,386,357,4,observed,1633.75,408.4375,Bodycare,Email,0.27,1.0
+CUST_10882,Male,49,False,False,USA,2023-05-13,2024-11-12,719,170,5,observed,251.56,50.312,Wellness,Paid Ads,0.27,0.72
+CUST_10883,Male,34,False,False,Kenya,2024-03-18,2025-03-16,409,46,3,observed,83.27,27.756666666666664,Makeup,Referral,0.09,0.35
+CUST_10884,Male,48,False,False,Canada,2023-10-10,2024-05-03,569,363,4,imputed_median,399.43,,Skincare,Referral,0.38,1.0
+CUST_10885,Male,42,False,False,Nigeria,2024-05-17,2025-01-07,349,114,6,observed,356.51,59.41833333333333,Skincare,Email,0.34,0.69
+CUST_10886,Female,33,False,False,Kenya,2024-02-05,2024-12-14,451,138,6,observed,607.68,101.27999999999999,Wellness,Referral,0.5,0.56
+CUST_10887,Male,33,False,False,UK,2024-12-16,2025-01-09,136,112,4,observed,311.95,77.9875,Haircare,Paid Ads,0.54,0.49
+CUST_10888,Female,32,False,False,Nigeria,2023-10-26,2024-01-02,553,485,7,observed,112.9,16.12857142857143,Haircare,Email,0.26,1.0
+CUST_10889,Unknown,16,False,True,Kenya,2023-03-20,2025-05-01,773,0,6,observed,151.12,25.186666666666667,Bodycare,Paid Ads,0.26,0.19
+CUST_10890,Female,41,False,False,USA,2024-04-18,2024-05-01,378,365,4,observed,279.91,69.9775,Wellness,Email,0.69,1.0
+CUST_10891,Male,33,False,False,USA,2023-09-14,2024-01-09,595,478,4,observed,122.17,30.5425,Wellness,Organic Search,0.02,1.0
+CUST_10892,Female,38,False,False,UK,2024-12-31,2025-05-01,121,0,3,observed,251.08,83.69333333333334,Bodycare,Paid Ads,0.23,0.25
+CUST_10893,Female,26,False,False,UK,2023-10-29,2024-03-04,550,423,8,observed,159.52,19.94,Skincare,Organic Search,0.36,1.0
+CUST_10894,Female,16,False,True,Kenya,2023-07-02,2024-02-08,669,448,2,observed,334.0,167.0,Makeup,Organic Search,0.3,1.0
+CUST_10895,Unknown,32,False,False,USA,2024-02-04,2025-01-22,452,99,4,observed,94.59,23.6475,Skincare,Email,0.35,0.29
+CUST_10896,Male,38,False,False,Kenya,2023-09-02,2024-03-24,607,403,3,observed,238.5,79.5,Skincare,Paid Ads,0.12,1.0
+CUST_10897,Female,23,False,False,USA,2024-11-11,2024-12-23,171,129,4,observed,308.69,77.1725,Makeup,Social Media,0.23,0.44
+CUST_10898,Female,16,False,True,UK,2024-10-01,2024-11-23,212,159,4,observed,288.11,72.0275,Wellness,Paid Ads,0.32,0.63
+CUST_10899,Female,37,False,False,UK,2023-01-16,2024-03-02,836,425,6,observed,401.5,66.91666666666667,Haircare,Organic Search,0.24,1.0
+CUST_10900,Female,34,False,False,Kenya,2023-02-14,2023-04-23,807,739,3,observed,739.82,246.60666666666668,Makeup,Organic Search,0.3,1.0
+CUST_10901,Unknown,41,False,False,Nigeria,2023-06-25,2024-03-08,676,419,6,observed,201.56,33.593333333333334,Wellness,Paid Ads,0.13,1.0
+CUST_10902,Female,23,False,False,Kenya,2024-11-13,2025-03-16,169,46,6,observed,112.5,18.75,Makeup,Referral,0.2,0.23
+CUST_10903,Male,22,False,False,USA,2023-08-27,2023-09-17,613,592,1,observed,98.23,98.23,Bodycare,Email,0.36,1.0
+CUST_10904,Male,43,False,False,USA,2023-05-21,2024-06-07,711,328,6,observed,172.7,28.78333333333333,Wellness,Organic Search,0.16,1.0
+CUST_10905,Male,26,False,False,Nigeria,2024-03-30,2025-04-12,397,19,5,observed,293.46,58.69199999999999,Bodycare,Organic Search,0.12,0.23
+CUST_10906,Unknown,31,False,False,Canada,2024-10-25,2025-01-06,188,115,2,observed,171.08,85.54,Bodycare,Paid Ads,0.31,0.48
+CUST_10907,Unknown,41,False,False,UK,2024-12-04,2025-01-29,148,92,2,observed,177.9,88.95,Bodycare,Organic Search,0.38,0.41
+CUST_10908,Female,45,False,False,USA,2023-07-17,2023-09-08,654,601,7,observed,343.91,49.13,Haircare,Paid Ads,0.25,1.0
+CUST_10909,Unknown,24,False,False,UK,2023-08-30,2025-01-30,610,91,3,observed,216.4,72.13333333333334,Bodycare,Paid Ads,0.15,0.49
+CUST_10910,Male,36,False,False,Nigeria,2023-09-12,2024-07-18,597,287,6,observed,221.57,36.928333333333335,Haircare,Email,0.18,1.0
+CUST_10911,Female,25,False,False,Kenya,2024-02-12,2024-08-23,444,251,4,observed,431.86,107.965,Makeup,Email,0.45,0.86
+CUST_10912,Male,38,False,False,Canada,2023-01-21,2025-03-11,831,51,6,observed,209.69,34.94833333333333,Bodycare,Paid Ads,0.1,0.21
+CUST_10913,Unknown,27,False,False,Kenya,2024-01-25,2024-09-18,462,225,2,observed,137.98,68.99,Makeup,Organic Search,0.03,0.75
+CUST_10914,Female,18,False,False,Canada,2023-07-20,2023-12-25,651,493,4,observed,2773.65,693.4125,Makeup,Social Media,0.74,1.0
+CUST_10915,Male,32,False,False,Canada,2024-02-09,2025-02-23,447,67,2,observed,213.84,106.92,Makeup,Organic Search,0.15,0.26
+CUST_10916,Female,38,False,False,Nigeria,2023-06-16,2023-12-31,685,487,6,observed,75.52,12.586666666666666,Bodycare,Email,0.28,1.0
+CUST_10917,Female,32,False,False,Canada,2024-03-10,2025-03-21,417,41,4,observed,174.55,43.6375,Bodycare,Organic Search,0.11,0.41
+CUST_10918,Male,29,False,False,Canada,2024-11-28,2025-01-04,154,117,2,observed,115.08,57.54,Haircare,Organic Search,0.17,0.48
+CUST_10919,Male,37,False,False,Nigeria,2023-03-24,2024-09-04,769,239,5,observed,202.85,40.57,Haircare,Social Media,0.12,0.83
+CUST_10920,Female,43,False,False,Nigeria,2024-11-05,2025-02-10,177,80,4,observed,231.53,57.8825,Skincare,Referral,0.43,0.52
+CUST_10921,Female,35,False,False,Kenya,2023-08-03,2024-09-13,637,230,3,observed,969.2,323.06666666666666,Haircare,Organic Search,0.22,0.93
+CUST_10922,Female,30,False,False,Canada,2024-06-21,2025-01-20,314,101,3,observed,379.96,126.65333333333332,Haircare,Paid Ads,0.31,0.53
+CUST_10923,Male,33,False,False,UK,2024-05-29,2024-07-24,337,281,5,observed,279.22,55.84400000000001,Haircare,Paid Ads,0.23,0.92
+CUST_10924,Male,49,False,False,Canada,2024-03-27,2025-02-10,400,80,3,observed,181.17,60.38999999999999,Haircare,Organic Search,0.29,0.34
+CUST_10925,Male,43,False,False,USA,2023-12-17,2024-01-01,501,486,4,observed,173.76,43.44,Skincare,Social Media,0.18,1.0
+CUST_10926,Female,51,False,False,USA,2023-04-10,2023-11-12,752,536,3,observed,1336.65,445.55,Makeup,Social Media,0.51,1.0
+CUST_10927,Male,24,False,False,Kenya,2024-09-10,2024-12-28,233,124,2,observed,74.37,37.185,Bodycare,Paid Ads,0.22,0.51
+CUST_10928,Female,33,False,False,Canada,2024-09-17,2024-10-01,226,212,8,observed,47.79,5.97375,Skincare,Email,0.13,0.88
+CUST_10929,Male,32,True,False,USA,2024-06-27,2024-11-17,308,165,6,observed,26.76,4.46,Haircare,Referral,0.31,0.56
+CUST_10930,Male,29,False,False,UK,2023-01-04,2024-10-18,848,195,6,observed,412.7,68.78333333333333,Skincare,Organic Search,0.21,0.7
+CUST_10931,Female,18,False,False,UK,2024-09-13,2025-01-15,230,106,5,observed,78.33,15.666,Skincare,Email,0.27,0.39
+CUST_10932,Female,34,False,False,Kenya,2024-09-13,2024-11-01,230,181,4,observed,161.57,40.3925,Makeup,Referral,0.75,0.82
+CUST_10933,Female,38,False,False,USA,2023-11-05,2025-02-25,543,65,1,observed,134.53,134.53,Skincare,Referral,0.66,0.42
+CUST_10934,Male,20,False,False,UK,2024-11-06,2024-11-28,176,154,2,observed,108.09,54.045,Skincare,Social Media,0.18,0.5
+CUST_10935,Male,46,False,False,UK,2023-09-21,2025-01-20,588,101,5,observed,99.24,19.848,Haircare,Email,0.21,0.43
+CUST_10936,Female,34,False,False,Kenya,2023-08-18,2025-03-29,622,33,4,observed,260.9,65.225,Bodycare,Email,0.53,0.4
+CUST_10937,Unknown,25,False,False,Canada,2023-08-27,2024-04-11,613,385,6,observed,162.85,27.141666666666666,Skincare,Referral,0.34,1.0
+CUST_10938,Male,43,False,False,USA,2024-08-09,2025-02-13,265,77,1,observed,158.95,158.95,Wellness,Organic Search,0.3,0.5
+CUST_10939,Female,56,False,False,Nigeria,2023-07-14,2024-08-14,657,260,3,observed,47.33,15.776666666666666,Bodycare,Paid Ads,0.43,1.0
+CUST_10940,Unknown,24,False,False,Nigeria,2023-08-16,2023-12-03,624,515,7,observed,237.15,33.878571428571426,Wellness,Social Media,0.58,1.0
+CUST_10941,Male,24,False,False,Canada,2023-05-31,2025-02-04,701,86,3,observed,214.36,71.45333333333333,Skincare,Social Media,0.39,0.69
+CUST_10942,Unknown,40,False,False,USA,2023-10-08,2025-02-08,571,82,2,observed,377.85,188.925,Bodycare,Email,0.21,0.53
+CUST_10943,Female,33,False,False,Kenya,2023-06-06,2024-01-07,695,480,3,observed,173.44,57.81333333333333,Haircare,Organic Search,0.6,1.0
+CUST_10944,Male,36,False,False,Canada,2023-11-03,2024-04-14,545,382,3,observed,275.75,91.91666666666667,Bodycare,Email,0.5,1.0
+CUST_10945,Female,16,False,True,Canada,2023-03-15,2024-09-05,778,238,4,observed,156.65,39.1625,Haircare,Referral,0.2,0.68
+CUST_10946,Male,17,False,True,Kenya,2024-08-17,2024-09-13,257,230,4,observed,25.52,6.38,Wellness,Referral,0.21,0.81
+CUST_10947,Male,16,False,True,Canada,2023-10-26,2024-03-22,553,405,3,observed,316.22,105.40666666666668,Haircare,Organic Search,0.19,1.0
+CUST_10948,Female,30,False,False,Nigeria,2023-04-15,2025-03-09,747,53,3,observed,406.48,135.49333333333334,Wellness,Email,0.23,0.5
+CUST_10949,Male,21,False,False,USA,2023-12-31,2024-08-29,487,245,4,observed,194.99,48.7475,Makeup,Referral,0.13,0.87
+CUST_10950,Male,16,False,True,Canada,2023-09-08,2023-10-12,601,567,5,observed,176.22,35.244,Bodycare,Paid Ads,0.33,1.0
+CUST_10951,Male,22,False,False,USA,2024-04-19,2025-03-17,377,45,7,observed,251.15,35.878571428571426,Wellness,Organic Search,0.44,0.2
+CUST_10952,Female,27,False,False,Canada,2024-10-18,2025-04-07,195,24,2,observed,558.31,279.155,Makeup,Referral,0.63,0.22
+CUST_10953,Male,30,False,False,USA,2024-08-30,2024-10-15,244,198,1,observed,226.98,226.98,Wellness,Paid Ads,0.23,0.55
+CUST_10954,Female,27,False,False,Nigeria,2023-07-09,2024-08-27,662,247,8,observed,964.0,120.5,Makeup,Referral,0.43,0.77
+CUST_10955,Male,30,False,False,Nigeria,2024-07-05,2024-09-06,300,237,4,observed,235.18,58.795,Skincare,Referral,0.13,0.74
+CUST_10956,Male,32,True,False,Canada,2023-11-18,2024-03-22,530,405,2,observed,246.94,123.47,Haircare,Social Media,0.08,1.0
+CUST_10957,Female,25,False,False,USA,2024-06-02,2024-11-01,333,181,6,observed,111.54,18.59,Wellness,Organic Search,0.12,0.66
+CUST_10958,Male,29,False,False,Nigeria,2023-10-28,2025-04-26,551,5,3,observed,93.75,31.25,Bodycare,Social Media,0.47,0.14
+CUST_10959,Unknown,16,False,True,UK,2024-12-05,2024-12-30,147,122,3,observed,349.06,116.35333333333334,Skincare,Social Media,0.16,0.46
+CUST_10960,Male,37,False,False,Nigeria,2024-07-19,2024-11-06,286,176,11,observed,56.03,5.093636363636364,Makeup,Referral,0.17,0.71
+CUST_10961,Female,21,False,False,UK,2024-02-14,2024-10-04,442,209,10,observed,358.63,35.863,Wellness,Paid Ads,0.49,0.68
+CUST_10962,Unknown,21,False,False,Kenya,2024-10-10,2025-04-06,203,25,2,observed,88.06,44.03,Makeup,Referral,0.19,0.1
+CUST_10963,Unknown,31,False,False,UK,2023-11-20,2025-02-06,528,84,4,observed,188.24,47.06,Haircare,Organic Search,0.03,0.47
+CUST_10964,Unknown,33,False,False,Nigeria,2024-02-21,2024-03-25,435,402,5,observed,162.74,32.548,Bodycare,Paid Ads,0.06,1.0
+CUST_10965,Male,34,False,False,USA,2024-01-22,2024-05-14,465,352,4,observed,75.79,18.9475,Skincare,Social Media,0.01,1.0
+CUST_10966,Unknown,28,False,False,Canada,2023-04-08,2024-09-30,754,213,7,observed,361.27,51.61,Bodycare,Referral,0.6,0.81
+CUST_10967,Female,31,False,False,UK,2023-11-22,2024-12-24,526,128,3,observed,316.47,105.49000000000001,Makeup,Email,0.49,0.59
+CUST_10968,Male,30,False,False,Kenya,2023-01-10,2024-12-13,842,139,5,observed,340.69,68.138,Haircare,Referral,0.16,0.54
+CUST_10969,Female,37,False,False,Kenya,2024-12-25,2025-02-26,127,64,6,observed,247.92,41.32,Wellness,Social Media,0.27,0.26
+CUST_10970,Male,35,False,False,Kenya,2024-03-14,2024-12-05,413,147,4,observed,443.96,110.99,Haircare,Organic Search,0.35,0.56
+CUST_10971,Female,24,False,False,Kenya,2023-04-03,2025-01-11,759,110,2,observed,424.8,212.4,Skincare,Organic Search,0.18,0.37
+CUST_10972,Female,23,False,False,Nigeria,2024-05-19,2024-05-24,347,342,3,observed,49.42,16.473333333333333,Makeup,Paid Ads,0.26,1.0
+CUST_10973,Male,16,False,True,Nigeria,2024-12-15,2025-01-15,137,106,1,zero_with_spend_set_to_1,396.05,,Skincare,Referral,0.21,0.51
+CUST_10974,Female,24,False,False,Nigeria,2024-12-01,2024-12-11,151,141,5,observed,520.81,104.16199999999999,Makeup,Paid Ads,0.19,0.8
+CUST_10975,Female,30,False,False,UK,2024-06-10,2024-12-07,325,145,7,observed,338.94,48.42,Wellness,Organic Search,0.13,0.42
+CUST_10976,Female,42,False,False,UK,2024-07-06,2024-09-04,299,239,1,observed,468.6,468.6,Bodycare,Referral,0.13,0.9
+CUST_10977,Male,38,False,False,Kenya,2024-10-20,2025-02-28,193,62,1,observed,8.92,8.92,Wellness,Email,0.16,0.25
+CUST_10978,Female,47,False,False,Nigeria,2024-04-16,2024-10-01,380,212,6,observed,202.53,33.755,Bodycare,Paid Ads,0.25,0.72
+CUST_10979,Male,18,False,False,USA,2024-03-17,2024-11-23,410,159,4,observed,230.23,57.5575,Haircare,Email,0.62,0.62
+CUST_10980,Female,18,False,False,Kenya,2023-08-20,2024-12-13,620,139,2,observed,305.34,152.67,Wellness,Referral,0.23,0.75
+CUST_10981,Female,38,False,False,Canada,2024-11-03,2025-02-23,179,67,5,observed,252.74,50.548,Wellness,Paid Ads,0.44,0.26
+CUST_10982,Female,36,False,False,USA,2023-05-17,2024-06-24,715,311,3,observed,209.42,69.80666666666666,Skincare,Paid Ads,0.15,0.94
+CUST_10983,Male,25,False,False,Kenya,2023-05-02,2024-07-06,730,299,2,observed,257.88,128.94,Haircare,Email,0.33,0.98
+CUST_10984,Unknown,30,False,False,Canada,2023-05-15,2023-09-04,717,605,6,observed,509.62,84.93666666666667,Haircare,Referral,0.4,1.0
+CUST_10985,Female,20,False,False,UK,2023-02-23,2025-01-17,798,104,5,observed,153.79,30.758,Makeup,Email,0.36,0.29
+CUST_10986,Male,29,False,False,Canada,2023-03-26,2024-06-07,767,328,4,observed,399.19,99.7975,Makeup,Social Media,0.27,0.93
+CUST_10987,Female,27,False,False,UK,2024-11-13,2025-03-02,169,60,5,observed,164.58,32.916000000000004,Skincare,Referral,0.59,0.5
+CUST_10988,Unknown,31,False,False,Nigeria,2024-10-06,2025-03-17,207,45,1,observed,278.14,278.14,Wellness,Paid Ads,0.12,0.32
+CUST_10989,Male,36,False,False,Nigeria,2023-07-24,2023-10-25,647,554,4,observed,286.93,71.7325,Makeup,Paid Ads,0.16,1.0
+CUST_10990,Male,25,False,False,Canada,2023-03-04,2024-08-07,789,267,7,observed,86.45,12.35,Skincare,Social Media,0.36,0.75
+CUST_10991,Female,33,False,False,UK,2023-11-24,2024-01-11,524,476,4,observed,1103.15,275.7875,Bodycare,Email,0.47,1.0
+CUST_10992,Female,31,False,False,USA,2024-03-17,2024-06-19,410,316,1,observed,459.46,459.46,Bodycare,Organic Search,0.31,1.0
+CUST_10993,Female,32,False,False,UK,2023-12-06,2024-12-09,512,143,3,observed,24.95,8.316666666666666,Makeup,Social Media,0.41,0.62
+CUST_10994,Male,40,False,False,UK,2024-08-21,2024-11-27,253,155,4,observed,264.28,66.07,Makeup,Referral,0.27,0.68
+CUST_10995,Male,50,False,False,Canada,2023-04-12,2023-06-27,750,674,2,observed,201.77,100.885,Bodycare,Paid Ads,0.61,1.0
+CUST_10996,Unknown,24,False,False,USA,2023-05-11,2023-11-23,721,525,5,observed,443.42,88.684,Makeup,Social Media,0.75,1.0
+CUST_10997,Male,24,False,False,USA,2024-03-22,2024-04-25,405,371,6,observed,76.8,12.799999999999999,Makeup,Paid Ads,0.11,1.0
+CUST_10998,Unknown,28,False,False,UK,2023-10-24,2023-12-09,555,509,2,observed,375.94,187.97,Haircare,Email,0.29,1.0
+CUST_10999,Male,40,False,False,Nigeria,2023-03-18,2023-09-03,775,606,4,observed,206.9,51.725,Makeup,Email,0.05,1.0

@@ -1,298 +1,168 @@
-# Customer Segmentation Using RFM Analysis & K-Means Clustering
+# Customer Segmentation: Transparent RFM Rules vs K-Means
 
-**1,000 customers. Six named segments. 53.9% flagged as high churn risk. Champions — just 6.1% of the customer base — accounted for nearly 10% of revenue. This project built a complete customer intelligence system from scratch: cleaned the data, scored every customer on three behavioural dimensions, assigned them to named segments and produced a marketing playbook a non-technical team could act on immediately.**
+> **⚠️ Synthetic data.** Every record in this repository is simulated. The dataset was generated to resemble a direct-to-consumer
+> beauty and wellness CRM export (1,010 rows with deliberate duplicates, missing values and inconsistent categories). No real company,
+> customer or campaign is involved, and no result here describes real business performance.
 
----
+An exploratory customer segmentation of 1,000 customers that **tests whether clustering adds anything beyond simple rules**. It doesn't.
+The final deliverable is therefore a deterministic, rule-based segmentation (recency band x value tier) with a documented audit trail.
 
-## 1. Project Overview
-
-I built this project for a Direct-to-Consumer Beauty and Wellness e-commerce brand that had customer data but no structured way to use it. Every customer was receiving the same marketing message regardless of how much they had spent, how recently they had bought or whether their purchase behaviour suggested they were about to leave.
-
-The goal was to produce something more useful than cluster numbers. Named segments with clear behavioural profiles and specific campaign recommendations — the kind of output a marketing manager could pick up and use without asking a data analyst to explain what Cluster 2 meant.
-
-I combined two complementary approaches. RFM analysis applied rule-based scoring across three behavioural dimensions: how recently a customer bought (Recency), how often they bought (Frequency) and how much they spent (Monetary). K-Means clustering then ran unsupervised on a five-feature matrix to find natural groupings in the data without any pre-defined rules, providing an independent validation of the RFM segments.
+This is version 2 of the project. Version 1 used K-Means plus RFM segment names that the data did not support. The audit that led to
+this rebuild is summarised in [`reports/audit_log.md`](reports/audit_log.md).
 
 ---
 
-## 2. Business Problem
+## Key results
 
-### Context
+All figures come from `notebooks/customer_segmentation.ipynb` and are stored in [`reports/metrics.json`](reports/metrics.json).
 
-The business I analysed operated across five product categories — Skincare, Haircare, Makeup, Bodycare and Wellness — serving customers in Kenya, the UK, the USA, Nigeria and Canada. The analytical methods I applied here work for any repeat-purchase or subscription business with CRM-level transaction data. The sector is specific; the framework is not.
+| Metric | Value |
+|---|---|
+| Customers (after removing 10 exact duplicates) | 1,000 |
+| Total revenue (uncapped spend) | $260,484 |
+| Mean / median total spend per customer | $260.48 / $203.28 |
+| Average order value: order-weighted / mean of customer AOV | $64.50 / $85.22 (957 customers with an observed order count) |
+| Median days since last purchase | 202 |
+| Top 20% of customers by spend: share of revenue | 46.2% |
+| Supplied churn score >= 0.70 | 539 customers (53.9%), but the score is almost a function of recency (see below) |
 
-### The Problem
-
-Despite collecting data across multiple customer touchpoints, the brand had no structured way to translate that data into targeted action. Without segmentation:
-
-- Marketing campaigns were generic — every customer received the same message regardless of spend level, recency or product preference
-- High-value customers were not identified or given any preferential retention treatment
-- Acquisition budget was evaluated on volume alone, without any view of which channels produced customers who actually stayed and spent
-- At-risk customers received no early intervention — disengagement went undetected until it was permanent
-- There was no personalisation strategy tied to product category preference or purchase history
-
-### Questions I Set Out to Answer
-
-1. Who were the Champions and what did their behaviour look like compared to everyone else?
-2. Which customers were showing early signs of disengagement before they stopped buying entirely?
-3. When I evaluated acquisition channels by lifetime value rather than customer count, did the ranking change?
-4. What measurably separated a new customer from a loyal one?
-5. Could I build segment profiles specific enough that a marketing team could act on them without a data analyst in the room?
-
-### What Success Looked Like
-
-I defined the success criteria before starting: a reproducible segmentation model producing named, interpretable customer groups with behavioural profiles clear enough that a non-technical stakeholder could read the segment description and know exactly what campaign to run. Vague cluster labels were not acceptable. Specific segments with supporting numbers were the minimum output.
+**What the data supports**
+1. **Recency and spend are the only informative axes.** Orders, email open rate, acquisition channel, preferred category, country and
+   gender show no detectable relationship with spend or with segment membership (16 tests, all non-significant after Holm correction,
+   all effect sizes negligible).
+2. **High-value customers are drifting away.** The top 20% of customers by spend (>= $368.35) generate 46.2% of revenue,
+   and 121 of those 200 customers have not purchased for more than 180 days. Those 121 account for 29.9% of all historical revenue.
+3. **The supplied churn score is not independent information.** Its rank correlation with recency is 0.95, recency alone explains
+   93% of its variance, and every customer inactive for more than 365 days has a score of exactly 1.00.
+4. **K-Means finds no natural clusters.** On recency, orders and log spend, the silhouette (0.27 at k = 3 or 4) is no better than the same data with
+   its columns shuffled independently (0.26 and 0.28). A two-level decision tree reproduces 95% of the cluster labels. The original
+   model's apparent structure came from counting recency twice (recency plus the churn score).
 
 ---
 
-## 3. Dataset Description
+## Segmentation
 
-The dataset contained behavioural and transactional records for 1,010 customers of a Beauty and Wellness e-commerce platform. I designed it to reflect the kind of data a CRM system actually produces — not a clean teaching dataset, but one with the real-world imperfections a data analyst encounters before any analysis can begin: missing values in key fields, duplicate records, and categorical inconsistencies where the same value had been entered in multiple formats.
+| Recency band | Days since last purchase |
+|---|---|
+| Active | 0-90 |
+| Cooling | 91-180 |
+| Lapsing | 181-365 |
+| Lapsed | over 365 |
 
-That choice was deliberate. A segmentation model built on pristine data does not prepare anyone for what a real CRM export looks like. The cleaning and validation work in this project was as important as the modelling that followed.
+**Value tier:** High-Value means the top 20% of customers by total uncapped spend (>= $368.35). Everyone else is Standard.
+Customers with tenure of 180 days or less are flagged as `newer_customer` (87 customers). This is an attribute, not a segment,
+because nobody in the data signed up in the four months before the analysis date.
 
-**Raw dataset:** 1,010 rows × 13 columns
+| Segment | Customers | % customers | % revenue | Median days since purchase | Median orders | Median spend | Median AOV |
+|---|---|---|---|---|---|---|---|
+| Active High-Value | 38 | 3.8 | 7.8 | 54 | 3 | $471.97 | $188.92 |
+| Active Standard | 191 | 19.1 | 12.5 | 50 | 4 | $164.58 | $42.94 |
+| Cooling High-Value | 41 | 4.1 | 8.6 | 139 | 4 | $480.89 | $110.99 |
+| Cooling Standard | 199 | 19.9 | 13.3 | 128 | 4 | $160.04 | $42.72 |
+| Lapsing High-Value | 66 | 6.6 | 14.3 | 255 | 4 | $466.96 | $128.27 |
+| Lapsing Standard | 217 | 21.7 | 15.0 | 256 | 4 | $166.84 | $42.93 |
+| Lapsed High-Value | 55 | 5.5 | 15.5 | 500 | 3 | $516.28 | $204.83 |
+| Lapsed Standard | 193 | 19.3 | 13.0 | 478 | 4 | $162.88 | $40.24 |
 
-| Column | Type | Description |
-|:---|:---|:---|
-| `customer_id` | string | Unique customer identifier |
-| `gender` | string | Female / Male / Unknown (after standardisation) |
-| `age` | float | Customer age — 48 missing values, imputed |
-| `country` | string | Kenya, UK, USA, Nigeria, Canada |
-| `signup_date` | date | Registration date |
-| `last_purchase_date` | date | Most recent order date |
-| `recency_days` | int | Days since last purchase |
-| `frequency` | float | Total number of orders — 26 missing values, imputed |
-| `monetary_value` | float | Total customer spend |
-| `preferred_category` | string | Most purchased category |
-| `acquisition_channel` | string | Email, Paid Ads, Referral, Social Media, Organic Search |
-| `email_open_rate` | float | Email engagement rate 0–1 |
-| `churn_risk_score` | float | Pre-calculated churn risk 0–1 |
+The segments are deterministic: shuffling the input rows changes no assignment. In the original version, row order alone moved 60 to 74 customers between segments.
 
----
+![Segment grid](visuals/charts/04_segment_grid.png)
 
-## 4. Key Business Insights
+### Suggested actions (hypotheses to test, not predicted results)
 
-### Data quality issues found and resolved
+The data has no campaign, cost or response history, so no ROI or uplift can be estimated. Each action should be run with a holdout group.
 
-Before any modelling started I ran a full audit. The raw data had three categories of problems:
+| Segment group | Suggested test | Why this segment |
+|---|---|---|
+| Lapsing and Lapsed High-Value (121) | Personal or high-touch win-back. Compare reactivation against a holdout. | 29.9% of historical revenue; no purchase for 181+ days |
+| Active and Cooling High-Value (79) | Retention and recognition (early access, service). Avoid discount-led offers. | High spend, recently active |
+| Cooling Standard (199) | Timed reminder or replenishment message around 90-180 days | Activity is fading but still recent |
+| Lapsed Standard (193) | Low-cost reactivation, then a sunset or suppression rule | Low value, inactive for over a year |
+| Active Standard (191) | Normal programme. Test basket-building offers (median AOV is $43 vs $189 in Active High-Value). | Recent but low spend per order |
 
-**Missing values:**
-- Gender: 180 missing (17.82%) — classified as Unknown rather than imputed
-- Age: 48 missing (4.75%) — imputed with median age of 32
-- Frequency: 26 missing (2.57%) — imputed with median of 4.0 orders
-
-**Duplicates:** 10 exact duplicate rows removed. Dataset reduced from 1,010 to 1,000.
-
-**Categorical inconsistencies:** Gender had five distinct values: Female, Male, M, F and NaN. Categories had mixed capitalisation — skincare and Skincare both appearing. Both were standardised before modelling.
-
-**Outliers:** Monetary value was capped at the 99th percentile ($1,315.02) using Winsorisation. Ten values were affected.
-
-### The RFM picture
-
-After cleaning, the RFM distributions across 1,000 customers showed wide spread on all three dimensions:
-
-| Dimension | Mean | Median | Range |
-|:---|:---|:---|:---|
-| Recency (days) | 244 | 202 | 0 – 829 |
-| Frequency (orders) | 3.98 | 4.0 | 0 – 11 |
-| Monetary value | $253 | $203 | $3.64 – $1,315 |
-
-The most striking finding from the correlation analysis: recency_days correlated with churn_risk_score at 0.85 — the strongest relationship in the entire dataset. Customers who had not bought recently were almost certainly at churn risk. Frequency and monetary value had virtually no correlation (0.01), meaning high-spend customers were not necessarily buying frequently and vice versa.
-
-### The six RFM segments
-
-Each customer received R, F and M scores from 1 to 5 using quintile-based scoring. Recency was inverted — lower days since last purchase earned a higher score. Combined RFM scores ranged from 3 to 15.
-
-| Segment | Customers | Share | Revenue Share | Avg Recency | Avg Frequency | Avg Spend |
-|:---|:---|:---|:---|:---|:---|:---|
-| Champions | 61 | 6.1% | 9.9% | 88 days | 5.95 orders | $409 |
-| Loyal Customers | 92 | 9.2% | 17.5% | 344 days | 5.90 orders | $482 |
-| Potential Loyalists | 377 | 37.7% | 36.2% | 184 days | 4.22 orders | $243 |
-| New Customers | 173 | 17.3% | 15.9% | 77 days | 2.09 orders | $233 |
-| At Risk | 184 | 18.4% | 14.5% | 436 days | — | $199 |
-| Hibernating | 113 | 11.3% | 6.0% | — | — | $134 |
-
-**Loyal Customers had the highest average spend at $482 — higher than Champions.** Champions bought more recently and more frequently, but the Loyal segment contained customers whose long-term cumulative spend was actually the highest in the dataset. This was the most counterintuitive finding and had direct implications for where retention investment should go.
-
-**Potential Loyalists were the largest segment at 37.7% of customers and 36.2% of revenue.** This group had the highest leverage: they were engaged enough to have bought multiple times but had not yet reached the frequency or recency thresholds of the top tiers. A small improvement in their purchase rate would have a large revenue impact given the segment size.
-
-### K-Means clustering validated the RFM segments
-
-Five features went into the K-Means model: recency_days, frequency, monetary_value, email_open_rate and churn_risk_score. All were standardised using StandardScaler before fitting.
-
-The elbow method and silhouette scores were tested for k=2 through k=10:
-
-| k | Inertia | Silhouette Score |
-|:---|:---|:---|
-| 2 | 3,557.4 | 0.2770 |
-| **3** | **3,107.7** | **0.2804** |
-| 4 | 2,705.4 | 0.2309 |
-| 5 | 2,376.7 | 0.2176 |
-
-**k=3 produced the best silhouette score at 0.2804.** The three clusters separated clearly along the churn risk and recency dimensions:
-
-| Cluster | Customers | Avg Recency | Avg Monetary | Avg Churn Risk | Interpretation |
-|:---|:---|:---|:---|:---|:---|
-| 0 | 67 | 336 days | $799 | 0.87 | High spenders, high churn risk — at risk of being permanently lost |
-| 1 | 428 | 399 days | $213 | 0.97 | Lapsed, low spend, highest churn risk — largely disengaged |
-| 2 | 505 | 101 days | $215 | 0.46 | Most recently active — current engaged base |
-
-PCA reduced to two dimensions for visualisation explained 58.4% of total variance (PC1: 37.5%, PC2: 21.0%).
-
-**Cluster 0 was the most commercially important finding from K-Means.** 67 customers with average spend of $799 and a churn risk score of 0.87 — high-value accounts that were showing strong disengagement signals. These customers were not captured as prominently by the RFM scoring alone and represented the highest-priority group for personal outreach.
-
-### Acquisition channel quality
-
-When channels were ranked by average customer lifetime value rather than customer count, the ordering changed:
-
-| Channel | Customers | Avg LTV | Avg Frequency | Avg Churn Risk |
-|:---|:---|:---|:---|:---|
-| Email | 203 | $263.87 | 4.05 | 0.71 |
-| Paid Ads | 200 | $258.08 | 4.00 | 0.72 |
-| Referral | 196 | $255.92 | 3.95 | 0.68 |
-| Social Media | 201 | $247.52 | 3.92 | 0.69 |
-| Organic Search | 200 | $239.76 | 4.00 | — |
-
-Referral produced customers with the lowest average churn risk despite not being the largest channel by volume. Email produced the highest average LTV. Both findings argued for investing more in these channels relative to their current share of acquisition budget.
-
-### The churn risk reality
-
-53.9% of all 1,000 customers had a churn risk score at or above 0.70 — the threshold I defined as high risk. This was not a model prediction. It was a field already present in the dataset reflecting behavioural signals of disengagement. More than half the customer base was showing signs of churning.
+**Compliance flag.** 75 customers are recorded as under 18 (19 of them High-Value, including the single highest spender).
+Check consent rules before including them in any campaign.
 
 ---
 
-## 5. Project Architecture
+## Methodology summary
+
+Full detail: [`reports/methodology.md`](reports/methodology.md).
+
+1. **Cleaning.**
+   - Dropped 10 exact duplicates.
+   - Standardised gender and category labels (missing gender is kept as "Unknown").
+   - Set 17 impossible "0 orders with spend" values to 1 and imputed 26 missing order counts with the median (all flagged).
+   - Imputed 48 missing ages with the median (flagged; age is not used for segmentation).
+   - Flagged the 75 under-18s.
+2. **No spend cap.** Revenue always uses uncapped spend. Clustering uses `log1p(spend)`.
+3. **Deterministic RFM scores** (exported for reference):
+   - R and M are quintiles computed on the values themselves.
+   - F uses fixed bins: 1 | 2 | 3-4 | 5-6 | 7+ orders.
+4. **Primary segmentation:** recency band x value tier, with fixed thresholds.
+5. **Clustering, exploratory only.** K-Means with k = 2 to 8 on three feature sets (original, original without churn, revised). Each was evaluated with:
+   - inertia, silhouette, a shuffled-column null silhouette, Davies-Bouldin, Calinski-Harabasz and Gaussian-mixture BIC;
+   - bootstrap ARI, row-shuffle ARI, agreement with Ward clustering, and how much of each solution a depth-2 decision tree reproduces.
+6. **Insight tests.** Kruskal-Wallis and chi-square tests with epsilon-squared or Cramér's V effect sizes, Holm-corrected as one family.
+
+![Model selection](visuals/charts/06_kmeans_model_selection.png)
+
+---
+
+## Limitations
+
+- **Synthetic data.** Channels, categories and the churn score appear to have been generated independently of purchasing behaviour.
+- **No transaction-level data.** There is no basket, timing, return or margin information, so cross-sell, journey or CLV modelling is not possible.
+- **No costs or campaign outcomes.** No financial impact can be calculated.
+- **A single snapshot.** Movement between segments over time cannot be measured.
+- **Thresholds are conventional choices.** The 90, 180 and 365-day bands and the top-20% value cut-off can change segment sizes.
+- **Frequency corrections and imputations** affect a small number of customers, all of them flagged in the data.
+
+---
+
+## Repository structure
 
 ```
-Raw CSV (1,010 customers, 13 columns)
-          ↓
-Data Quality Audit — missing values, duplicates, categorical inconsistencies
-          ↓
-7-Step Cleaning Pipeline — logged and documented at every step
-          ↓
-Exploratory Data Analysis — demographics, RFM distributions,
-                             channel quality, churn risk, correlations
-          ↓
-RFM Feature Engineering — R, F, M scores (quintile-based 1–5)
-                           + composite RFM score + RFM code
-          ↓
-Rule-Based Segmentation — 6 named segments assigned by score thresholds
-          ↓
-K-Means Clustering — 5-feature scaled matrix
-                     elbow + silhouette to find k=3
-          ↓
-Cluster Profiling & Business Naming — radar charts, heatmaps, PCA scatter
-          ↓
-Channel Quality Analysis + Category Preference by Segment
-          ↓
-Export — 1,000-row enriched CSV with RFM scores, segment labels and cluster IDs
-```
-
-**Why two methods rather than one?** RFM is interpretable and immediately actionable — a marketing team can understand what "Champions" means without a data science background. K-Means is data-driven — it finds groupings the rules might miss. Running both and comparing the outputs gave more confidence in the final segments than either method alone would have.
-
----
-
-## 6. Tech Stack
-
-| Tool | Version | Role |
-|:---|:---|:---|
-| Python | 3.x | End-to-end pipeline |
-| pandas | 1.4.2 | Data cleaning, feature engineering, aggregation |
-| NumPy | 1.21.5 | Numerical operations, quintile scoring |
-| scikit-learn | 1.0.2 | K-Means, StandardScaler, PCA, silhouette scoring |
-| Matplotlib | — | All visualisations |
-| Seaborn | — | Heatmaps and distribution plots |
-| Jupyter Notebook | — | Interactive analysis environment |
-
----
-
-## 7. Repository Structure
-
-```
-customer-segmentation/
-│
-├── Customer_Segmentation_project.ipynb    # Main analysis notebook (77 cells)
-│
+ecommerce-customer-segmentation/
+├── README.md
+├── requirements.txt                 pinned versions used to run the notebook
+├── notebooks/
+│   └── customer_segmentation.ipynb  canonical analysis (runs top to bottom)
+├── src/                             cleaning, segmentation, clustering and stats functions used by the notebook
 ├── data/
-│   ├── raw/
-│   │   └── customer_segmentation_dataset.csv   # Source data (1,010 rows)
-│   └── cleaned/
-│       └── customer_segmentation_cleaned.csv   # After 7-step cleaning pipeline
-│
-├── visuals/
-│   └── charts/
-│       ├── acquisition_channels.png
-│       ├── correlation_heatmap.png
-│       ├── customer_clusters.png
-│       ├── elbow_method.png
-│       ├── rfm_segments.png
-│       └── spending_distribution.png
-│
-└── README.md
+│   ├── raw/customer_segmentation_dataset.csv        synthetic source (1,010 rows)
+│   ├── cleaned/customer_segmentation_cleaned.csv    cleaned, with data-quality flags
+│   └── processed/                                   dashboard-ready exports
+│       ├── customer_segments.csv                    one row per customer with scores, segment, flags
+│       ├── segment_profiles.csv
+│       └── exploratory_cluster_profiles.csv
+├── reports/
+│   ├── executive_summary.md
+│   ├── methodology.md
+│   ├── audit_log.md                 what was wrong in v1 and what changed
+│   ├── metrics.json                 every headline figure, written by the notebook
+│   └── tables/                      model selection, insight tests, reconciliation, cleaning log
+├── sql/
+│   ├── schema.sql, analysis_queries.sql
+│   └── test_queries.py              runs the SQL on SQLite and checks it against metrics.json
+├── visuals/charts/                  9 charts, one file per chart
+├── dashboards/README.md             how to build a dashboard from the exports
+└── archive/original_project/        v1 notebooks, charts, SQL and reports, kept unchanged for reference
 ```
 
----
-
-## 8. Export Files
-
-| File | Rows | Columns | What it contains |
-|:---|:---|:---|:---|
-| `customer_segmentation_cleaned.csv` | 1,000 | 15 | Cleaned dataset with tenure_days derived — use for retraining |
-| `customer_segmentation_output.csv` | 1,000 | 21 | Enriched export including R_score, F_score, M_score, RFM_Score, RFM_Code, RFM_Segment and Cluster — connect directly to Power BI or Looker Studio |
-
-**The output file is Power BI-ready.** Import `customer_segmentation_output.csv`, use `RFM_Segment` as a slicer and `monetary_value` as the revenue metric. The segment column already contains the business names — no DAX translation needed.
-
-A suggested SQL schema is documented in the final notebook section for teams that want to load the output into a relational database for ongoing CRM integration.
-
----
-
-## 9. How to Run the Project
-
-**1. Clone the repository**
+## How to run
 
 ```bash
-git clone https://github.com/PatienceAnono/customer-segmentation.git
-cd customer-segmentation
+pip install -r requirements.txt
+cd notebooks
+jupyter nbconvert --to notebook --execute --inplace customer_segmentation.ipynb   # or open it in Jupyter and Run All
+cd ..
+python sql/test_queries.py
 ```
 
-**2. Install dependencies**
-
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn jupyter
-```
-
-**3. Place the data file**
-
-```
-data/raw/customer_segmentation_dataset.csv
-```
-
-**4. Run the notebook**
-
-```bash
-jupyter notebook Customer_Segmentation_project.ipynb
-```
-
-Run all cells from top to bottom. Charts save automatically to `visuals/charts/` and the enriched output saves to `data/` when the export cell runs.
-
-**Recreating the segments on new data** — the RFM scoring uses quintile-based thresholds fitted on the training dataset. To apply the same scoring to a new customer cohort, refit the quintile breakpoints on the new data and reassign scores. The segment assignment logic is rule-based and does not require retraining — only the score thresholds need updating.
+The notebook can also be run from the repository root. It needs `archive/original_project/customer_segmentation_output.csv`
+to reproduce and compare against the original results.
 
 ---
 
-## 10. Future Improvements
-
-**1. Add a time-series layer to the RFM scoring.**
-The current model scored customers on their full historical behaviour. A rolling RFM that recalculates scores monthly would show segment migration over time — which customers moved from Potential Loyalist to Champion, and which moved from Loyal to At Risk. That migration view is more actionable than a static snapshot.
-
-**2. Build a CLV prediction model on top of the segments.**
-The segments identified who customers were today. A survival analysis model — Kaplan-Meier or BG/NBD — would estimate how long each segment would continue buying and how much they would spend over that lifetime. That converts the segmentation from a descriptive tool into a forward-looking financial model.
-
-**3. Test the segment recommendations and measure response rates.**
-The strategic recommendations were built from behavioural data. Running A/B tests — one campaign version per segment recommendation — would produce empirical evidence of which segment strategies actually drove repeat purchase and which did not. The next model iteration would incorporate those outcomes.
-
-**4. Expand the feature set for K-Means.**
-The clustering used five features. Adding product category history, return rate, seasonal purchase patterns and device type would produce more granular clusters, particularly within the large Potential Loyalists group (377 customers, 37.7% of the base) which was likely hiding meaningful sub-segments.
-
----
-
-**Patience Anono** · PA Data Analytics · [padataanalytics.com](https://padataanalytics.com) · hello@padataanalytics.com
+**Patience Anono** · [padataanalytics.com](https://padataanalytics.com)

@@ -1,0 +1,11 @@
+step,rows_affected,detail
+Drop exact duplicate rows,10,Every duplicated customer_id was an exact copy
+Standardise gender,180,M/F mapped to Male/Female; missing kept as 'Unknown' (not imputed)
+Standardise category case,0,Title case
+"Parse dates, derive tenure_days",0,Reference date 2025-05-01
+Correct impossible frequency,17,frequency 0 with spend > 0 set to 1 (minimum consistent value) and flagged
+Impute missing frequency,26,Median of observed values (4); flagged
+Impute missing age,48,Median; flagged. Age is not used for segmentation
+Flag customers under 18,75,Kept; flagged for marketing-consent review
+Add log1p(monetary_value),0,Used for clustering instead of a 99th-percentile cap; revenue always uses uncapped spend
+Derive average order value,43,AOV = spend / orders; left blank where frequency was corrected or imputed
