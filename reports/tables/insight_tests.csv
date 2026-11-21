@@ -1,0 +1,17 @@
+comparison,test,statistic,p_value,effect_size,effect_measure,n,min_expected,p_holm,significant_at_0.05_after_holm
+Spend by acquisition channel,Kruskal-Wallis,1.2064,0.877,0.0012,epsilon_squared,1000,,1.0,False
+Orders by acquisition channel,Kruskal-Wallis,0.7205,0.9488,0.0007,epsilon_squared,1000,,1.0,False
+AOV by acquisition channel,Kruskal-Wallis,1.5919,0.8102,0.0017,epsilon_squared,957,,1.0,False
+Recency by acquisition channel,Kruskal-Wallis,4.7332,0.3158,0.0047,epsilon_squared,1000,,1.0,False
+Churn score by acquisition channel,Kruskal-Wallis,5.3032,0.2576,0.0053,epsilon_squared,1000,,1.0,False
+Spend by preferred category,Kruskal-Wallis,4.3785,0.3572,0.0044,epsilon_squared,1000,,1.0,False
+Orders by preferred category,Kruskal-Wallis,2.5988,0.627,0.0026,epsilon_squared,1000,,1.0,False
+Spend by country,Kruskal-Wallis,7.2373,0.1239,0.0072,epsilon_squared,1000,,1.0,False
+Email open rate by segment,Kruskal-Wallis,5.2382,0.6309,0.0052,epsilon_squared,1000,,1.0,False
+Age by segment,Kruskal-Wallis,5.5078,0.5982,0.0055,epsilon_squared,1000,,1.0,False
+Segment x acquisition channel,Chi-square,26.4741,0.547,0.0814,cramers_v,1000,7.448,1.0,False
+Segment x preferred category,Chi-square,15.9616,0.9664,0.0632,cramers_v,1000,6.422,1.0,False
+Segment x country,Chi-square,24.2671,0.6674,0.0779,cramers_v,1000,7.372,1.0,False
+Segment x gender,Chi-square,13.1964,0.5111,0.0812,cramers_v,1000,6.84,1.0,False
+Value tier x acquisition channel,Chi-square,1.0712,0.8988,0.0327,cramers_v,1000,39.2,1.0,False
+Value tier x preferred category,Chi-square,1.9988,0.736,0.0447,cramers_v,1000,33.8,1.0,False

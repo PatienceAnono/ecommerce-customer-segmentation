@@ -1,0 +1,7 @@
+original_segment,Active High-Value,Active Standard,Cooling High-Value,Cooling Standard,Lapsing High-Value,Lapsing Standard,Lapsed High-Value,Lapsed Standard
+At Risk,0,0,0,0,6,60,10,108
+Champions,12,16,15,18,0,0,0,0
+Hibernating,0,0,0,12,0,42,0,59
+Loyal Customers,0,0,4,6,28,21,17,16
+New Customers,22,79,9,63,0,0,0,0
+Potential Loyalists,4,96,13,100,32,94,28,10

@@ -1,0 +1,10 @@
+metric,original_claim,verified_value,status
+Average order value,$253 (executive summary),$85.22 mean per customer; $64.50 order-weighted,Corrected: $253 was average total spend per customer
+Average total spend per customer,$253 (capped spend),$260.48 uncapped,Corrected: revenue now uncapped
+Total revenue,"~$253,046","$260,484.00 uncapped",Corrected
+Customers with churn score >= 0.70,~640 (64%) in executive summary; 539 (53.9%) in notebook,539 (53.9%),Executive summary figure was wrong
+Median churn score,0.71 (notebook conclusion),0.745 (mean 0.706),Corrected
+Spend cap,"$799 (executive summary) / $1,315.02 (notebook)",No cap; log transform for modelling,Method changed
+Loyal Customers outspend Champions,"Yes, the 'most counterintuitive finding'",Mann-Whitney p = 0.53,Removed: no detectable difference
+Row-order stability of segments,Not assessed,60-74 customers moved (original); 0 (revised),Fixed
+Number of segments,"'five' in notebook text, six in code",8 rule-based segments,Redefined

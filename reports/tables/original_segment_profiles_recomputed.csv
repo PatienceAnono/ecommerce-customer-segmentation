@@ -1,0 +1,7 @@
+original_segment,customers,median_recency_days,median_orders,median_spend,median_tenure_days,median_churn_score,pct_recency_over_180,pct_tenure_over_365
+At Risk,184,410.0,4.0,159.5,640.5,1.0,100.0,93.5
+Champions,61,99.0,6.0,360.8,325.0,0.5,0.0,42.6
+Hibernating,113,386.0,2.0,120.1,593.0,1.0,89.4,85.8
+Loyal Customers,92,304.0,6.0,384.6,560.0,1.0,89.1,80.4
+New Customers,173,80.0,2.0,205.9,334.0,0.4,0.0,42.8
+Potential Loyalists,377,159.0,4.0,199.4,426.0,0.6,43.5,60.7
